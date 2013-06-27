@@ -1,0 +1,141 @@
+/* Basic jQuery Slider essential styles */
+
+    ul.bjqs{
+        position:relative; 
+        list-style:none;
+        padding:0;
+        margin:0;
+        overflow:hidden;
+        display:none;
+    }
+
+    li.bjqs-slide{
+        position:absolute;
+        display:none;
+    }
+
+    ul.bjqs-controls{
+        list-style:none;
+        margin:0;
+        padding:0;
+        z-index:9999;
+    }
+
+    ul.bjqs-controls.v-centered li a{ position:absolute; }
+
+    ul.bjqs-controls.v-centered li.bjqs-next a{ right:0; }
+
+    ul.bjqs-controls.v-centered li.bjqs-prev a{ left:0; }
+
+    ol.bjqs-markers{
+        list-style: none; 
+        padding: 0; 
+        margin: 0; 
+        width:100%;
+    }
+
+    ol.bjqs-markers.h-centered{ text-align: center; }
+
+    ol.bjqs-markers li{ display:inline; }
+
+    ol.bjqs-markers li a{ display:inline-block; }
+
+    p.bjqs-caption{
+        display:block;
+        width:96%;
+        margin:0;
+        padding:2%;
+        position:absolute;
+        bottom:0;
+    }
+
+    ul.bjqs-controls.v-centered li a{
+	    display:block;
+	    padding:10px;
+	    background:#fff;
+	    color:#000;
+	    text-decoration: none;
+        font-size: 1em;
+    }
+
+    ul.bjqs-controls.v-centered li a:hover{
+	    background: rgb(62,62,62);
+	    color:#fff;
+    }
+
+    ol.bjqs-markers li a{
+	    padding:5px 10px;
+	    background: rgb(62,62,62);
+	    color:#fff;
+	    margin:5px;
+	    text-decoration: none;
+    }
+
+    ol.bjqs-markers li.active-marker a,
+    ol.bjqs-markers li a:hover{
+	    background: rgb(140,200,0);
+    }
+
+    p.bjqs-caption{
+	    background: rgba(255,255,255,0.5);
+    }
+
+    /*Styles for screen 900px and lower*/
+	@media screen and (max-width: 900px){
+        ul.bjqs-controls.v-centered li a{	        
+	        padding: 5px;	        	        
+            font-size: 0.9em;
+        }
+        ol.bjqs-markers li a{
+	        padding:5px 7px;	        
+	        margin:5px;
+            font-size: 0.9em;	        
+        }
+        p.bjqs-caption{
+            font-size: 0.9em;
+        }
+	}
+
+	/*Styles for screen 700px and lower*/
+	@media screen and (max-width: 700px){
+        ul.bjqs-controls.v-centered li a{	        
+	        padding: 5px;	        	        
+            font-size: 0.9em;
+        }
+        ol.bjqs-markers li a{
+	        padding:5px 7px;	        
+	        margin:5px;
+            font-size: 0.9em;	        
+        }
+        p.bjqs-caption{
+            font-size: 0.9em;
+        }
+	}
+
+
+	/*Styles for screen 540px and lower*/
+    @media only screen and (max-width : 540px) {
+        ul.bjqs-controls.v-centered li a{	        
+	        padding: 4px;	        	        
+            font-size: 0.8em;
+        }        
+
+        ol.bjqs-markers li a{
+	        padding:2px 4px;	        
+	        margin: 2px;
+            font-size: 0.8em;
+        }
+        p.bjqs-caption{ font-size: 0.8em; }
+    }
+
+    /*Styles for screen 320px and lower*/
+    @media only screen and (max-width : 320px) {
+        ul.bjqs-controls.v-centered li a{ font-size: 0.6em; }        
+        ol.bjqs-markers li a{ font-size: 0.6em; }
+        p.bjqs-caption{ font-size: 0.6em; }
+    }
+
+
+
+
+

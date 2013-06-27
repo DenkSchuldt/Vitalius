@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<imagenes>	
+	<slider>
+		<imagen>
+			<url>./images/alimentos/alimentos_01.jpg</url>
+			<title>Frutas saludables</title>
+		</imagen>
+		<imagen>
+			<url>./images/alimentos/alimentos_02.jpg</url>
+			<title>Aguacate</title>
+		</imagen>
+		<imagen>
+			<url>./images/alimentos/alimentos_03.jpg</url>
+			<title>Brocoli</title>
+		</imagen>
+		<imagen>
+			<url>./images/alimentos/alimentos_04.jpg</url>
+			<title>Frutas saludables</title>
+		</imagen>
+		<imagen>
+			<url>./images/alimentos/alimentos_05.jpg</url>
+			<title>Manzana</title>
+		</imagen>
+		<imagen>
+			<url>./images/alimentos/alimentos_06.jpg</url>
+			<title>Pimiento rojo</title>
+		</imagen>
+		<imagen>
+			<url>./images/alimentos/alimentos_07.jpg</url>
+			<title>Tomates</title>
+		</imagen>
+		<imagen>
+			<url>./images/alimentos/alimentos_08.jpg</url>
+			<title>Bananos</title>
+		</imagen>
+		<imagen>
+			<url>./images/alimentos/alimentos_09.jpg</url>
+			<title>Jugos y vitaminas</title>
+		</imagen>
+		<imagen>
+			<url>./images/alimentos/alimentos_10.jpg</url>
+			<title>Peras y manzanas</title>
+		</imagen>
+		<imagen>
+			<url>./images/alimentos/alimentos_11.jpg</url>
+			<title>Alimentos para sopas</title>
+		</imagen>
+	</slider>
+</imagenes>	

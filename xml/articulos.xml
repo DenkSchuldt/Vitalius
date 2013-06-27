@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<articulos>
+	<articulo>
+		<titulo>
+			Consejos para no engordar en verano
+		</titulo>
+		<descripcion>
+			El sol despunta por la ventana de tu habitación avisando que el verano está esperándote para disfrutar las vacaciones. Claro que con más tiempo libre y menos ocupaciones...
+		</descripcion>
+		<imagen>
+			./images/articulos/articulo_01.jpg
+		</imagen>
+		<enlace>
+		</enlace>
+	</articulo>
+	<articulo>
+		<titulo>
+			10 malos hábitos para la salud del corazón
+		</titulo>
+		<descripcion>
+			Hoy te proponemos conocer algunos malos hábitos para la salud del corazón. Esta lista pretende resumir aquellos factores de riesgo de enfermedades cardiovasculares más...
+		</descripcion>
+		<imagen>
+			./images/articulos/articulo_02.jpg
+		</imagen>
+		<enlace>
+		</enlace>
+		</articulo>
+	<articulo>
+		<titulo>
+			Desayunos saludables: propiedades del muesli
+		</titulo>
+		<descripcion>
+			Como seguramente sabes, el desayuno es la comida más importante del día, es la que recarga tus energías cada mañana para mantenerte activo durante esas largas jornadas de...
+		</descripcion>
+		<imagen>
+			./images/articulos/articulo_03.jpg
+		</imagen>
+		<enlace>
+		</enlace>		
+	</articulo>
+		<articulo>
+		<titulo>
+			7 consejos de nutrición para un envejecimiento saludable
+		</titulo>
+		<descripcion>
+			Hoy te traemos una serie de consejos de nutrición para un envejecimento saludable. Si bien una alimentación balanceada es fundamental a lo largo de toda la vida, cuando envejecemos es...
+		</descripcion>
+		<imagen>
+			./images/articulos/articulo_04.jpg
+		</imagen>
+		<enlace>
+		</enlace>		
+	</articulo>
+	<articulo>
+		<titulo>
+			Cómo podemos cuidar nuestra salud
+		</titulo>
+		<descripcion>
+			La salud no sólo es sinónimo de ausencia de enfermedad. Estar saludables implica un estado permantente tanto de bienestar físico como emocional y psicológico que todos...
+		</descripcion>
+		<imagen>
+			./images/articulos/articulo_05.jpg
+		</imagen>
+		<enlace>
+		</enlace>		
+	</articulo>	
+	<articulo>
+		<titulo>
+			10 hábitos saludables
+		</titulo>
+		<descripcion>
+			Llevar hábitos saludables es esencial para mantenernos sanos, jóvenes y en forma más allá de la edad que tengamos. Seguir una vida saludable, en definitiva, nos hace tener...
+		</descripcion>
+		<imagen>
+			./images/articulos/articulo_06.jpg
+		</imagen>
+		<enlace>
+		</enlace>
+	</articulo>	
+		<articulo>
+		<titulo>
+			5 Alimentos que deberías eliminar de tu dieta
+		</titulo>
+		<descripcion>
+			Aunque cada vez se habla más sobre la vida saludable y los buenos hábitos, los problemas de salud se siguen dando con más frecuencia. En muchos casos, son incentivados por...
+		</descripcion>
+		<imagen>
+			./images/articulos/articulo_07.jpg
+		</imagen>		
+		<enlace>
+		</enlace>		
+	</articulo>	
+</articulos>
