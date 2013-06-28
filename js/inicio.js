@@ -10,7 +10,7 @@
 		section2 = document.getElementById('articles_right');
 		cargarArticulos();
 		lis[0].setAttribute('class','option');
-		document.getElementById('up').addEventListener('click',function(){
+		lis[0].addEventListener('click', function () {
 			moveVerticalTo(position('main_header'),1000);
 		});
 		for(var i=1; i<lis.length; i++){

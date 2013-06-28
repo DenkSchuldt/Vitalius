@@ -25,12 +25,10 @@
 				var y = $(this).scrollTop();            
 				if (y >= top) {        
 					$('#main_nav').addClass('fixed');
-					document.getElementById('title').style.visibility = 'visible';
-					document.getElementById('up').style.visibility = 'visible';
+					document.getElementById('title').style.visibility = 'visible';					
 				} else {        
 					$('#main_nav').removeClass('fixed');
-					document.getElementById('title').style.visibility = 'hidden';
-					document.getElementById('up').style.visibility = 'hidden';
+					document.getElementById('title').style.visibility = 'hidden';					
 				}
 			});
 		}  
