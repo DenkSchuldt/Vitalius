@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<frases>
+	<frase>
+		<descripcion> La primera riqueza es la salud
+		</descripcion>
+		<autor>Emerson Ralph Waldo</autor>
+	</frase>
+	<frase>
+		<descripcion>No cambies la salud por la riqueza, ni la libertad por el poder.</descripcion>
+		<autor>Benjamin Franklin</autor>
+	</frase>
+	<frase>
+		<descripcion>La salud no lo es todo pero sin ella, todo lo demás es nada.</descripcion>
+		<autor>Schopenhauer</autor>
+	</frase>
+</frases>
