@@ -1,34 +1,75 @@
 ﻿<!DOCTYPE html>
-<html>
+<html xmlns=”http://www.w3.org/1999/xhtml” xmlns:fb=”http://www.facebook.com/2008/fbml”> 
 	<head>
 		<meta charset="UTF-8"/>
 		<meta name="description" content="Proyecto Parcial I"/>
 		<title>Nombre - Recetas</title>
-		<link rel="stylesheet" type="text/css" href="../css/css_pages.css">
+		<link rel="stylesheet" type="text/css" href="../css/css_recetas.css">
+		
+		<div id="fb-root"></div>
+		
+		
+		<script>/*
+window.fbAsyncInit = function() {
+FB.init({appId:"166808283489142", status: "true", cookie: "true",
+xfbml: "true"});
+};
+(function() {
+var e = document.createElement("script"); e.async = true;
+e.src = document.location.protocol +
+"//connect.facebook.net/en_US/all.js";
+document.getElementById("fb-root").appendChild(e);
+}());*/
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=166808283489142";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+/*<fb:comments   xid=”<?php echo urlencode("http://localhost:9090/Proyecto%20Parcial%20I/pages/recetas.html");?>” simple=”1″  numposts=”4″></fb:comments>*/</script>
+
+		
+	
+
+
+
+		
+		
+		
+	
+
+
 	</head>
 	<body>
 		<div id="title">Nombre</div>		
 		<nav id="main_nav">			
 			<ul>
-				<li><span>Inicio</span></li>
-				<li><span>Que Comer</span></li>
-				<li><span>Que Beber</span></li>
-				<li><span>Recetas</span></li>
-				<li><span>Calendario de Dieta</span></li>
-				<li><span>Registro</span></li>
+				<li>Inicio</li>
+				<li>Que Comer</li>
+				<li>Que Beber</li>
+				<li>Recetas</li>
+				<li>Calendario de Dieta</li>
+				<li>Registro</li>
 			</ul>
-            <div id="pull"></div>
 		</nav>
 		<div id="content">
 			<div id="inicio">
 				<section id="sectionInicio">
+				
 				</section>
-			</div>			
-		</div>
+				<section id="sectionMenu">
+				
+				</section>
+
+		<div class="fb-like" data-href="http://localhost:9090/Proyecto%20Parcial%20I/pages/recetas.html" data-send="true" data-width="450" data-show-faces="true"></div>
+		
+		
+		
 		<footer id="main_footer"></footer>
 	</body>
 </html>
-
 <script src="../js/jquery.js"></script>
 <script src="../js/general.js"></script>
 <script src="../js/recetas.js"></script>
