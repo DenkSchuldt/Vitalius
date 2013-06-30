@@ -1,6 +1,8 @@
 
     var n = 0, seccion;
     var fst = 0, lst = 0;
+	var phraseToDisplay = new Array();
+	var numFrases=0;
 
 	/*	
 	 * Description:
@@ -48,9 +50,54 @@
 					location.href = "./pages/registro.html";
 				},true);		
 			}
-		}		
+		}
+		cita = document.getElementById('cita');
+		cargarFrases();		
 	}	
+	function cargarFrases(){
+		var url="./xml/frases.xml";
+		var request= new XMLHttpRequest();
+		
+		request.addEventListener('load',procesarFrases,false);
+		request.open("GET",url,true);
+		request.send(null);
+	}
+	function procesarFrases(e){
+			
+			var descripcion,autor,article,p,strong,texto;
+			var xml= e.target.responseXML;
+			var frase = xml.documentElement.getElementsByTagName("frase");
+			numFrases= frase.length;
+			
+			for(i=0;i<frase.length;i++){
+				
+				
+				descripcion = frase[i].getElementsByTagName("descripcion")[0].textContent;
+				autor = frase[i].getElementsByTagName("autor")[0].textContent;
+				
+				article = document.createElement('article');
+				p = document.createElement('p');
+				strong = document.createElement('strong');
+				
+				texto = document.createTextNode(descripcion);
+				p.appendChild(texto);
+				texto = document.createTextNode(autor);
+				strong.appendChild(texto);
+				
+				
+				article.appendChild(p);
+				article.appendChild(strong);
+				phraseToDisplay.push(article);
+				
+				//cita.appendChild(article);
+		}
+		choosePhrase();
+	}
+	function choosePhrase(){
+		num=Math.floor((Math.random()*numFrases)+1) - 1;
+		cita.appendChild(phraseToDisplay[num]);
 	
+	}
 	function moverIzq(){
 	    n = n - 3;	    
 		cargarArticulos();
