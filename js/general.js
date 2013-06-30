@@ -25,10 +25,10 @@
 				var y = $(this).scrollTop();            
 				if (y >= top) {        
 					$('#main_nav').addClass('fixed');
-					document.getElementById('title').style.visibility = 'visible';					
+					$('#title').fadeIn();
 				} else {        
 					$('#main_nav').removeClass('fixed');
-					document.getElementById('title').style.visibility = 'hidden';					
+					$('#title').fadeOut();
 				}
 			});
 		}  

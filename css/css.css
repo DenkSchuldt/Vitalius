@@ -4,23 +4,23 @@ body{
 	width: 100%;
 	height: 100%;
 	Font-Family: "Verdana", Geneva, sans-serif;
-    overflow-x:hidden;
+    background-color: rgb(62,62,62);
+    overflow-x: hidden;
 }
 
 /*--------------------------------------------------[Header]----------------------------------------------------*/
 
-	#main_header{	
-        display:inline-block;
+	#main_header{	        
 		height: 20%;
 		width: 100%;
+        display:block;
 		background-color: white;
-		color:	black;
-		position: absolute;
+		color:	black;		
 	}
 	#main_header h1{
         margin: 0;
         padding: 0;
-        padding-top: 5px;
+        padding-top: 15px;
 		padding-left: 30px;
 		font-size: 3.5em;
 		text-shadow: 0 0 0.2em rgb(217,226,119), 0 0 0.2em gray;
@@ -30,98 +30,13 @@ body{
         margin: 0;
         padding: 0;
 		padding-left: 30px;
+        padding-bottom: 15px;
 		font-size: 1.5em;
 		text-shadow: 0 0 0.2em rgb(217,226,119);
 		height: auto;	
 	}
-	
-    #main_footer{
-	    height: 40%;
-	    width: 100%;
-	    top: 400%;	    
-	    position: absolute;        
-    }
 
-    #header_footer {
-        height:auto;
-        width: 100%;
-        text-align:left;
-        background-color: rgb(200,200,200);        
-    }
-
-    #header_footer label{
-        margin-left: 10%;
-        padding: 10px;
-        color: white;
-	    background-color: rgb(140,200,0);
-        font-size:1.1em;
-    }   
-    
-    #body_footer{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background-color: rgb(62,62,62);
-    }
-
-    #body_footer div{
-        width: 25%;
-        height: 100%;        
-        position: absolute;        
-        background-color: rgb(62,62,62);                        
-    }
-    #body_footer div:nth-child(1) {left:0;}
-    #body_footer div:nth-child(2) {left:25%;border-left: 1px dashed gray;}
-    #body_footer div:nth-child(3) {left:50%;border-left: 1px dashed gray;}
-    #body_footer div:nth-child(4) {left:75%;border-left: 1px dashed gray;}
-
-    #body_footer span {
-        text-decoration:underline;        
-        color:white;
-        position: absolute;
-        margin-top: 10px;
-        margin-left: 10%;
-        font-size: 0.9em;
-    }
-
-    #body_footer a {
-        text-decoration:none; 
-        color:gray;
-        margin-left: 15%;
-        margin-top: 55px;
-        position: absolute;
-    }
-    #body_footer a:hover {color:lightgray;}
-
-    #body_footer form {
-        font-size:0.8em;
-        text-align:left;        
-        width: 90%;
-        margin-left:5%;
-        margin-top: 45px;
-        background-color: rgba(166,166,166,0.5);        
-        padding-top: 15px;
-        padding-bottom:15px;
-        position: absolute;
-    }
-
-    #body_footer label{
-        float: left;
-        display: block;
-        margin-right: 5px;
-        margin-left: 10px;
-        width: 5em;
-        text-align:right;
-    }
-
-    #body_footer input{width: 13em;}
-    #body_footer textarea {width: 13em;}
-    #body_footer input[type="submit"] {
-        width: 5em;
-        margin-left:6em;
-    }
-
-	/*Styles for screen 900px and lower*/
+    /*Styles for screen 900px and lower*/
 	@media screen and (max-width: 900px){		
         #main_header h1{        
             padding-top: 10px;		    
@@ -155,19 +70,17 @@ body{
 /*--------------------------------------------------[NAV BAR]----------------------------------------------------*/
 
 	#main_nav{		
-		top: 20%;
-		height: auto;
 		width: 100%;
+        display:inline-block;
 		text-align: right;
 		color: white;
-		background-color: rgb(62,62,62);
-		position: absolute;
-		z-index: 2;
+		background-color: rgb(62,62,62);		
+		z-index: 2;        
 	}
 	#main_nav ul{
 		list-style-type: none; 
 		float: right;
-		margin: 0;	
+		margin: 0;	        
 	}
 	#main_nav li{
 		display: inline-block;
@@ -183,12 +96,13 @@ body{
 	#main_nav.fixed{position: fixed;top: 0;}
 	#title{
 		left: 15px;
+        top: 0;
 		padding: 15px;
-		text-shadow: 0 0 0.2em white;
-		visibility: hidden;
+		text-shadow: 0 0 0.2em white;	    
 		position: fixed;
 		z-index: 3;
 		color: white;
+        display: none;
 	}
 	
 	/*Styles for screen 900px and lower*/
@@ -255,66 +169,72 @@ body{
 		}
 	}	
 	
-.option{
-	color: white;
-	background-color: rgb(140,200,0);
-}
+    .option{
+    	color: white;
+    	background-color: rgb(140,200,0);
+    }
 
-#up{
-	width: auto;
-	height: auto;
-	top: 85%;
-	left: 90%;	
-	opacity: 0.5;
-	z-index: 3;
-	position: fixed;
-	color: white;
-	text-align: center;
-	padding-top: 5px;
-	visibility: hidden;
-}
-#up:hover{cursor: pointer;}
 
-#inicio{
-	height: 80%;
-	width: 100%;
-	top: 20%;
-	background-color: rgb(211,217,83);	
-	background-image: url(../images/various/corazon.png);
-	background-size: 40%;
-	background-repeat: no-repeat;	
-	background-position: top left;
-	position: absolute;
-}
-#inicio #cita{
-	top: 10%;
-	left: 50%;
-	width: 40%;
-	height: 50%;
-	position: absolute;
-	font-size: 3em;
-}
+/*--------------------------------------------------[DIV UNO]----------------------------------------------------*/
 
-/*---------------------------------------------[Div 2]--------------------------------------------*/
+    #inicio{
+        width: 100%;
+	    background-image: url(../images/various/corazon.png);
+	    background-size: 40%;
+	    background-repeat: no-repeat;	
+	    background-position: top left;                
+        background-color: #669c1f;
+        padding-bottom: 10%;
+    }
 
-    #woman_01{	
-	    height: 100%;
+    #inicio p {margin:-3px;}
+    #inicio p:nth-child(1){
+        width: 40%;
+        margin-left: 50%;
+        padding: 20px;
+        text-align: justify;
+        color: white;        
+        padding-top: 5%;        
+    }
+    #inicio p:nth-child(2){        
+	    width: 40%;
+        margin-left: 50%;
+        margin-top: 3%;
+	    font-size: 1.5em;
+        background-color: rgba(255,255,255,0.5);
+        text-align:justify;
+        padding: 20px;      
+    }
+    #inicio strong:nth-child(2){margin-left:60%;}
+
+/*--------------------------------------------------[DIV DOS]----------------------------------------------------*/
+
+    #woman_01{		    
 	    width: 100%;
-	    top: 100%;
+	    display: block;
 	    background-color: white;
 	    background-color: white;	
 	    background-image: url(../images/saludable/saludable_03.jpeg);
-	    background-size: 50%;
+	    background-size: 38%;
 	    background-repeat:no-repeat;	
 	    background-position:bottom right;
-	    position: absolute;
+        padding-bottom: 10%;
     }
     #woman_01 h2{
+        margin: 0;
 	    text-align: left;	
-	    font-size: 4em;
+	    font-size: 3em;
 	    padding-left: 50px;
+        padding-top: 60px;        
     }
-    #slide{margin-left: 70px;}
+    #woman_01 p {
+        padding-left: 50px;
+    }
+    #slide{
+        margin-left: 70px;
+        margin-top: 2%;
+        border: 1px dotted black;
+    }
 
     /*Styles for screen 900px and lower*/
 	@media screen and (max-width: 900px){
@@ -361,89 +281,288 @@ body{
 	        padding-left: 20px;
         }
         #slide{            
-            margin-left: auto;
+            margin-left: auto;            
         }
     }
 
 
+/*--------------------------------------------------[DIV TRES]----------------------------------------------------*/
 
+    #articles{
+	    width: 100%;        
+	    display: inline-block;
+	    background-color: #669c1f;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    #articles h2{
+        margin: 0;
+	    text-align: left;	
+	    font-size: 2.5em;
+	    padding-left: 50px;
+        padding-bottom: 40px;
+        color: white;
+    }
 
+    #articles section {        
+        margin-left:auto;
+        margin-right:auto;
+        height: auto;        
+        background-color: rgba(255,255,255,0.4);        
+        display: table;
+    }
 
-#articles{
-	height: 100%;
-	width: 100%;
-	top: 200%;
-	background-color: rgb(205,217,79);
-	position: absolute;
-}
-#articles #articles_left{
-	width: 40%;
-	height: 100%;
-	left: 0;
-	position: absolute;
-	border-right: 2px solid white;
-}
-#articles #articles_right{
-	width: 50%;
-	height: 100%;
-	left: 50%;
-	position: absolute;	
-}
+    #articles span {
+        margin-top: -30px;
+        font-size: 0.8em;
+        float: right;
+        margin-right: 20px;
+        color: gray;        
+    }
 
-#woman_02{
-	height: 100%;
-	width: 100%;
-	top: 300%;
-	background-color: white;
-	position: absolute;
-	background-image: url(../images/saludable/saludable_02.jpg);
-	background-size: 50%;
-	background-repeat:no-repeat;	
-	background-position:bottom right;
-	position: absolute;	
-}
-#woman_02 h2{
-	text-align: left;	
-	font-size: 4em;
-	padding-left: 50px;
-}
-#woman_02_video{
-	margin-left: 100px;	
-}
+    #articles label {
+        display: inline-block;
+        width: 100%;
+        padding-top: 25px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        font-size: 1.3em;
+    }
 
-.out{Font-Family: "Verdana", Geneva, sans-serif;}
-.on{cursor: pointer;}
+    .on{cursor: pointer;}    
 
-.izqS{
-  float: left;
-  width: 60;
-  height: 60;
-  border-top: 60px solid transparent;
-  border-bottom: 60px solid transparent;
-  border-right:60px solid #006600;
-}
-.derS{
-  float: right;
-  width: 60;
-  height: 60;
-  border-top: 60px solid transparent;
-  border-bottom: 60px solid transparent;
-  border-left:60px solid #006600;
-}
+    .articulo{
+		width: 350px;
+		height: 40%;
+		margin-left: 15px;
+        margin-right: 15px;		
+        background-color: rgba(255,255,255,0.4);
+        padding: 10px;        
+        display: table-cell;
+        vertical-align: middle;
+    }
+	
+	.articulo:hover{		
+		cursor: pointer;
+		background-color: rgba(255,255,255,1);
+	}	
+	
+	.titulo{				
+		width: 90%;		
+        margin-left: 5%;
+        font-size: 1em;
+        display: block;
+        text-align:justify;
+	}
+    .descripcion {
+        width: 90%;
+        margin-left: 5%;
+        text-align: justify;
+        text-justify: inter-word;
+        font-size: 0.8em;
+        display: block;
+    }
+    .fecha {
+        display: block;
+        float: right;
+        margin-right: 5%;
+        color: rgb(109,109,109);
+    }
 
-.izq{
-  float: left;
-  width: 50;
-  height: 50;
-  border-top: 50px solid transparent;
-  border-bottom: 50px solid transparent;
-  border-right:50px solid #25aa00;
-}
-.der {
-  float: right;
-  width: 50;
-  height: 50;
-  border-top: 50px solid transparent;
-  border-bottom: 50px solid transparent;
-  border-left:50px solid #25aa00;
-}
+    #articles_buttons {        
+        margin-left:auto;
+        margin-right:auto;
+        width: 160px;
+        padding-top: 15px;        
+    }
+    #articles_buttons img {
+        display: inline-block;        
+        width: 80px;
+        position:relative;
+        float: left;
+        opacity: 0.8;
+    }
+    #articles_buttons img:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    #show{		
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		z-index: 10;
+		display: none;
+	}
+	
+	#background{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background-color: black;
+		opacity: 0.9;
+	}
+	
+	#visible{
+		width: 85%;
+		height: 85%;
+		top: 7.5%;
+		left: 7.5%;
+		background-color: white;
+		position: absolute;		
+	}
+	
+	#articulo{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background-color: white;
+		overflow-x:auto;
+		font-size: 1.2em;
+		text-align: justify;        
+	}	
+
+/*------------------------------------------------[DIV CUATRO]----------------------------------------------------*/
+
+    #woman_02{
+        margin-top: -3px;
+	    width: 100%;
+	    display: block;
+	    background-color: white;	    
+	    background-image: url(../images/saludable/saludable_02.jpg);
+	    background-size: 40%;
+	    background-repeat:no-repeat;	
+	    background-position:bottom right;	    
+        padding-bottom: 10%;
+    }
+    #woman_02 h2{
+        margin: 0;
+	    text-align: left;	
+	    font-size: 3em;
+	    padding-left: 50px;
+        padding-top: 60px;        
+    }
+    #woman_02 p {                
+        padding-left: 50px;
+        width: 60%;
+        text-align: justify;        
+    }
+    #woman_02_video{
+	    margin-left: 100px;
+        margin-top: -10px;
+        display: block;        
+    }
+
+    #woman_02_video iframe {
+        border: 1px dotted black;
+        width: 560px;
+        height: 315px;
+    }
+
+/*--------------------------------------------------[Footer]----------------------------------------------------*/
+	
+    #main_footer{	    
+	    width: 100%;
+        display: block;        
+        background-color: rgb(62,62,62);
+        position: absolute;
+    }
+
+    #header_footer {        
+        width: 100%;
+        text-align:left;
+        background-color: rgb(200,200,200);
+        font-size: 0.8em;       
+    }
+
+    #header_footer strong{
+        margin-left: 10%;
+        padding: 5px;
+        color: white;
+	    background-color: rgb(140,200,0);
+        font-size:1.1em;
+        display: inline-block;
+    }   
+    
+    #body_footer{
+        width: 100%;        
+        position: absolute;
+        background-color: rgb(62,62,62);
+        display: block;
+    }
+
+    #body_footer div{
+        width: 25%;        
+        display:inline-block;
+        position: absolute;
+        background-color: rgb(62,62,62);
+    }
+    #body_footer div:nth-child(1) {left:0;}
+    #body_footer div:nth-child(2) {left:25%;border-left: 1px dashed gray;}
+    #body_footer div:nth-child(3) {left:50%;border-left: 1px dashed gray;}
+    #body_footer div:nth-child(4) {left:75%;border-left: 1px dashed gray;}
+
+    #body_footer span {
+        text-decoration:underline;        
+        color: rgb(140,200,0);     
+        margin-top: 10px;
+        margin-left: 10%;
+        font-size: 0.9em;
+        display: block;
+    }
+    
+    #body_footer img {
+        padding-left: 20%;
+        padding-right: 5%;
+        width: 40px;
+    }    
+
+    #body_footer p {
+        width: 90%;
+        margin-left:5%;
+        font-size: 0.8em;
+        text-align:justify;
+        color: #d7d7d7;
+    }    
+    #body_footer a{
+        text-decoration:none; 
+        color: gray;        
+        position: absolute;
+    }
+
+    #body_footer ul {color: rgb(140,200,0);}
+    #body_footer li {margin-left:5%;}
+
+    #body_footer a:hover {color:lightgray;}
+
+    #body_footer form {
+        font-size:0.8em;
+        text-align:left;        
+        width: 90%;
+        margin-left:5%;        
+        background-color: rgba(166,166,166,0.5);        
+        padding-top: 15px;
+        padding-bottom:15px;        
+    }
+
+    #body_footer label{
+        float: left;
+        display: block;
+        margin-right: 5px;
+        margin-left: 10px;
+        width: 5em;
+        text-align:right;
+    }
+
+    #body_footer input{width: 13.2em;}
+    #body_footer textarea {width: 13em;}
+    #body_footer input[type="submit"]{
+        width: 5em;
+        margin-left:6em;
+        color: white;
+	    background-color: rgb(140,200,0);
+        border: 0;
+    }
+    #body_footer input[type="submit"]:hover {cursor:pointer;background-color: rgb(130,180,0);}

@@ -1,94 +1,101 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<articulos>
-	<articulo>
-		<titulo>
-			Consejos para no engordar en verano
-		</titulo>
-		<descripcion>
-			El sol despunta por la ventana de tu habitación avisando que el verano está esperándote para disfrutar las vacaciones. Claro que con más tiempo libre y menos ocupaciones...
-		</descripcion>
-		<imagen>
-			./images/articulos/articulo_01.jpg
-		</imagen>
-		<enlace>
-		</enlace>
-	</articulo>
-	<articulo>
-		<titulo>
-			10 malos hábitos para la salud del corazón
-		</titulo>
-		<descripcion>
-			Hoy te proponemos conocer algunos malos hábitos para la salud del corazón. Esta lista pretende resumir aquellos factores de riesgo de enfermedades cardiovasculares más...
-		</descripcion>
-		<imagen>
-			./images/articulos/articulo_02.jpg
-		</imagen>
-		<enlace>
-		</enlace>
-		</articulo>
-	<articulo>
-		<titulo>
-			Desayunos saludables: propiedades del muesli
-		</titulo>
-		<descripcion>
-			Como seguramente sabes, el desayuno es la comida más importante del día, es la que recarga tus energías cada mañana para mantenerte activo durante esas largas jornadas de...
-		</descripcion>
-		<imagen>
-			./images/articulos/articulo_03.jpg
-		</imagen>
-		<enlace>
-		</enlace>		
-	</articulo>
-		<articulo>
-		<titulo>
-			7 consejos de nutrición para un envejecimiento saludable
-		</titulo>
-		<descripcion>
-			Hoy te traemos una serie de consejos de nutrición para un envejecimento saludable. Si bien una alimentación balanceada es fundamental a lo largo de toda la vida, cuando envejecemos es...
-		</descripcion>
-		<imagen>
-			./images/articulos/articulo_04.jpg
-		</imagen>
-		<enlace>
-		</enlace>		
-	</articulo>
-	<articulo>
-		<titulo>
-			Cómo podemos cuidar nuestra salud
-		</titulo>
-		<descripcion>
-			La salud no sólo es sinónimo de ausencia de enfermedad. Estar saludables implica un estado permantente tanto de bienestar físico como emocional y psicológico que todos...
-		</descripcion>
-		<imagen>
-			./images/articulos/articulo_05.jpg
-		</imagen>
-		<enlace>
-		</enlace>		
-	</articulo>	
-	<articulo>
-		<titulo>
-			10 hábitos saludables
-		</titulo>
-		<descripcion>
-			Llevar hábitos saludables es esencial para mantenernos sanos, jóvenes y en forma más allá de la edad que tengamos. Seguir una vida saludable, en definitiva, nos hace tener...
-		</descripcion>
-		<imagen>
-			./images/articulos/articulo_06.jpg
-		</imagen>
-		<enlace>
-		</enlace>
-	</articulo>	
-		<articulo>
-		<titulo>
-			5 Alimentos que deberías eliminar de tu dieta
-		</titulo>
-		<descripcion>
-			Aunque cada vez se habla más sobre la vida saludable y los buenos hábitos, los problemas de salud se siguen dando con más frecuencia. En muchos casos, son incentivados por...
-		</descripcion>
-		<imagen>
-			./images/articulos/articulo_07.jpg
-		</imagen>		
-		<enlace>
-		</enlace>		
-	</articulo>	
-</articulos>
+<?xml version="1.0" encoding="utf-8" ?> <rss version="2.0" xml:base="http://www.eluniverso.com/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/"> 
+<channel> 
+	<title>ELUNIVERSO.COM - Salud</title>
+	<description>Noticias de Ecuador y del mundo</description>
+	<link>http://www.eluniverso.com/</link>
+	<atom:link rel="self" href="http://www.eluniverso.com/rss/salud.xml" />
+	<language>es</language>
+	<copyright>Copyright 2012 C.A. EL UNIVERSO</copyright>
+	<item> 
+		<title>Gobierno británico respalda tratamiento de fertilidad con &quot;tres padres&quot;</title>
+		<link>http://www.eluniverso.com/vida-estilo/2013/06/28/nota/1087826/gobierno-britanico-respalda-tratamiento-fertilidad-tres-padres</link>
+		<description>El Reino Unido podría convertirse en el primer país del mundo que autoriza un tratamiento de fertilidad que utiliza material genético de tres personas para evitar ciertas enfermedades hereditarias incurables, tras recibir este viernes el respaldo del gobierno.
+		El ministerio de Sanidad británico se encargará de redactar las nuevas normas que regirán la polémica técnica de reproducción asistida popularmente llamada de los &quot;tres padres&quot; y las someterá a una consulta pública antes de presentarlas al parlamento el año que viene.</description>
+		<guid isPermaLink="false">http://www.eluniverso.com/vida-estilo/2013/06/28/nota/1087826/gobierno-britanico-respalda-tratamiento-fertilidad-tres-padres</guid>
+		<pubDate>Fri, 28 Jun 2013 19:58:35 -0500</pubDate>
+		<source url="http://www.eluniverso.com/rss/salud.xml">ELUNIVERSO.COM - Salud</source>
+	</item>
+ <item> <title>Arma tu pequeño bar en casa</title>
+ <link>http://www.eluniverso.com/vida-estilo/2013/06/28/nota/1083816/arma-tu-pequeno-bar-casa</link>
+ <description>Son importantes, especiales y a veces incluso son únicas para cada tipo de bebida. Pero en muchas ocasiones son casi siempre las más menospreciadas y hasta olvidadas por la jefa  del hogar.
+Aquí te presentamos una guía de los vasos y copas que debes tener en tu casa para tus bebidas y cocteles. Además el porqué debemos utilizarlos.
+Copa de vino tinto
+	Este vino se ofrece al clima, a no más de 18 °C. Destápalo una hora antes de servirlo. Acompaña a carnes rojas y los más añejos a pastas, venado, cordero y quesos.</description>
+ <guid isPermaLink="false">http://www.eluniverso.com/vida-estilo/2013/06/28/nota/1083816/arma-tu-pequeno-bar-casa</guid>
+ <pubDate>Fri, 28 Jun 2013 00:00:01 -0500</pubDate>
+ <source url="http://www.eluniverso.com/rss/salud.xml">ELUNIVERSO.COM - Salud</source>
+</item>
+ <item> <title>Para que tengas unas piernas seductoras</title>
+ <link>http://www.eluniverso.com/vida-estilo/2013/06/28/nota/1083926/que-tengas-piernas-seductoras</link>
+ <description>Unas piernas bonitas y bien tonificadas es el deseo de toda mujer. Pese a lo que muchas creen, no es tan difícil conseguir la meta, simplemente deben ejercitarse y tener una alimentación balanceada.
+
+	La cosmetóloga Karen Núñez indicó que actualmente hay varios tratamientos estéticos que ayudan a mantener las piernas sexys.
+
+	“Los tratamientos que se pueden hacer son mesoterapia corporal, carboxi, vacumterapia  y masajes reductores que ayudan a eliminar o drenar la grasa que se forma por la celulitis”, recalcó Núñez.</description>
+ <guid isPermaLink="false">http://www.eluniverso.com/vida-estilo/2013/06/28/nota/1083926/que-tengas-piernas-seductoras</guid>
+ <pubDate>Fri, 28 Jun 2013 00:00:01 -0500</pubDate>
+ <source url="http://www.eluniverso.com/rss/salud.xml">ELUNIVERSO.COM - Salud</source>
+</item>
+ <item> <title>El rostro revela cómo está tu salud</title>
+ <link>http://www.eluniverso.com/vida-estilo/2013/06/28/nota/1083901/rostro-revela-como-esta-tu-salud</link>
+ <description>La piel no solo es el órgano más grande del cuerpo, también es un espejo donde se reflejan los estados de salud,  porque el estilo de vida y los hábitos alimenticios ejercen una influencia directa sobre ella. Es así, que  todo desequilibrio de tu dieta se notará, sobre todo, en la piel de tu  rostro.
+
+	El dermatólogo Patricio Zamora Barrezueta explica que se debe diferenciar entre las enfermedades que producen enrojecimiento cutáneo y las que dan lugar a un rostro muy blanco.</description>
+ <guid isPermaLink="false">http://www.eluniverso.com/vida-estilo/2013/06/28/nota/1083901/rostro-revela-como-esta-tu-salud</guid>
+ <pubDate>Fri, 28 Jun 2013 00:00:01 -0500</pubDate>
+ <source url="http://www.eluniverso.com/rss/salud.xml">ELUNIVERSO.COM - Salud</source>
+</item>
+ <item> <title>Cirujanos indios reconstruyen cabeza de una niña con hidrocefalia</title>
+ <link>http://www.eluniverso.com/vida-estilo/2013/06/27/nota/1083551/cirujanos-indios-reconstruyen-cabeza-nina-hidrocefalea</link>
+ <description>Médicos indios anunciaron este jueves que tuvieron éxito en la segunda etapa de la reconstrucción del cráneo de una niña de un año, que sufría de un raro trastorno por el que casi se duplica el tamaño de la cabeza.
+La operación de cuatro horas en el cráneo de la menor fue llevada a cabo en un hospital cerca de Nueva Delhi, donde el mes pasado los cirujanos drenaron el fluido que había en la cabeza de la niña, en una operación de vida o muerte.</description>
+ <guid isPermaLink="false">http://www.eluniverso.com/vida-estilo/2013/06/27/nota/1083551/cirujanos-indios-reconstruyen-cabeza-nina-hidrocefalea</guid>
+ <pubDate>Thu, 27 Jun 2013 11:21:39 -0500</pubDate>
+ <source url="http://www.eluniverso.com/rss/salud.xml">ELUNIVERSO.COM - Salud</source>
+</item>
+ <item> <title>Patentan tejido óseo artificial a partir de células madre y carbón activado</title>
+ <link>http://www.eluniverso.com/vida-estilo/2013/06/26/nota/1080146/patentan-tejido-oseo-artificial-partir-celulas-madre-carbon</link>
+ <description>Científicos de Granada han patentado un nuevo biomaterial que permite generar tejido óseo o huesos artificiales a partir de células madre procedentes de cordón umbilical que son previamente diferenciadas sobre un soporte de tela de carbón activado, aspecto en el que reside la novedad del estudio.</description>
+ <guid isPermaLink="false">http://www.eluniverso.com/vida-estilo/2013/06/26/nota/1080146/patentan-tejido-oseo-artificial-partir-celulas-madre-carbon</guid>
+ <pubDate>Thu, 27 Jun 2013 00:00:02 -0500</pubDate>
+ <source url="http://www.eluniverso.com/rss/salud.xml">ELUNIVERSO.COM - Salud</source>
+</item>
+ <item> <title>Chequeos anuales evitan la ceguera</title>
+ <link>http://www.eluniverso.com/vida-estilo/2013/06/26/nota/1074926/chequeos-anuales-evitan-ceguera</link>
+ <description>De acuerdo con las últimas estimaciones de la Organización Mundial de la Salud (OMS), 285 millones de personas sufren de alguna deficiencia visual en el mundo, de las cuales 39 millones son ciegas. Sin embargo, del total de casos, hasta el 80% son evitables, según los expertos.
+Para el oftalmólogo José Miguel Varas Prieto, al menos el 50% de la ceguera en el país tiene origen en las cataratas (una opacidad del cristalino del ojo), situándose así como la primera causa de esta discapacidad visual.</description>
+ <guid isPermaLink="false">http://www.eluniverso.com/vida-estilo/2013/06/26/nota/1074926/chequeos-anuales-evitan-ceguera</guid>
+ <pubDate>Wed, 26 Jun 2013 00:00:01 -0500</pubDate>
+ <source url="http://www.eluniverso.com/rss/salud.xml">ELUNIVERSO.COM - Salud</source>
+</item>
+ <item> <title>El Acro-yoga relaja y divierte</title>
+ <link>http://www.eluniverso.com/vida-estilo/2013/06/26/nota/1074916/acro-yoga-relaja-divierte</link>
+ <description>La unión de yoga, acrobacia y masaje tailandés se denomina acro-yoga.
+Simha Rambay, de Narasimha Yoga, indica que en su centro se practica la vertiente de inmersión solar, que es solo acrobática.
+Vea la fotogalería de una rutina básica de acro-yoga
+</description>
+ <enclosure url="http://www.eluniverso.com/sites/default/files/styles/nota_ampliada_normal_foto/public/fotos/2013/06/2890921a.jpg?itok=Mil1dcKJ" length="23004" type="image/jpeg" />
+ <guid isPermaLink="false">http://www.eluniverso.com/vida-estilo/2013/06/26/nota/1074916/acro-yoga-relaja-divierte</guid>
+ <pubDate>Wed, 26 Jun 2013 00:00:01 -0500</pubDate>
+ <source url="http://www.eluniverso.com/rss/salud.xml">ELUNIVERSO.COM - Salud</source>
+</item>
+ <item> <title>No comer por estrés es posible</title>
+ <link>http://www.eluniverso.com/vida-estilo/2013/06/26/nota/1074921/no-comer-estres-es-posible</link>
+ <description>Una carga de carbohidratos simples hace que el cerebro libere serotonina, la hormona que mejora el humor y da un efecto tranquilizador. Así lo explica la nutricionista Éricka Borbor.
+Agrega que cuando las personas se ven abrumadas por el estrés de la rutina diaria, surge lo que se conoce como emotional eating, es decir, que comen por motivos emocionales. Para evitarlo sugiere:
+Cinco comidas
+	La alimentación diaria se distribuye en tres comidas principales y dos snacks. Lo importante es no dejar que entre cada una transcurran más de tres horas.</description>
+ <guid isPermaLink="false">http://www.eluniverso.com/vida-estilo/2013/06/26/nota/1074921/no-comer-estres-es-posible</guid>
+ <pubDate>Wed, 26 Jun 2013 00:00:01 -0500</pubDate>
+ <source url="http://www.eluniverso.com/rss/salud.xml">ELUNIVERSO.COM - Salud</source>
+</item>
+ <item> <title>Ocurren 115 abortos al día en Bolivia, según investigación</title>
+ <link>http://www.eluniverso.com/noticias/2013/06/23/nota/1060956/ocurren-115-abortos-dia-bolivia-segun-investigacion</link>
+ <description>Una red de médicos de organizaciones no gubernamentales (ONGs) están dedicadas a realizar abortos ilegales en Bolivia, afirma la investigadora estadounidense Natalie Kimball.
+Kimball presentó la investigación &#039;La historia escondida del embarazo no deseado y el aborto&#039; en La Paz y El Alto, como proyecto de su tesis de doctorado, con datos desde 1952 hasta el 2010. </description>
+ <guid isPermaLink="false">http://www.eluniverso.com/noticias/2013/06/23/nota/1060956/ocurren-115-abortos-dia-bolivia-segun-investigacion</guid>
+ <pubDate>Sun, 23 Jun 2013 17:44:13 -0500</pubDate>
+ <source url="http://www.eluniverso.com/rss/salud.xml">ELUNIVERSO.COM - Salud</source>
+</item>
+</channel>
+</rss>

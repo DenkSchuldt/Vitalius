@@ -46,7 +46,7 @@
         margin:0;
         padding:2%;
         position:absolute;
-        bottom:0;
+        bottom:0;        
     }
 
     ul.bjqs-controls.v-centered li a{
@@ -77,7 +77,7 @@
     }
 
     p.bjqs-caption{
-	    background: rgba(255,255,255,0.5);
+	    background-color: rgba(140,200,0,0.5);
     }
 
     /*Styles for screen 900px and lower*/
