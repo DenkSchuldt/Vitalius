@@ -1,5 +1,5 @@
 
-    var lis = document.querySelectorAll('#main_nav li');
+    var lis = document.querySelectorAll('#main_nav li');    
 
     /*
 	 * Description:
@@ -34,7 +34,7 @@
 				},true);		
 			}
 		}
-		
+				
 		document.registry.addEventListener("invalid", validarFormulario, true);
 		document.getElementById("btnEnviar").addEventListener("click", enviar, false);
 		
@@ -65,6 +65,30 @@
 		estatura = document.getElementById("txtEstatura");
 		estatura.addEventListener("input", validar, false);
 		
+		$('#txtEstatura').keyup(function (){		    
+		    if ($.trim($("#txtPeso").val())) {		        
+		        var p = parseFloat($("#txtPeso").val()).toFixed(2);
+		        var e = parseFloat($("#txtEstatura").val()).toFixed(2);
+		        p = (p / 2.2).toFixed(2);
+		        e = (e / 100).toFixed(2);
+		        e = (e * e).toFixed(2);
+		        var valor = (p / e).toFixed(2);
+		        document.querySelector('#imc').innerHTML = valor + " kg/m<sup>2</sup>";
+		    }
+		});
+
+		$('#txtPeso').keyup(function () {
+		    if ($.trim($("#txtEstatura").val())) {
+		        var p = parseFloat($("#txtPeso").val()).toFixed(2);
+		        var e = parseFloat($("#txtEstatura").val()).toFixed(2);
+		        p = (p / 2.2).toFixed(2);
+		        e = (e / 100).toFixed(2);
+		        e = (e * e).toFixed(2);
+		        var valor = (p / e).toFixed(2);
+		        document.querySelector('#imc').innerHTML = valor + " kg/m<sup>2</sup>";
+		    }
+		});
+
 		validar();
 	}
 	
@@ -167,6 +191,7 @@
 	function validarFormulario(e){
 		var elem=e.target;
 		elem.style.background='rgb(217,226,119)';
-	}
-	
+	}	
+
+
 	window.onload = registroStart();
