@@ -3,62 +3,99 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<meta name="description" content="Proyecto Parcial I"/>
-		<title>Nombre - Registro</title>
-		<link rel="stylesheet" type="text/css" href="../css/css_registro.css">
+		<title>Vitalius - Registro</title>
+		<link rel="stylesheet" type="text/css" href="../css/css.css">
 	</head>
 	<body>
 		<header id="main_header">
-			<h1>Nutrici&oacute;n</h1>
+			<h1>Vitalius</h1>
 			<h4>Come sano, vive bien</h4>
-		</header>
-		<div id="title">Nombre</div>
-		<div id="up"><img src="../images/various/subir.png"/></div>
-		<nav id="main_nav">			
+		</header>		
+		<div id="title">Vitalius</div>        
+		<nav id="main_nav">
 			<ul>
 				<li><span>Inicio</span></li>
-				<li><span>Que Comer</span></li>
-				<li><span>Que Beber</span></li>
+				<li><span>Que comer</span></li>
+				<li><span>Que beber</span></li>
 				<li><span>Recetas</span></li>
 				<li><span>Calendario de Dieta</span></li>
 				<li><span>Registro</span></li>
 			</ul>
-            <div id="pull"></div>
+			<div id="pull"></div>
 		</nav>
-		<div id="content">
-			<div id="inicio">
-				<section id="fomulario">
-					<form name="registry" method="post">
-						
-						<div id="datosPersonales">
-							<h5>Datos Personales</h5>
-							Nombre:<br/> <input type="text" name="txtNombre" id="txtNombre">
-							<br />
-							Apellido: <br/> <input type="text" name="txtApellido" id="txtApellido"><br />
-							Fecha de nacimiento:<br/><input type="date" name="txtFecha" id="txtFecha"><br/>
-						</div>	
-						<div id="cuenta">
-							<h5>Cuenta</h5>
-							Correo Electronico:  <br/><input type="email" name="txtEmail" id="txtEmail"><br />
-							Usuario:  <br/><input type="text" name="txtUsuario" id="txtUsuario"><br />
-							Contrasena: <br/> <input type="password" name="txtContrasena" id="txtContrasena"><br />
-							Repetir Contrasena: <br/> <input type="password" name="txtRepContrasena" id="txtRepContrasena"><br />
-						</div>	
-						<div id="salud">
-							<h5>Salud</h5>
-							Peso:  <br/><input type="number" name="txtPeso" id="txtPeso"> libras<br />
-							Estatura: <br/> <input type="number" name="txtEstatura" id="txtEstatura">centimetros<br /> 
-						</div>
-						<div id="boton">
-							<input type="submit" id="btnEnviar" value="Registrarse">
-						</div>
-					</form>
-				 </section>
+		<div id="content">            
+			<div id="form">
+                <br/><br/>
+				<form id="formulario" name="registry" method="post">						
+                    <h3>Datos Personales</h3>
+					<span><label>Nombre:</label><input type="text" name="txtNombre" id="txtNombre"></span><br/>
+					<span><label>Apellido:</label><input type="text" name="txtApellido" id="txtApellido"></span><br/>
+					<span><label>Fecha de nacimiento:</label><input type="date" name="txtFecha" id="txtFecha"></span><br/>
+					<hr/><h3>Cuenta</h3>
+					<span><label>Correo Electronico:</label><input type="email" name="txtEmail" id="txtEmail"></span><br/>
+					<span><label>Usuario:</label><input type="text" name="txtUsuario" id="txtUsuario"></span><br/>
+					<span><label>Contrasena:</label><input type="password" name="txtContrasena" id="txtContrasena"></span><br/>
+					<span><label>Repetir Contrasena:</label><input type="password" name="txtRepContrasena" id="txtRepContrasena"></span><br/>
+					<hr/><h3>Salud</h3>
+                    <div>
+                        <div id="salud">
+					        <span><label>Peso (lb):</label><input type="number" name="txtPeso" id="txtPeso"></span><br/>
+					        <span><label>Estatura (cm):</label><input type="number" name="txtEstatura" id="txtEstatura"></span><br/>
+                        </div>
+                        <div id="indice">
+                            <h4>Índice de masa corporal (IMC):</h4>
+                            <p id="imc"></p>
+                            <h4>Su peso ideal es: </h4><p id="ideal"></p>
+                            <h4>Usted debe&nbsp;</h4><span></span><p id="kg"></p>
+                        </div>
+                    </div>
+					<div id="boton">
+						<input type="submit" id="btnEnviar" value="Registrarse">
+					</div>
+				</form>				 
 			</div>			
 		</div>
-		<footer id="main_footer">DAW - 2013</footer>
+		<footer id="main_footer">
+            <div id="header_footer"><strong>Vitalius</strong>&nbsp;&nbsp;Come sano, vive bien.</div>
+            <div id="body_footer">                             
+                <div>
+                    <span>Redes sociales</span>  
+                    <p>
+                        <img src="../images/various/facebook.png"/>/vitalius.com<br />
+                        <img src="../images/various/twitter.png"/>@vitalius<br />
+                        <img src="../images/various/gplus.png"/>Vitalius<br />
+                    </p>
+                </div>
+                <div>
+                    <span>Sobre nosotros</span>
+                    <p><strong>Vitalius</strong> es una empresa que provee información necesaria para que las personas puedan llevar una vida saludable. <br/><br/>Nuestra finalidad es ayudar a que nuestros usuarios puedan llevar un control de la cantidad de alimentos y calorías que ingieren.</p>
+                </div>
+                <div>
+                    <span>Sitios Relacionados</span>
+                    <ul>
+                        <li><a href="http://www.enerzona.net/" target="_blank">enerzona</a></li>
+                        <li><a href="http://www.vivirmejor.com/" target="_blank">vivirmejor</a></li>
+                        <li><a href="http://www.alimentacion.es/" target="_blank">alimentacion</a></li>
+                    </ul>
+                </div>                
+                <div>
+                    <span>Sugerencias</span>
+                    <p>Nos es grato leerte. Si tienes alguna sugerencia, puedes escibirnos:</p>
+                    <form>
+                        <label>Nombre:</label>
+                        <input type="text" name="nombre" required/><br/>
+                        <label>Email:</label>
+                        <input type="email"name="email" required/><br/>
+                        <label>Mensaje:</label>
+                        <textarea rows="3" cols="20">
+                        </textarea><br/>
+                        <input type="submit" value="Enviar" id="button"/><br/>
+                    </form><br/>
+                </div>
+			</div>
+		</footer>
+        <script src="../js/jquery.js"></script>
+        <script src="../js/general.js"></script>
+        <script src="../js/registro.js"></script>
 	</body>
 </html>
-
-<script src="../js/jquery.js"></script>
-<script src="../js/general.js"></script>
-<script src="../js/registro.js"></script>
