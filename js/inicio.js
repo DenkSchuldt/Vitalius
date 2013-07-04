@@ -2,7 +2,8 @@
     var n = 0, seccion;
     var fst = 0, lst = 0;
 	var phraseToDisplay = new Array();
-	var numFrases=0;
+	var numFrases = 0;
+	var current_article = "";
 
 	/*	
 	 * Description:
@@ -11,7 +12,9 @@
 	function inicioStart() {	    
 	    seccion = document.querySelector('#articles section');
 	    document.querySelector('#show #background').addEventListener('click', function () {
-	        $('#show').fadeOut('fast');	        
+	        $('#show').fadeOut('fast');
+	        var social = document.querySelector('#social');
+	        document.querySelector('body').removeChild(social);
 	    }, false);
 	    document.querySelector('#articles_left').addEventListener('click', function () {
 	        moverIzq();
@@ -117,7 +120,31 @@
 	    texto = texto.slice(fst, lst + 10);
 	    var footer = texto.slice(texto.indexOf('<footer>'), texto.indexOf('</footer>') + 9);
 	    texto = texto.replace(footer, "");	    
-	    document.querySelector('#articulo').innerHTML += texto;
+	    document.querySelector('#inner_article').innerHTML += texto;
+	    document.querySelector('#inner_article').innerHTML += "<br><br><strong>El Universo.com</strong><br><br>Compartir en<br><br>";
+	    loadSocialLinks();
+	}
+
+	function loadSocialLinks() {
+	    var social = document.createElement('div');
+        social.style.display = "inline-block";
+	    var facebook = document.createElement('img');
+	    facebook.setAttribute("src", "./images/various/facebook.png");
+	    facebook.setAttribute('class', 'generic');
+	    var twitter = document.createElement('img');
+	    twitter.setAttribute("src", "./images/various/twitter.png");
+	    twitter.setAttribute('class', 'generic');	    
+
+	    facebook.addEventListener('click', function () {
+	        newwindow = window.open("https://www.facebook.com/sharer/sharer.php?u=" + current_article,'Compartir en Facebook','height=500,width=500');
+	        if (window.focus) { newwindow.focus(); }
+	    }, false);
+	    twitter.addEventListener('click', function () {
+	        newwindow = window.open("http://twitter.com/home?status=Acabo de leer un articulo en Vitalius: "+current_article,'Compartir en Twitter', 'height=300,width=500');
+	        if (window.focus) { newwindow.focus(); }
+	    }, false);	    
+	    document.querySelector('#inner_article').appendChild(facebook);
+	    document.querySelector('#inner_article').appendChild(twitter);	    
 	}
 
 	function procesarArticulos(e) {	    
@@ -152,10 +179,11 @@
 	        article.header = titulo;
 	        article.addEventListener('click', function () {
 	            var link = this.url;
+	            current_article = this.url;
 	            var request = new XMLHttpRequest();
 	            request.open("GET", "http://chimecho.nixiweb.com/DAW/AJAX_XML/gethtml.php?URL=" + escape(link), true);	            
 	            $('#show').fadeIn('fast');
-	            document.querySelector('#articulo').innerHTML = '<br/><h2>' + this.header + '</h2><br/>';
+	            document.querySelector('#inner_article').innerHTML = '<h2>' + this.header + '</h2><br/>';
 	            //document.querySelector('#comentarios div').setAttribute('data-href', link);
 	            request.addEventListener('load', mostrarNoticia, false);
 	            request.send(null);
