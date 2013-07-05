@@ -5,93 +5,96 @@
 	 * Description:
 	 * Initial function.
 	 */
-	function registroStart(){		
-		lis[5].setAttribute('class','option');
-		for(var i=0; i<lis.length; i++){
-			if(i == 0){
-				lis[i].addEventListener('click',function(){
-					location.href = "../index.html";
-				},true);		
-			}
-			if(i == 1){
-				lis[i].addEventListener('click',function(){
-					location.href = "./que_comer.html";
-				},true);		
-			}
-			if(i == 2){
-				lis[i].addEventListener('click',function(){
-					location.href = "./que_beber.html";
-				},true);		
-			}
-			if(i == 3){
-				lis[i].addEventListener('click',function(){
-					location.href = "./recetas.html";
-				},true);		
-			}			
-			if(i == 4){
-				lis[i].addEventListener('click',function(){
-					location.href = "./calendario_dieta.html";
-				},true);		
-			}
-		}
+    function registroStart(){		
+        lis[5].setAttribute('class','option');
+        for(var i=0; i<lis.length; i++){
+            if(i == 0){
+                lis[i].addEventListener('click',function(){
+                    location.href = "../index.html";
+                },true);		
+            }
+            if(i == 1){
+                lis[i].addEventListener('click',function(){
+                    location.href = "./que_comer.html";
+                },true);		
+            }
+            if(i == 2){
+                lis[i].addEventListener('click',function(){
+                    location.href = "./que_beber.html";
+                },true);		
+            }
+            if(i == 3){
+                lis[i].addEventListener('click',function(){
+                    location.href = "./recetas.html";
+                },true);		
+            }			
+            if(i == 4){
+                lis[i].addEventListener('click',function(){
+                    location.href = "./calendario_dieta.html";
+                },true);		
+            }
+        }
 				
-		document.registry.addEventListener("invalid", validarFormulario, true);
-		document.getElementById("btnEnviar").addEventListener("click", enviar, false);
+        document.registry.addEventListener("invalid", validarFormulario, true);
+        document.getElementById("btnEnviar").addEventListener("click", enviar, false);
 		
-		nombre   = document.getElementById("txtNombre");
-		nombre.addEventListener("input", validar, false);
+        nombre   = document.getElementById("txtNombre");
+        nombre.addEventListener("input", validar, false);
  
-		apellido = document.getElementById("txtApellido");
-		apellido.addEventListener("input", validar, false);
+        apellido = document.getElementById("txtApellido");
+        apellido.addEventListener("input", validar, false);
 		
-		fecha = document.getElementById("txtFecha");
-		fecha.addEventListener("input", validar, false);
+        fecha = document.getElementById("txtFecha");
+        fecha.addEventListener("input", validar, false);
 		
-		email = document.getElementById("txtEmail");
-		email.addEventListener("input", validar, false);
+        email = document.getElementById("txtEmail");
+        email.addEventListener("input", validar, false);
 		
-		usuario = document.getElementById("txtUsuario");
-		usuario.addEventListener("input", validar, false);
+        usuario = document.getElementById("txtUsuario");
+        usuario.addEventListener("input", validar, false);
 		
-		contrasena = document.getElementById("txtContrasena");
-		contrasena.addEventListener("input", validar, false);
+        contrasena = document.getElementById("txtContrasena");
+        contrasena.addEventListener("input", validar, false);
 		
-		repContrasena = document.getElementById("txtRepContrasena");
-		repContrasena.addEventListener("input", validar, false);
+        repContrasena = document.getElementById("txtRepContrasena");
+        repContrasena.addEventListener("input", validar, false);
 		
-		peso = document.getElementById("txtPeso");
-		peso.addEventListener("input", validar, false);
+        peso = document.getElementById("txtPeso");
+        peso.addEventListener("input", validar, false);
 		
-		estatura = document.getElementById("txtEstatura");
-		estatura.addEventListener("input", validar, false);
+        estatura = document.getElementById("txtEstatura");
+        estatura.addEventListener("input", validar, false);
 		
+
+        $("#lb, #kg, #m, #cm").change(function(){
+            calcularIMC();
+        });
+
 		$('#txtEstatura').keyup(function (){		    
 		    if ($.trim($("#txtPeso").val())) {		        
-		        var p = parseFloat($("#txtPeso").val()).toFixed(2);
-		        var e = parseFloat($("#txtEstatura").val()).toFixed(2);
-		        p = (p / 2.2).toFixed(2);
-		        e = (e / 100).toFixed(2);
-		        e = (e * e).toFixed(2);
-		        var valor = (p / e).toFixed(2);
-		        document.querySelector('#imc').innerHTML = valor + " kg/m<sup>2</sup>";
+		        calcularIMC();
 		    }
 		});
 
 		$('#txtPeso').keyup(function () {
 		    if ($.trim($("#txtEstatura").val())) {
-		        var p = parseFloat($("#txtPeso").val()).toFixed(2);
-		        var e = parseFloat($("#txtEstatura").val()).toFixed(2);
-		        p = (p / 2.2).toFixed(2);
-		        e = (e / 100).toFixed(2);
-		        e = (e * e).toFixed(2);
-		        var valor = (p / e).toFixed(2);
-		        document.querySelector('#imc').innerHTML = valor + " kg/m<sup>2</sup>";
+		        calcularIMC();
 		    }
 		});
 
 		validar();
 	}
 	
+	function calcularIMC() {
+	    var p = parseFloat($("#txtPeso").val()).toFixed(2);
+	    var e = parseFloat($("#txtEstatura").val()).toFixed(2);
+	    if (document.getElementById('lb').checked) p = (p / 2.2).toFixed(2);
+	    if (document.getElementById('cm').checked) e = (e / 100).toFixed(2);
+	    e = (e * e).toFixed(2);
+	    var valor = (p / e).toFixed(2);
+	    document.querySelector('#imc').innerHTML = valor + " kg/m<sup>2</sup>";
+	}
+
 	function validar(){
 		if(nombre.value==''){
 		  nombre.setCustomValidity('Ingresar su nombre');

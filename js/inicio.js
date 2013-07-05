@@ -105,8 +105,11 @@
 		cargarArticulos();
 	}
 
-	function cargarArticulos(){
-		var url = "./xml/articulos.xml";
+	function cargarArticulos() {
+	    var online = navigator.onLine;
+	    var url = "";
+	    if (online) url = "http://chimecho.nixiweb.com/DAW/AJAX_XML/gethtml.php?URL=http://www.eluniverso.com/rss/salud.xml";
+		else url = "./xml/articulos.xml";
 		var request = new XMLHttpRequest();
 		request.addEventListener('load',procesarArticulos,false);
 		request.open("GET",url,true);

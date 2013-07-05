@@ -8,7 +8,7 @@
 	    var menuHeight = menu.height();
 	    $(pull).on('click', function (e) {	        
 	        e.preventDefault();
-	        menu.slideToggle();
+	        menu.slideToggle();	        
 	    });	    
 	});
 

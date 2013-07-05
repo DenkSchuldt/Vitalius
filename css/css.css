@@ -36,36 +36,6 @@ body{
 		height: auto;	
 	}
 
-    /*Styles for screen 900px and lower*/
-	@media screen and (max-width: 900px){		
-        #main_header h1{        
-            padding-top: 10px;		    
-		    font-size: 3.0em;		    
-	    }
-	    #main_header h4{font-size: 1.3em;}
-	}
-
-	/*Styles for screen 700px and lower*/
-	@media screen and (max-width: 700px){
-        #main_header h1{        
-            padding-top: 15px;		    
-		    font-size: 2.5em;		    
-	    }	    
-	}
-
-	/*Styles for screen 540px and lower*/
-	@media only screen and (max-width : 540px){
-        #main_header h1{        
-            padding-top: 30px;
-		    padding-left: 20px;
-		    font-size: 1.5em;		    
-	    }
-	    #main_header h4{            
-		    padding-left: 20px;
-		    font-size: 1.0em;		    		    
-	    }        
-	}
-
 
 /*--------------------------------------------------[NAV BAR]----------------------------------------------------*/
 
@@ -75,7 +45,8 @@ body{
 		text-align: right;
 		color: white;
 		background-color: rgb(62,62,62);		
-		z-index: 2;        
+		z-index: 2;
+        border-bottom: 1px solid gray;
 	}
 	#main_nav ul{
 		list-style-type: none; 
@@ -103,76 +74,7 @@ body{
 		z-index: 3;
 		color: white;
         display: none;
-	}
-	
-	/*Styles for screen 900px and lower*/
-	@media screen and (max-width: 900px){
-		#main_nav li{		
-			padding: 10px;            
-			font-size: 0.8em;
-		}
-		#title{
-			left: 0;						
-			font-size: 0.8em;
-			top: -4px;
-		}
-	}
-
-	/*Styles for screen 700px and lower*/
-	@media screen and (max-width: 700px){
-		#main_nav li{			
-            padding: 7px;
-			font-size: 0.65em;
-		}
-		#title{
-			font-size: 0.65em;
-			top: -8px;
-		}
-	}
-
-
-	/*Styles for screen 540px and lower*/
-	@media only screen and (max-width : 540px){
-		#main_nav{height: 30px;}
-		#main_nav ul {
-			margin-top: 30px;
-			width: 100%;			
-			display: none;
-            text-align: left;	            
-            background-color: rgb(62,62,62);
-		}
-		#main_nav li{
-			display: block;
-			width: 100%;
-            padding-left: 0;
-            padding-right: 0;
-		}
-		#title{			
-			top: -6px;
-		}
-		#main_nav div#pull{display: block;}
-		#main_nav div#pull:hover{cursor:pointer;}
-		#main_nav div#pull:after {		
-			content: "";
-			background: url('../images/various/menu.png') no-repeat;
-			background-position: -5px 0px;
-			display: inline-block;
-			position: absolute;
-			width: 25px;
-			height: 50px;
-			right: 0;
-			top: 5px;
-		}
-        #slide{margin-left: auto;}
-        #main_nav li span{		
-            padding-left: 15px;
-		}
-	}	
-	
-    .option{
-    	color: white;
-    	background-color: rgb(140,200,0);
-    }
+	}		
 
 
 /*--------------------------------------------------[DIV UNO]----------------------------------------------------*/
@@ -235,55 +137,6 @@ body{
         border: 1px dotted black;
     }
 
-    /*Styles for screen 900px and lower*/
-	@media screen and (max-width: 900px){
-        #woman_01 h2{
-	        text-align: left;	
-	        font-size: 3em;
-	        padding-left: 40px;
-        }
-	    #slide{
-            margin-left: 45px;
-	    }	
-	}
-
-	/*Styles for screen 700px and lower*/
-	@media screen and (max-width: 700px){
-        #woman_01 h2{
-	        text-align: left;	
-	        font-size: 2em;
-	        padding-left: 30px;
-        }
-		#slide{
-            margin-left: 15px;            
-	    }
-	}
-
-
-	/*Styles for screen 540px and lower*/
-    @media only screen and (max-width : 540px) {
-        #woman_01 h2{
-	        text-align: left;	
-	        font-size: 1em;
-	        padding-left: 20px;
-        }
-        #slide{
-            margin-left: auto;
-        }
-    }
-
-    /*Styles for screen 320px and lower*/
-    @media only screen and (max-width : 320px) {
-        #woman_01 h2{
-	        text-align: left;	
-	        font-size: 1em;
-	        padding-left: 20px;
-        }
-        #slide{            
-            margin-left: auto;            
-        }
-    }
-
 
 /*--------------------------------------------------[DIV TRES]----------------------------------------------------*/
 
@@ -294,6 +147,7 @@ body{
         padding-top: 60px;
         padding-bottom: 60px;
     }
+
     #articles h2{
         margin: 0;
 	    text-align: left;	
@@ -488,7 +342,6 @@ body{
         margin-top: -10px;
         display: block;        
     }
-
     #woman_02_video iframe {
         border: 1px dotted black;
         width: 560px;
@@ -497,14 +350,14 @@ body{
 
 /*--------------------------------------------------[Footer]----------------------------------------------------*/
 	
-    #main_footer{	    
+    #main_footer{
 	    width: 100%;
         display: block;        
         background-color: rgb(62,62,62);
         position: absolute;
     }
 
-    #header_footer {        
+    #header_footer {
         width: 100%;
         text-align:left;
         background-color: rgb(200,200,200);
@@ -528,15 +381,14 @@ body{
     }
 
     #body_footer div{
-        width: 25%;        
+        width: 24.5%;        
         display:inline-block;
-        position: absolute;
+        float: left;
         background-color: rgb(62,62,62);
-    }
-    #body_footer div:nth-child(1) {left:0;}
-    #body_footer div:nth-child(2) {left:25%;border-left: 1px dashed gray;}
-    #body_footer div:nth-child(3) {left:50%;border-left: 1px dashed gray;}
-    #body_footer div:nth-child(4) {left:75%;border-left: 1px dashed gray;}
+    }    
+    #body_footer div:nth-child(2) {border-left: 1px dashed gray;}
+    #body_footer div:nth-child(3) {border-left: 1px dashed gray;}
+    #body_footer div:nth-child(4) {border-left: 1px dashed gray;}
 
     #body_footer span {
         text-decoration:underline;        
@@ -642,7 +494,7 @@ body{
     }
 
     #formulario h3 {
-        margin-left: 50px;
+        margin-left: 30px;
         font-size: 2em;
     }
 
@@ -653,7 +505,7 @@ body{
 
     #formulario label {        
         text-align: right;
-        margin-left: 50px;
+        margin-left: 30px;
         margin-right: 15px;
         display: inline-block;
         width: 13em;
@@ -702,7 +554,7 @@ body{
     }
     #formulario input[type="submit"] {
         margin-top: 10px;
-        margin-left: 30%;
+        margin-left: 28%;
         margin-bottom: 5%;
         display: block;        
     }
@@ -711,3 +563,192 @@ body{
         background-color: rgb(62,62,62);
         color: white;        
     }
+
+
+/*
+-----------------------------------------------------------------------------------------------------------------
+                                                    RESPONSIVE
+-----------------------------------------------------------------------------------------------------------------
+*/
+
+	/*Styles for screen 540px and lower*/
+	@media only screen and (max-width : 540px){
+        #main_header h1{        
+            padding-top: 30px;
+		    padding-left: 20px;
+		    font-size: 1.5em;		    
+	    }
+	    #main_header h4{            
+		    padding-left: 20px;
+		    font-size: 1.0em;		    		    
+	    }
+        /*--------------------------------------NAV--------------------------------------*/
+		#main_nav{height: 45px;}
+		#main_nav ul {
+			margin-top: 45px;
+			width: 100%;
+			display: none;
+            text-align: left;	            
+            background-color: rgb(62,62,62);
+            position: absolute;
+            z-index: 20;
+            padding: 0;
+            padding-bottom: 3px;
+		}
+		#main_nav li{
+			display: block;
+			width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+            margin: 0;
+		}
+		#title{top: -2px;}
+		#main_nav div#pull{display: block;}
+		#main_nav div#pull:hover{cursor:pointer;}
+		#main_nav div#pull:after {		
+			content: "";
+			background: url('../images/various/menu.png') no-repeat;
+			background-position: -5px 8px;
+			display: inline-block;
+			width: 25px;
+			height: 50px;
+			right: 0;
+			margin-top: 5px;            
+		}
+        #slide{margin-left: auto;}
+        #main_nav li span{		
+            padding-left: 15px;            
+		}
+
+        /*--------------------------------------DIV 1--------------------------------------*/
+        #inicio{ background-image: none; }        
+        #inicio p:nth-child(1){
+            width: 80%;
+            margin-left: 5%;            
+        }
+        #inicio p:nth-child(2){        
+	        width: 80%;
+            margin-left: 4%;
+        }        
+
+        /*--------------------------------------DIV 2--------------------------------------*/
+
+        #woman_01 {padding-bottom: 45%;}
+
+        #woman_01 h2{	        
+	        font-size: 1em;
+	        padding-left: 20px;
+            padding-top: 30px;
+        }
+        #woman_01 p {
+            padding-left: 0;
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            text-align: justify;
+        }
+        #slide{
+            margin-left: 5%;
+            margin-right: 5%;            
+            border: none;
+            border-top: 1px dotted black;
+            border-bottom: 1px dotted black;
+        }        
+
+        /*--------------------------------------DIV 3--------------------------------------*/
+        #articles {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }        
+        #articles h2{
+            font-size: 1em;
+	        padding-left: 20px;
+            padding-bottom: 20px;
+            padding-top: 0;
+        }
+        .articulo{
+		    width: 90%;
+		    height: auto;
+		    margin-left: 2%;
+            padding: 10px;
+            display: block;
+            float: left;
+            border-bottom: 1px solid gray;
+        }
+        #articles section {        
+            margin-left: 0;
+            display: block;
+        }
+
+        #visible{
+		    width: 90%;		    
+		    left: 5%;
+            font-size: 0.8em;
+	    }
+    
+        #inner_article {
+            padding: 10px;                        
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+
+        /*--------------------------------------DIV 4--------------------------------------*/
+        #woman_02{padding-bottom: 40%;}
+        #woman_02 h2{
+            font-size: 1em;
+	        padding-left: 20px;
+            padding-top: 30px;
+        }
+        #woman_02 p {                
+            padding-left: 5%;
+            width: 90%;
+            text-align: justify;
+        }
+        #woman_02_video{
+            width: 90%;
+	        margin-left: 3%;            
+            margin-top: 0;            
+        }
+        #woman_02_video iframe {
+            border: 1px dotted black;            
+            width: auto;
+            height:auto;
+        }
+
+        /*--------------------------------------FOOTER--------------------------------------*/        
+        #body_footer div{                 
+            display: inline-block;
+            width: 100%;                        
+        }
+        #body_footer div:nth-child(1) {border-bottom: 1px dashed gray;border-left: none;}
+        #body_footer div:nth-child(2) {border-bottom: 1px dashed gray;border-left: none;}
+        #body_footer div:nth-child(3) {border-bottom: 1px dashed gray;border-left: none;}
+        #body_footer div:nth-child(4) {border-left: none;}                
+
+        #body_footer label{
+            margin-left: 10px;
+            width: auto;            
+        }
+        #body_footer input{
+            width: 90%;
+            margin-left: 4%;
+        }
+        #body_footer textarea {
+            width: 90%;
+            margin-left: 4%;
+        }
+        #body_footer input[type="submit"]{
+            width: 25%;
+            margin-left: 70%;            
+        }        
+	}	
+	
+
+
+
+    .option{
+    	color: white;
+    	background-color: rgb(140,200,0);
+    }
+
+
