@@ -3,31 +3,113 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<meta name="description" content="Proyecto Parcial I"/>
-		<title>Nombre - Que Beber</title>
-		<link rel="stylesheet" type="text/css" href="../css/css_que_beber.css">		
+		<title>Vitalius - Que beber</title>
+		<link rel="stylesheet" type="text/css" href="../css/css.css">
+		<link rel="stylesheet" type="text/css" href="../css/bjqs.css"/>
+		
+		<script src="../js/jquery.js"></script>
+        <script src="../js/jquery-1.9.1.min.js"></script>
+        <script src="../js/jquery-ui-1.8.23.custom.min.js"></script>
+        <script src="../js/bjqs-1.3.min.js"></script>   
 	</head>
-	<body>		
-		<div id="title">Nombre</div>
-		<nav id="main_nav">			
+	<body>
+		<header id="main_header">
+			<h1>Vitalius</h1>
+			<h4>Come sano, vive bien</h4>
+		</header>		
+		<div id="title">Vitalius</div>        
+		<nav id="main_nav">
 			<ul>
 				<li><span>Inicio</span></li>
-				<li><span>Que Comer</span></li>
-				<li><span>Que Beber</span></li>
+				<li><span>Que comer</span></li>
+				<li><span>Que beber</span></li>
 				<li><span>Recetas</span></li>
 				<li><span>Calendario de Dieta</span></li>
 				<li><span>Registro</span></li>
 			</ul>
-            <div id="pull"></div>
+			<div id="pull"></div>
 		</nav>
-		<div id="content">
-			<div id="inicio">
-				<section id="sectionInicio">
-				</section>
+		<div id="content">            
+			<div id="divSlider">
+                <br/><br/>
+				<h2>Beber es vida</h2>
+				<div id="slider">
+					<div id="slide">
+						<ul class="bjqs">
+							<li><img src="../images/bebidas/bebida_01.jpg" title="Bebidas saludables"/></li>
+							<li><img src="../images/bebidas/bebida_02.jpg" title="Jugo de Narajna"/></li>
+							<li><img src="../images/bebidas/bebida_03.jpg" title="Jugos varios"/></li>
+							<li><img src="../images/bebidas/bebida_04.png" title="Jugos de vegetales con frutas"/></li>
+							<li><img src="../images/bebidas/bebida_05.png" title="Leche"/></li>
+						</ul>				
+					</div>
+				</div>  
+				<script class="secret-source">
+			    jQuery(document).ready(function ($) {
+			        $('#slide').bjqs({
+			            animtype: 'slide',
+			            height: 320,
+			            width: 620,
+			            responsive: true,
+			            randomstart: true
+			        });
+			    });
+			</script>
+			</div>		
+				
+			<div id="queBeberFrase">
+				<p>Hay dos principales tipos de jugos: los de vegetales, que restauran al organismo, y los de frutas, que lo limpian. Puedes alternarlos, o tomar tres veces a la semana de verdura y dos días de fruta. Procura que tus jugos sean fáciles de hacer, para que seas constante y pronto obtengas resultados: una súper energía. Procura lavar muy bien los ingredientes antes de prepararlos y tomar el jugo despacio para facilitar la digestión.</p>
+			</div>
+			<div id="queBeberNutritivo">
+				<h2>Qué beber para bajar de peso</h2>
+                <section id="nutritivoSection"></section>
+                <div id="articles_buttons">
+                    <div id="articles_left"><img src="../images/various/left.png"/></div>
+                    <div id="articles_right"><img src="../images/various/right.png"/></div>
+                </div>
 			</div>			
 		</div>
-		<footer id="main_footer"></footer>
+		<footer id="main_footer">
+            <div id="header_footer"><strong>Vitalius</strong>&nbsp;&nbsp;Come sano, vive bien.</div>
+            <div id="body_footer">                             
+                <div>
+                    <span>Redes sociales</span>  
+                    <p>
+                        <img src="../images/various/facebook.png"/>/vitalius.com<br />
+                        <img src="../images/various/twitter.png"/>@vitalius<br />
+                        <img src="../images/various/gplus.png"/>Vitalius<br />
+                    </p>
+                </div>
+                <div>
+                    <span>Sobre nosotros</span>
+                    <p><strong>Vitalius</strong> es una empresa que provee información necesaria para que las personas puedan llevar una vida saludable. <br/><br/>Nuestra finalidad es ayudar a que nuestros usuarios puedan llevar un control de la cantidad de alimentos y calorías que ingieren.</p>
+                </div>
+                <div>
+                    <span>Sitios Relacionados</span>
+                    <ul>
+                        <li><a href="http://www.enerzona.net/" target="_blank">enerzona</a></li>
+                        <li><a href="http://www.vivirmejor.com/" target="_blank">vivirmejor</a></li>
+                        <li><a href="http://www.alimentacion.es/" target="_blank">alimentacion</a></li>
+                    </ul>
+                </div>                
+                <div>
+                    <span>Sugerencias</span>
+                    <p>Nos es grato leerte. Si tienes alguna sugerencia, puedes escibirnos:</p>
+                    <form>
+                        <label>Nombre:</label>
+                        <input type="text" name="nombre" required/><br/>
+                        <label>Email:</label>
+                        <input type="email"name="email" required/><br/>
+                        <label>Mensaje:</label>
+                        <textarea rows="3" cols="20">
+                        </textarea><br/>
+                        <input type="submit" value="Enviar" id="button"/><br/>
+                    </form><br/>
+                </div>
+			</div>
+		</footer>
+        <script src="../js/jquery.js"></script>
+        <script src="../js/general.js"></script>
+        <script src="../js/que_beber.js"></script>
 	</body>
 </html>
-<script src="../js/jquery.js"></script>
-<script src="../js/general.js"></script>
-<script src="../js/que_beber.js"></script>
