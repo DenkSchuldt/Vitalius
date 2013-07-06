@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<bebidas>
+	<bebida>
+		<titulo> Refresco de kiwi 
+		</titulo>
+		<receta>Licuar 1 kiwi maduro, pelado, media taza de hielo y una cucharada de granadina hasta obtener un granizado. Servir en un vaso y agregar una cucharada de jugo de lima y rellenar con refresco dietético.
+		</receta>
+	</bebida>
+	<bebida>
+		<titulo> Licuado de plátano 
+		</titulo>
+		<receta>Licuar 1 taza de jugo de naranja, 1 taza de jugo de manzana sin endulzar y 1 taza de cubos de hielo hasta triturar. Agrega 3 bananas maduras y procesar.
+		</receta>
+	</bebida>
+	<bebida>
+		<titulo> Licuado de tomate, pepino y limón
+		</titulo>
+		<receta>Licuar 4 tomares maduros, 1 pepino grande pelado, 1 diente de ajo pelado, ½ pimiento verde sin semillas, jugo de ½ limón. Una vez licuado añadir 4 cucardas de aceite de oliva y sal al gusto moviendo con cuidado
+		</receta>
+	</bebida>
+	<bebida>
+		<titulo> Licuado de pepino 
+		</titulo>
+		<receta>Pelar un pepino y cortar en rodajas reservar. Licuar el pepino con  4 cucharadas de jugo de limón, 6 hojas de menta, 4 cubos de hielo y ½ taza de jugo de manzana.
+		</receta>
+	</bebida>
+	
+</bebidas>
