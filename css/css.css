@@ -536,11 +536,11 @@ body{
         display: inline-block;        
         margin-left: 40px;
         margin-top: -20px;
+        text-align:center;
     }
 
-    #indice p {
-        width: 100%;
-        margin-left: 30px;        
+    #indice p {        
+        margin-left: -30px;
         margin-top:0;
         margin-bottom:0;        
     }
@@ -715,7 +715,7 @@ body{
             height:auto;
         }
 
-        /*--------------------------------------FOOTER--------------------------------------*/        
+        /*--------------------------------------FOOTER--------------------------------------*/
         #body_footer div{                 
             display: inline-block;
             width: 100%;                        
@@ -740,7 +740,66 @@ body{
         #body_footer input[type="submit"]{
             width: 25%;
             margin-left: 70%;            
+        }   
+
+        /*-------------------------------------REGISTRO-------------------------------------*/
+        /*----------------------------------------------------------------------------------*/        
+  
+        #formulario {width: 90%;}
+        #formulario h3 {
+            margin-left: 20px;
+            font-size: 1.5em;
+        }
+        #formulario label {
+            text-align: left;
+            margin-left: 20px;
+            width: auto;
+        }
+        #formulario #salud label{
+            width: 3em;
+            text-align: center;
+        }
+        #formulario input[type="text"], input[type="email"], input[type="password"], input[type="date"]{
+            margin-left: 20px;
+            width: 85%;
+            margin-left: 5%;
+        }
+        #txtPeso, #txtEstatura{ 
+            margin-left: 20px;
+            margin-right: 10px;
+            width: 5.8em;
         }        
+    
+        #formulario input[type="submit"] {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;            
+            padding: 8px;
+            font-size: 1.5em;            
+            background-color: rgb(62,62,62);
+            margin-top: 10px;            
+            color: white;
+        }
+        #formulario input[type="submit"]:hover{
+            cursor: pointer;
+            background-color: gray;    
+            color: black;        
+        }        
+
+        #indice {
+            font-size: 0.9em;
+            width: 80%;            
+            margin-left: 10%;
+            margin-top: -10px;
+            text-align: center;
+        }
+
+        #indice p {
+            margin-left: 0;
+            padding: 0;
+            width: 100%;
+        }
+        #indice p:nth-child(2){font-size: 1.5em;}
 	}	
 	
 
