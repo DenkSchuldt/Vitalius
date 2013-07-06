@@ -1,50 +1,28 @@
 ﻿<!DOCTYPE html>
-<html xmlns=”http://www.w3.org/1999/xhtml” xmlns:fb=”http://www.facebook.com/2008/fbml”> 
+<html> 
 	<head>
 		<meta charset="UTF-8"/>
 		<meta name="description" content="Proyecto Parcial I"/>
 		<title>Nombre - Recetas</title>
-		<link rel="stylesheet" type="text/css" href="../css/css_recetas.css">
-		
-		<div id="fb-root"></div>
-		
-		
-		<script>/*
-window.fbAsyncInit = function() {
-FB.init({appId:"166808283489142", status: "true", cookie: "true",
-xfbml: "true"});
-};
-(function() {
-var e = document.createElement("script"); e.async = true;
-e.src = document.location.protocol +
-"//connect.facebook.net/en_US/all.js";
-document.getElementById("fb-root").appendChild(e);
-}());*/
-(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=166808283489142";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-
-/*<fb:comments   xid=”<?php echo urlencode("http://localhost:9090/Proyecto%20Parcial%20I/pages/recetas.html");?>” simple=”1″  numposts=”4″></fb:comments>*/</script>
-
-		
-	
-
-
-
-		
-		
-		
-	
-
-
-	</head>
-	<body>
-		<div id="title">Nombre</div>		
-		<nav id="main_nav">			
+		<link rel="stylesheet" type="text/css" href="../css/css.css">
+    </head>		
+    <body>
+		<div id="fb-root"></div>		
+		<script>
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=166808283489142";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+		<div id="title">Nombre</div>
+        <header id="main_header">
+			<h1>Vitalius</h1>
+			<h4>Come sano, vive bien</h4>
+		</header>
+		<nav id="main_nav">
 			<ul>
 				<li>Inicio</li>
 				<li>Que Comer</li>
@@ -54,22 +32,57 @@ document.getElementById("fb-root").appendChild(e);
 				<li>Registro</li>
 			</ul>
 		</nav>
-		<div id="content">
-			<div id="inicio">
-				<section id="sectionInicio">
-				
-				</section>
-				<section id="sectionMenu">
-				
-				</section>
+		<div id="content_recetas">            
+            <div id="introduccion_recetas">
+                <h3>Recetas</h3>
+                <p>En este apartado podrás encontrar muchas recetas que te ayudarán a comer de manera saludable.
+                    ¡Buen provecho!
+                </p>
+            </div>
+            <div id="seccion_recetas">
 
+            </div>            
+        </div>
 		<div class="fb-like" data-href="http://localhost:9090/Proyecto%20Parcial%20I/pages/recetas.html" data-send="true" data-width="450" data-show-faces="true"></div>
-		
-		
-		
-		<footer id="main_footer"></footer>
+		<footer id="main_footer">
+            <div id="header_footer"><strong>Vitalius</strong>&nbsp;&nbsp;Come sano, vive bien.</div>
+            <div id="body_footer">                             
+                <div>
+                    <span>Redes sociales</span><br/>
+                    <img src="../images/various/facebook.png" alt="Facebook"/><p>/vitalius.com</p><br/>
+                    <img src="../images/various/twitter.png" alt="Twitter"/><p>@vitalius</p><br/>
+                    <img src="../images/various/gplus.png" alt="G+"/><p>Vitalius</p><br/>
+                </div>
+                <div>
+                    <span>Sobre nosotros</span>
+                    <p><strong>Vitalius</strong> es una empresa que provee información necesaria para que las personas puedan llevar una vida saludable. <br/><br/>Nuestra finalidad es ayudar a que nuestros usuarios puedan llevar un control de la cantidad de alimentos y calorías que ingieren.</p>
+                </div>
+                <div>
+                    <span>Sitios Relacionados</span>
+                    <ul>
+                        <li><a href="http://www.enerzona.net/" target="_blank">enerzona</a></li>
+                        <li><a href="http://www.vivirmejor.com/" target="_blank">vivirmejor</a></li>
+                        <li><a href="http://www.alimentacion.es/" target="_blank">alimentacion</a></li>
+                    </ul>
+                </div>                
+                <div>
+                    <span>Sugerencias</span>
+                    <p>Nos es grato leerte. Si tienes alguna sugerencia, puedes escibirnos:</p>
+                    <form>
+                        <label>Nombre:</label>
+                        <input type="text" name="nombre" required/><br/>
+                        <label>Email:</label>
+                        <input type="email"name="email" required/><br/>
+                        <label>Mensaje:</label>
+                        <textarea rows="3" cols="20">
+                        </textarea><br/>
+                        <input type="submit" value="Enviar" id="button"/><br/>
+                    </form><br/>
+                </div>
+			</div>
+		</footer>
+        <script src="../js/jquery.js"></script>
+        <script src="../js/general.js"></script>
+        <script src="../js/recetas.js"></script>
 	</body>
 </html>
-<script src="../js/jquery.js"></script>
-<script src="../js/general.js"></script>
-<script src="../js/recetas.js"></script>

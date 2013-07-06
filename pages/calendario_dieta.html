@@ -4,7 +4,7 @@
 		<meta charset="UTF-8"/>
 		<meta name="description" content="Proyecto Parcial I"/>
 		<title>Nombre - Calendario de Dieta</title>
-		<link rel="stylesheet" type="text/css" href="../css/css_calendario_dieta.css">		
+		<link rel="stylesheet" type="text/css" href="../css/css.css">
 	</head>
 	<body>		
 		<div id="title">Nombre</div>
@@ -25,9 +25,45 @@
 				</section>
 			</div>			
 		</div>
-		<footer id="main_footer"></footer>
+		<footer id="main_footer">
+            <div id="header_footer"><strong>Vitalius</strong>&nbsp;&nbsp;Come sano, vive bien.</div>
+            <div id="body_footer">                             
+                <div>
+                    <span>Redes sociales</span><br/>
+                    <img src="../images/various/facebook.png"/><p>/vitalius.com</p><br/>
+                    <img src="../images/various/twitter.png"/><p>@vitalius</p><br/>
+                    <img src="../images/various/gplus.png"/><p>Vitalius</p><br/>
+                </div>
+                <div>
+                    <span>Sobre nosotros</span>
+                    <p><strong>Vitalius</strong> es una empresa que provee información necesaria para que las personas puedan llevar una vida saludable. <br/><br/>Nuestra finalidad es ayudar a que nuestros usuarios puedan llevar un control de la cantidad de alimentos y calorías que ingieren.</p>
+                </div>
+                <div>
+                    <span>Sitios Relacionados</span>
+                    <ul>
+                        <li><a href="http://www.enerzona.net/" target="_blank">enerzona</a></li>
+                        <li><a href="http://www.vivirmejor.com/" target="_blank">vivirmejor</a></li>
+                        <li><a href="http://www.alimentacion.es/" target="_blank">alimentacion</a></li>
+                    </ul>
+                </div>                
+                <div>
+                    <span>Sugerencias</span>
+                    <p>Nos es grato leerte. Si tienes alguna sugerencia, puedes escibirnos:</p>
+                    <form>
+                        <label>Nombre:</label>
+                        <input type="text" name="nombre" required/><br/>
+                        <label>Email:</label>
+                        <input type="email"name="email" required/><br/>
+                        <label>Mensaje:</label>
+                        <textarea rows="3" cols="20">
+                        </textarea><br/>
+                        <input type="submit" value="Enviar" id="button"/><br/>
+                    </form><br/>
+                </div>
+			</div>
+		</footer>
+        <script src="../js/jquery.js"></script>
+        <script src="../js/general.js"></script>
+        <script src="../js/calendario_dieta.js"></script>
 	</body>
 </html>
-<script src="../js/jquery.js"></script>
-<script src="../js/general.js"></script>
-<script src="../js/calendario_dieta.js"></script>

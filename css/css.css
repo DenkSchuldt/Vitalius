@@ -399,10 +399,16 @@ body{
         display: block;
     }
     
+    #body_footer div:nth-child(1) p{        
+        display: inline-block;
+        width:auto;
+        position: relative;        
+        top:-15px;
+    }
+    
     #body_footer img {
-        padding-left: 20%;
-        padding-right: 5%;
         width: 40px;
+        margin-left: 50px;        
     }    
 
     #body_footer p {
@@ -453,7 +459,7 @@ body{
     }
     #body_footer input[type="submit"]:hover {cursor:pointer;background-color: rgb(130,180,0);}
 
-		/*
+/*
 [---------------------------------------------------------------------------------------------------------------]
 [---------------------------------------------------(Que beber)--------------------------------------------------]
 [---------------------------------------------------------------------------------------------------------------]
@@ -526,6 +532,36 @@ body{
         display: table-cell;
         vertical-align: middle;
     }
+
+
+/*
+[---------------------------------------------------------------------------------------------------------------]
+[---------------------------------------------------(RECETAS)---------------------------------------------------]
+[---------------------------------------------------------------------------------------------------------------]
+*/
+    #content_recetas {
+        background-color: #669c1f;
+        margin-top: -3px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    #introduccion_recetas {
+        background-color: rgba(211,252,70,0.7);
+        width: 90%;
+        margin-left: 5%;
+        padding-bottom: 20px;
+    }    
+    
+    #seccion_recetas {
+        margin-top: 0;
+        background-color: rgba(255,255,255,0.7);
+        width: 90%;
+        margin-left: 5%;
+        padding-bottom: 5%;
+    }
+
+
 
 /*
 [---------------------------------------------------------------------------------------------------------------]
