@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<calificaciones>
+	<calificacion CalificacionID="1" RecetaID="1">
+		<puntuacion>5</puntuacion>
+	</calificacion>	
+</calificaciones>

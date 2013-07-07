@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<imagenes>
+<imagen ImagenID="1" RecetaID="1"><url>../images/recetas/mini-pizza-portobello.jpg</url><alt>Mini Pizza Portobello</alt></imagen>
+<imagen ImagenID="2" RecetaID="2"><url>../images/recetas/pastel-de-fresas.jpg</url><alt>Pastel de Fresas</alt></imagen>
+<imagen ImagenID="3" RecetaID="3"><url>../images/recetas/papas-alemanas-papas-horneadas-con-sal-y-vinagre.jpg</url><alt>Papas horneadas con Sal y Vinagre</alt></imagen>
+<imagen ImagenID="4" RecetaID="4"><url>../images/recetas/albóndigas-al-chipotle.jpg</url><alt>Albondigas al Chipotle</alt></imagen>
+<imagen ImagenID="5" RecetaID="5"><url>../images/recetas/crema-de-elote.jpg</url><alt>Crema de Elote</alt></imagen>
+</imagenes>

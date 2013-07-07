@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ingredientes>
+<ingrediente IngredienteID="1" RecetaID="1"><cantidad>1</cantidad><nombre>Hongo Portobello (Limpiado y sin tallo)</nombre></ingrediente>
+<ingrediente IngredienteID="2" RecetaID="1"><cantidad>2 cucharadas</cantidad><nombre>Salsa para pizza favorita (baja en calorias)</nombre></ingrediente>
+<ingrediente IngredienteID="3" RecetaID="1"><cantidad>2 cucharadas</cantidad><nombre>Queso Mozarella (parcialmente descremado)</nombre></ingrediente>
+<ingrediente IngredienteID="4" RecetaID="1"><cantidad>4</cantidad><nombre>Pimiento verde</nombre></ingrediente>
+<ingrediente IngredienteID="5" RecetaID="1"><cantidad>4</cantidad><nombre>Cebolla</nombre></ingrediente>
+<ingrediente IngredienteID="6" RecetaID="1"><cantidad>Al gusto</cantidad><nombre>Sal</nombre></ingrediente>
+<ingrediente IngredienteID="7" RecetaID="1"><cantidad>Al gusto</cantidad><nombre>Pimienta</nombre></ingrediente>
+<ingrediente IngredienteID="8" RecetaID="2"><cantidad>1/2 taza</cantidad><nombre>Harina integral</nombre></ingrediente>
+<ingrediente IngredienteID="9" RecetaID="2"><cantidad>1/2 taza</cantidad><nombre>Harina blanca</nombre></ingrediente>
+<ingrediente IngredienteID="10" RecetaID="2"><cantidad>1/2 cucharadita</cantidad><nombre>Polvo para hornear</nombre></ingrediente>
+<ingrediente IngredienteID="11" RecetaID="2"><cantidad>1/2 cucharadita</cantidad><nombre>Bicarbonato de sodio</nombre></ingrediente>
+<ingrediente IngredienteID="12" RecetaID="2"><cantidad>1/4 cucharadita</cantidad><nombre>Sal</nombre></ingrediente>
+<ingrediente IngredienteID="13" RecetaID="2"><cantidad>3 cucharadas</cantidad><nombre>Mantequilla sin sal (suavizada)</nombre></ingrediente>
+<ingrediente IngredienteID="14" RecetaID="2"><cantidad>1/3 taza</cantidad><nombre>Azucar Splenda</nombre></ingrediente>
+<ingrediente IngredienteID="15" RecetaID="2"><cantidad>1/2 cucharadita</cantidad><nombre>Extracto de Vainilla pura</nombre></ingrediente>
+<ingrediente IngredienteID="16" RecetaID="2"><cantidad>1/2 cucharadita</cantidad><nombre>Cascara de limon rallado</nombre></ingrediente>
+<ingrediente IngredienteID="17" RecetaID="2"><cantidad>1</cantidad><nombre>Huevo grande</nombre></ingrediente>
+<ingrediente IngredienteID="18" RecetaID="2"><cantidad>3/4 taza</cantidad><nombre>Suero de leche (sin grasa)</nombre></ingrediente>
+<ingrediente IngredienteID="19" RecetaID="2"><cantidad>1 taza</cantidad><nombre>Fresas frescas (cortadas en mitades)</nombre></ingrediente>
+<ingrediente IngredienteID="20" RecetaID="2"><cantidad>1 cucharada</cantidad><nombre>Azucar morena</nombre></ingrediente>
+<ingrediente IngredienteID="21" RecetaID="3"><cantidad>2</cantidad><nombre>Papas grandes (cortadas en rodajas gruesas, sin pelar)</nombre></ingrediente>
+<ingrediente IngredienteID="22" RecetaID="3"><cantidad>2 cucharadas</cantidad><nombre>Paprika</nombre></ingrediente>
+<ingrediente IngredienteID="23" RecetaID="3"><cantidad>1 cucharada</cantidad><nombre>Azucar morena</nombre></ingrediente>
+<ingrediente IngredienteID="24" RecetaID="3"><cantidad>Al gusto</cantidad><nombre>Sal</nombre></ingrediente>
+<ingrediente IngredienteID="25" RecetaID="3"><cantidad>Al gusto</cantidad><nombre>Pimienta</nombre></ingrediente>
+<ingrediente IngredienteID="26" RecetaID="3"><cantidad>Al gusto</cantidad><nombre>Aceite en aerosol para cocinar</nombre></ingrediente>
+<ingrediente IngredienteID="27" RecetaID="3"><cantidad>Al gusto</cantidad><nombre>Vinagre de malta</nombre></ingrediente>
+<ingrediente IngredienteID="28" RecetaID="4"><cantidad>1.25 libras</cantidad><nombre>Carne de res molida extra magra (5% de grasa)</nombre></ingrediente>
+<ingrediente IngredienteID="29" RecetaID="4"><cantidad>1 lata de 28oz.</cantidad><nombre>Salsa de tomate</nombre></ingrediente>
+<ingrediente IngredienteID="30" RecetaID="4"><cantidad>1/2</cantidad><nombre>Cebolla picada</nombre></ingrediente>
+<ingrediente IngredienteID="31" RecetaID="4"><cantidad>1/4 taza</cantidad><nombre>Cilantro picado</nombre></ingrediente>
+<ingrediente IngredienteID="32" RecetaID="4"><cantidad>1</cantidad><nombre>Huevo</nombre></ingrediente>
+<ingrediente IngredienteID="33" RecetaID="4"><cantidad>3</cantidad><nombre>Dientes de ajo picado</nombre></ingrediente>
+<ingrediente IngredienteID="34" RecetaID="4"><cantidad>1</cantidad><nombre>Hoja de Laurel</nombre></ingrediente>
+<ingrediente IngredienteID="35" RecetaID="4"><cantidad>2</cantidad><nombre>Chipotles en adobo</nombre></ingrediente>
+<ingrediente IngredienteID="36" RecetaID="4"><cantidad>Al gusto</cantidad><nombre>Cilantro</nombre></ingrediente>
+<ingrediente IngredienteID="37" RecetaID="4"><cantidad>Al gusto</cantidad><nombre>Cebolla</nombre></ingrediente>
+<ingrediente IngredienteID="38" RecetaID="5"><cantidad>6 mazorcas</cantidad><nombre>Maiz fresco y desgranado</nombre></ingrediente>
+<ingrediente IngredienteID="39" RecetaID="5"><cantidad>2 tazas</cantidad><nombre>Leche evaporada baja en grasa</nombre></ingrediente>
+<ingrediente IngredienteID="40" RecetaID="5"><cantidad>6 tazas</cantidad><nombre>Caldo de verdoras o de pollo (sin grasa)</nombre></ingrediente>
+<ingrediente IngredienteID="41" RecetaID="5"><cantidad>5 ramitas</cantidad><nombre>Tomillo fresco</nombre></ingrediente>
+<ingrediente IngredienteID="42" RecetaID="5"><cantidad>1</cantidad><nombre>Cebolla picada</nombre></ingrediente>
+<ingrediente IngredienteID="43" RecetaID="5"><cantidad>2</cantidad><nombre>Papas en cubitos</nombre></ingrediente>
+<ingrediente IngredienteID="44" RecetaID="5"><cantidad>2</cantidad><nombre>Tallos de apios cortados en cubitos</nombre></ingrediente>
+<ingrediente IngredienteID="45" RecetaID="5"><cantidad>1/4 taza</cantidad><nombre>Harina</nombre></ingrediente>
+<ingrediente IngredienteID="46" RecetaID="5"><cantidad>2 cucharadas</cantidad><nombre>Mantequilla</nombre></ingrediente>
+<ingrediente IngredienteID="47" RecetaID="5"><cantidad>3</cantidad><nombre>Dientes de ajo finamente picados</nombre></ingrediente>
+<ingrediente IngredienteID="48" RecetaID="5"><cantidad>1/2 taza</cantidad><nombre>Perejil fresco picado</nombre></ingrediente>
+<ingrediente IngredienteID="49" RecetaID="5"><cantidad>Al gusto</cantidad><nombre>Sal</nombre></ingrediente>
+<ingrediente IngredienteID="50" RecetaID="5"><cantidad>Al gusto</cantidad><nombre>Pimienta negra</nombre></ingrediente>
+</ingredientes>

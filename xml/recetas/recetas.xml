@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recetas>
+	<receta RecetaID="1">
+		<titulo>Mini Pizza Portobello</titulo>
+		<descripcion>
+			Esta es una receta baja en carbohidratos, muy deliciosa y fácil de hacer. Se trata de mini pizzas de hongos portobello. La mejor parte es que usted tiene la capacidad de controlar los carbohidratos en base a qué tipo de salsa le añada. Estos pizzas de hongos portobello también son buenas como aperitivo para un gran juego o como un plato principal. ¡Utilice sus pizzas favoritas para una explosión de sabor fuera de este mundo!
+		</descripcion>
+		<porcion>1</porcion>
+		<tiempo>25 minutos</tiempo>
+		<url>http://www.lacocinasaludable.com/mini-portobello-pizza/</url>
+	</receta>
+	<receta RecetaID="2">
+		<titulo>Pastel de Fresas</titulo>
+		<descripcion>
+			Con esta receta puede participar en diferentes competencias de repostería y pastelería y obtener algun premio cada vez que se presente. ¡Delicioso para paladares de todas las edades!
+		</descripcion>
+		<porcion>8</porcion>
+		<tiempo>45 minutos</tiempo>
+		<url>http://www.lacocinasaludable.com/pastel-de-fresas/</url>
+	</receta>
+	<receta RecetaID="3">
+		<titulo>Papas Alemanas: Papas Horneadas con Sal y Vinagre</titulo>
+		<descripcion>
+			Esta es una gran idea para acompañar cualquier comida. Puede prepararlas todo el tiempo, a veces con mantequilla y otras con aceite de oliva, y condimentarlas de manera diferente cada vez. ¡Quedan deliciosas de cualquier forma! 			
+		</descripcion>
+		<porcion>4</porcion>
+		<tiempo>55 minutos</tiempo>
+		<url>http://www.lacocinasaludable.com/papas-alemanas-papas-horneadas-con-sal-y-vinagre/</url>
+	</receta>
+	<receta RecetaID="4">
+		<titulo>Albondigas al Chipotle</titulo>
+		<descripcion>
+			Los chiles Chipotles son chiles jalapeños ahumados. Los aztecas en la zona norte de la Ciudad de México solían ahumar los jalapeños para su conservación, ya que la gruesa piel del chile inhibe el proceso de secado natural y previene que se echen a perder. Al igual que los jitomates deshidratados, los podemos encontrar secos, en bolsas. 
+		</descripcion>
+		<porcion>5</porcion>
+		<tiempo>1 hora 15 minutos</tiempo>
+		<url>http://www.lacocinasaludable.com/albondigas-al-chipotle/</url>
+	</receta>
+	<receta RecetaID="5">
+		<titulo>Crema de Elote</titulo>
+		<descripcion>
+			El toque suave y dulce que da el elote a ciertos platos es irresistible en esta crema, que se prepara en un abrir y cerrar de ojos. Es un platillo sencillo pero muy sabroso, puedes adornarlos con unos trocitos de pan tostado o un poco de queso rallado.
+		</descripcion>
+		<porcion>8</porcion>
+		<tiempo>45 minutos</tiempo>
+		<url>http://www.lacocinasaludable.com/crema-de-elote/</url>
+	</receta>
+</recetas>
