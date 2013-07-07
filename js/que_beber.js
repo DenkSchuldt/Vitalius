@@ -1,6 +1,8 @@
 
     var lis = document.querySelectorAll('#main_nav li');
-
+	var n = 0;
+	var fst = 0, lst = 0;
+	var current_article = ""; 
     /*
 	 * Description:
 	 * Initial function.
@@ -35,6 +37,19 @@
 			}
 		}
 		seccion = document.getElementById('nutritivoSection');
+		
+		document.querySelector('#show #background').addEventListener('click', function () {
+	        $('#show').fadeOut('fast');
+	        var social = document.querySelector('#social');
+	        document.querySelector('body').removeChild(social);
+	    }, false);
+		
+		document.querySelector('#articles_left').addEventListener('click', function() {
+	        moverIzq();
+	    }, false);
+	    document.querySelector('#articles_right').addEventListener('click', function() {
+	        moverDer();
+	    }, false);
 		cargarBajarDePeso();
 	}
 	
@@ -46,13 +61,59 @@
 		request.open("GET",url,true);
 		request.send(null);
 	}
+	function moverIzq(){
+	    n = n - 3;	    
+		cargarBajarDePeso();
+	}
 	
+	function moverDer(){
+	    n = n + 3;	    	    
+		cargarBajarDePeso();
+	}
+	function imprimir(id) {
+		var divElements = document.getElementById(id).innerHTML;
+		var oldPage = document.body.innerHTML;
+		document.body.innerHTML = "<html><head><title></title></head><body>" +divElements + "</body>";
+		window.print();
+		document.body.innerHTML = oldPage;
+      
+    }
+	function loadSocialLinks() {
+	    var social = document.createElement('div');
+        social.style.display = "inline-block";
+	    var facebook = document.createElement('img');
+	    facebook.setAttribute("src", "../images/various/facebook.png");
+	    facebook.setAttribute('class', 'generic');
+	    var twitter = document.createElement('img');
+	    twitter.setAttribute("src", "../images/various/twitter.png");
+	    twitter.setAttribute('class', 'generic');	    
+		var printer = document.createElement('img');
+	    printer.setAttribute("src", "../images/various/printer.gif");
+	    printer.setAttribute('class', 'generic');	
+		
+	    facebook.addEventListener('click', function () {
+	        newwindow = window.open("https://www.facebook.com/sharer/sharer.php?u=" + current_article,'Compartir en Facebook','height=500,width=500');
+	        if (window.focus) { newwindow.focus(); }
+	    }, false);
+	    twitter.addEventListener('click', function () {
+	        newwindow = window.open("http://twitter.com/home?status= Acabo de leer un articulo en Vitalius: "+current_article,'Compartir en Twitter', 'height=300,width=500');
+	        if (window.focus) { newwindow.focus(); }
+	    }, false);
+		printer.addEventListener('click', function () {
+	        imprimir('inner_article');
+	    }, false);
+	    document.querySelector('#inner_article').appendChild(facebook);
+	    document.querySelector('#inner_article').appendChild(twitter);
+		document.querySelector('#inner_article').appendChild(printer);
+	}
 	function procesarBajarDePeso(e){
 	
 		var xml= e.target.responseXML;
 		var descripcion = xml.documentElement.getElementsByTagName("bebida");
-		//numNot=receta.length;
-		for(i=0;i<descripcion.length;i++){
+		while(seccion.firstChild){ seccion.removeChild(seccion.firstChild);}
+		if (n < 0) { n = 0; }
+	    if (n > descripcion.length - 3) { n = descripcion.length - 3; }
+	    for (i = n; i < descripcion.length && i < (n + 3) ; i++){
 		
 			titulo = descripcion[i].getElementsByTagName("titulo")[0].textContent;
 			receta = descripcion[i].getElementsByTagName("receta")[0].textContent;
@@ -69,10 +130,20 @@
 						
 			article.appendChild(h3);
 			article.appendChild(p);
+			
+			article.header = titulo;
+			article.recipe = receta;
+	        article.addEventListener('click', function () {
+	            $('#show').fadeIn('fast');
+	            document.querySelector('#inner_article').innerHTML = '<h2>' + this.header + '</h2><br/>' + '<p>' + this.recipe + '</p><br><br>Compartir en<br><br>';
+	            loadSocialLinks();
+	        }, false);
 		
 			seccion.appendChild(article);
 		}
 
 	}
+	
+	
 	
 	window.onload = queBeberStart();
