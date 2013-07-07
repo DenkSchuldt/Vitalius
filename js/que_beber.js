@@ -40,8 +40,12 @@
 		
 		document.querySelector('#show #background').addEventListener('click', function () {
 	        $('#show').fadeOut('fast');
-	        var social = document.querySelector('#social');
-	        document.querySelector('body').removeChild(social);
+	      /*  var social = document.querySelector('#social');
+	        document.querySelector('body').removeChild(social);*/
+			var nodo = document.querySelector('#compartir_article');
+			while (nodo.firstChild)
+			{nodo.removeChild(nodo.firstChild);}
+	        
 	    }, false);
 		
 		document.querySelector('#articles_left').addEventListener('click', function() {
@@ -76,7 +80,7 @@
 		document.body.innerHTML = "<html><head><title></title></head><body>" +divElements + "</body>";
 		window.print();
 		document.body.innerHTML = oldPage;
-      
+		queBeberStart();
     }
 	function loadSocialLinks() {
 	    var social = document.createElement('div');
@@ -102,9 +106,9 @@
 		printer.addEventListener('click', function () {
 	        imprimir('inner_article');
 	    }, false);
-	    document.querySelector('#inner_article').appendChild(facebook);
-	    document.querySelector('#inner_article').appendChild(twitter);
-		document.querySelector('#inner_article').appendChild(printer);
+	    document.querySelector('#compartir_article').appendChild(facebook);
+	    document.querySelector('#compartir_article').appendChild(twitter);
+		document.querySelector('#compartir_article').appendChild(printer);
 	}
 	function procesarBajarDePeso(e){
 	
@@ -135,7 +139,7 @@
 			article.recipe = receta;
 	        article.addEventListener('click', function () {
 	            $('#show').fadeIn('fast');
-	            document.querySelector('#inner_article').innerHTML = '<h2>' + this.header + '</h2><br/>' + '<p>' + this.recipe + '</p><br><br>Compartir en<br><br>';
+	            document.querySelector('#inner_article').innerHTML = '<h2>' + this.header + '</h2><br/>' + '<p>' + this.recipe + '</p><br><br>';
 	            loadSocialLinks();
 	        }, false);
 		
