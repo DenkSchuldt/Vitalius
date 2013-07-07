@@ -464,7 +464,59 @@ body{
 [---------------------------------------------------(Que comer)--------------------------------------------------]
 [---------------------------------------------------------------------------------------------------------------]
 */	
-	
+			
+#comer{
+	    width: 100%;        
+	    display: inline-block;
+	    background-color: #669c1f;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    #comer h2{
+        margin: 0;
+	    text-align: left;	
+	    font-size: 20px;
+		max-width:300px;
+        padding-bottom: 40px;
+        color: white;
+		height:50px;
+    }
+
+    #comer section {        
+        height: auto; 
+		width:100%;		
+        background-color: rgba(255,255,255,0.4);        
+        display: table;
+		overflow:hidden;
+    }
+#comer span {
+        margin-top: 0px;
+        font-size: 0.8em;
+        float: left;
+        margin-right: 20px;
+        color: gray; 
+		height:400px;overflow:hidden;
+		
+		max-width:300px;
+    }
+
+#comer label {
+        display: inline-block;
+        width: 80%;
+        padding-top: 25px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+		padding-right: 20px;
+        font-size: 1em;
+}
+#comer p {
+		
+		height:200px;
+		min-height:100px;
+        height: auto;               
+        display: table;
+    }	
 #cortina{
 background: #F1F1F1;
 width:100%;

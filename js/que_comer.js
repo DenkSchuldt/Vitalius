@@ -13,6 +13,8 @@
 		
 var izq=document.getElementById("izquierda");
 var der=document.getElementById("derecha");
+var izq2=document.getElementById("izquierda2");
+var der2=document.getElementById("derecha2");
 
 document.getElementById("cortina").addEventListener('click',function(e){
 	document.getElementById("cortina").style.display="none";
@@ -32,7 +34,6 @@ izq.addEventListener('mouseout',function(e){
 	},false);
 
 	
-var der=document.getElementById("derecha");	
 der.addEventListener('click',function(e){
 	m++;
 	cargarArticulos();
@@ -41,6 +42,29 @@ der.addEventListener('mouseover',function(e){
 	this.setAttribute("class","derS");
 	},false);
 der.addEventListener('mouseout',function(e){
+	this.setAttribute("class","der");
+	},false);
+	
+izq2.addEventListener('click',function(e){
+	n--;
+	cargarArticulos();
+	},false);
+izq2.addEventListener('mouseover',function(e){
+	this.setAttribute("class","izqS");
+	},false);
+izq2.addEventListener('mouseout',function(e){
+	this.setAttribute("class","izq");
+	},false);
+
+		
+der2.addEventListener('click',function(e){
+	n++;
+	cargarArticulos();
+	},false);
+der2.addEventListener('mouseover',function(e){
+	this.setAttribute("class","derS");
+	},false);
+der2.addEventListener('mouseout',function(e){
 	this.setAttribute("class","der");
 	},false);
 	
@@ -110,12 +134,12 @@ der.addEventListener('mouseout',function(e){
 		if(n > articulos.length-3){
 			n = articulos.length-3;
 		}
-		for(i=0;i<articulos.length&&i<(n+3);i++){
+		for(i=n;i<articulos.length&&i<(n+3);i++){
 			var titulo=articulos[i].getElementsByTagName("titulo")[0].textContent;
 			var descripcion=articulos[i].getElementsByTagName("descripcion")[0].textContent;
 			var imagen=articulos[i].getElementsByTagName("imagen")[0].textContent;
 			var ul=document.createElement('ul');
-			var article=document.createElement('article');
+			var article=document.createElement('span');
 			var h2=document.createElement('h2');
 			var p=document.createElement('p');
 			ul.setAttribute("class","out");
@@ -135,15 +159,15 @@ der.addEventListener('mouseout',function(e){
 			p.style.textAlign = "justify";
 			var imgfig= document.createElement('img');
 			imgfig.src=imagen;
-			imgfig.width="400";
-			imgfig.height="400";
+			imgfig.width="200";
+			imgfig.height="200";
 			var fig=document.createElement('fig');
 			fig.appendChild(imgfig);
+			h2.style.color="#000000";
+			article.appendChild(h2);	
 			article.appendChild(fig);
-			
-			article.appendChild(h2);			
 			article.appendChild(p);
-			article.appendChild(document.createElement('hr'));
+			article.id=i;
 			ul.appendChild(article);
 			seccion.appendChild(ul);
 			
@@ -151,19 +175,39 @@ der.addEventListener('mouseout',function(e){
 			cort=document.getElementById("cortina");
 				cort.style.display="inline";
 				deb=document.getElementById("debajo");
-				deb.setAttribute("class","debajoOn");
-				cort.appendChild(deb);
 				while(deb.firstChild) {
 					deb.removeChild(deb.firstChild);
 				}
+				
+				deb.setAttribute("class","debajoOn");
+				cort.appendChild(deb);
 				but= document.createElement('input');
 				but.type="button";
 				but.addEventListener('click',function(){
 				printDiv("debajo");
 				},true);
 				but.value="imprimir";
+				titulo=articulos[this.getAttribute("id")].getElementsByTagName("titulo")[0].textContent;
+				descripcion=articulos[this.getAttribute("id")].getElementsByTagName("descripcion")[0].textContent;
+				imagen=articulos[this.getAttribute("id")].getElementsByTagName("imagen")[0].textContent;
+				texto = document.createTextNode(titulo);
+				h2.appendChild(texto);
+				texto=document.createTextNode(descripcion);
+				p.appendChild(texto);
+				imgfig= document.createElement('img');
+				imgfig.src=imagen;
+				imgfig.width="200";
+				imgfig.height="200";
+				fig=document.createElement('fig');
+				fig.appendChild(imgfig);
+				var art=document.createElement('article');
+				art.appendChild(h2);	
+				art.appendChild(fig);
+				art.appendChild(p);
+				
 				deb.appendChild(but);
-				deb.appendChild(this);
+				deb.style.width="600px";
+				deb.appendChild(art);
 			},true);
 			
 			
@@ -173,12 +217,9 @@ der.addEventListener('mouseout',function(e){
 	function printDiv(divName) {
      var printContents = document.getElementById(divName).innerHTML;
      var originalContents = document.body.innerHTML;
-
      document.body.innerHTML = printContents;
-
      window.print();
-
      document.body.innerHTML = originalContents;
-	queComerStart();
+	window.location.reload(); 
 	}
 	window.onload = queComerStart();

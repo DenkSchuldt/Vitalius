@@ -2,91 +2,100 @@
 <comidas>
 	<comida>
 		<titulo>
-			Macadamia endulzada
+			La Comida ¿La Usas para Refugiarte de tus Emociones?
 		</titulo>
 		<descripcion>
-			cocinar
+			¿Adicción a la comida?
+No podemos afirmar que exista, una adicción como tal, pero sí, algo muy similar a lo que ocurre con los narcóticos, y es que cuando nosotros llevamos a cabo una acción que disfrutamos, como comer helado, nuestro cerebro, produce sustancias químicas como la dopamina, que nos hacen sentir una ráfaga de placer y satisfacción.
+
+Así que si tienes un anhelo por comer algo, que podrías describir como un antojo, que está constante en tu mente y a veces no descansa hasta que lo obtienes, no es nada nuevo, es algo por lo que muchos de nosotros, sino es que todos, pasamos, o hemos pasado. Pero si ésta conducta se ha ido fortaleciendo hasta el punto que se nos imposible no ceder, es el resultado de un sistema de recompensa que se ha ido desviando.
+
+No hay nada malo con nuestro cerebro, de hecho, el sistema de recompensa, resulta muy útil en el proceso de aprendizaje, y para alcanzar nuestros objetivos, sin embargo, si la comida se vuelve una recompensa para nosotros, muy seguramente tendremos problemas de salud en el futuro, derivado de nuestra alimentación y peso.
 			</descripcion>
 		<imagen>
-			../images/alimentos/alimentos_01.jpg
+			../images/comidas/imagen1.jpg
 		</imagen>
 		<enlace>
 		</enlace>
 	</comida>
 	<comida>
 		<titulo>
-			otra comida
+			Como eliminar la ansiedad por comer
 		</titulo>
 		<descripcion>
-		cocinar
+		Tratar de comer de manera saludable no debe agregar preocupación y ansiedad adicional tu vida. Por eso es importante saber que comes y que no estas comiendo, así como, cuándo y con qué frecuencia comes, ya que esto puede afectar tu estado de ánimo, sus niveles de energía, y por lo tanto lo bien que puedes manejar la adversidad y la tensión de llevar una dieta.
+
 		</descripcion>
 		<imagen>
-			../images/alimentos/alimentos_02.jpg
+			../images/comidas/imagen2.jpg
 		</imagen>
 		<enlace>
 		</enlace>
 		</comida>
 	<comida>
 		<titulo>
-			Desayunos saludables: propiedades del muesli
+			Comer bien para rendir más
 		</titulo>
 		<descripcion>
-			Como seguramente sabes, el desayuno es la comida más importante del día, es la que recarga tus energías cada mañana para mantenerte activo durante esas largas jornadas de...
-		</descripcion>
+			Hoy en día sabemos que durante un periodo de entrenamiento  la idea es lograr que tu cuerpo pueda para llegar a un estado nutritivo perfecto que permita afrontar sin problemas una competición o una rutina de entrenamiento cotidiana. Esto es válido tanto para aquellas personas que realizan una actividad física suave-moderada (caminatas, footing, natación, etc.) sin el objetivo de competir, como para los que participan en certámenes competitivos.
+
+En principio, se debe conocer, por ejemplo, la importancia de disponer de buenas reservas de glucógeno y estar hidratado, puesto que sin una adecuada reserva de energía muscular no lograremos los mejores resultados y hasta podemos tener problemas de salud.		</descripcion>
 		<imagen>
-			../images/alimentos/alimentos_03.jpg
+			../images/comidas/imagen3.jpg
 		</imagen>
 		<enlace>
 		</enlace>		
 	</comida>
 		<comida>
 		<titulo>
-			7 consejos de nutrición para un envejecimiento saludable
+			Cómo hacer que los niños coman verduras
 		</titulo>
 		<descripcion>
-			Hoy te traemos una serie de consejos de nutrición para un envejecimento saludable. Si bien una alimentación balanceada es fundamental a lo largo de toda la vida, cuando envejecemos es...
-		</descripcion>
+			El consumo de verduras es muy importante para seguir una dieta saludable ya que son una de las principales fuentes de fibra, vitaminas, minerales y antioxidantes. Sin embargo, animar a los niños a consumirlas suele ser todo un reto. A continuación, ofrecemos algunas sugerencias para ayudar a los padres.
+
+Muchos padres saben que algunos niños son difíciles y selectivos con la comida. A muchos no les gusta la verdura y pueden convertir la hora de la comida en una auténtica pesadilla. Teniendo en cuenta que las preferencias de alimentación del niño pueden determinar su conducta alimentaria en el futuro, es importante saber que estas preferencias pueden mejorarse.		</descripcion>
 		<imagen>
-			../images/alimentos/alimentos_04.jpg
+			../images/comidas/imagen4.jpg
 		</imagen>
 		<enlace>
 		</enlace>		
 	</comida>
 	<comida>
 		<titulo>
-			Cómo podemos cuidar nuestra salud
+			Recetas con anis
 		</titulo>
 		<descripcion>
-			La salud no sólo es sinónimo de ausencia de enfermedad. Estar saludables implica un estado permantente tanto de bienestar físico como emocional y psicológico que todos...
-		</descripcion>
+			El anis es una hierba aromática con la que se pueden preparar sopas, bebidas, aderezos, pasteles, galletas, gelatinas, etc. Tienen un aroma dulce y suave, puede combinar con verduras y algunas frutas, asi como con  carnes. Sus hojas tiernas se le pueden agregar a las ensaladas para darles un toque especial y ayudar a evitar gases o malas digestiones en la comida.		</descripcion>
 		<imagen>
-			../images/alimentos/alimentos_05.jpg
+			../images/comidas/imagen5.jpg
 		</imagen>
 		<enlace>
 		</enlace>		
 	</comida>	
 	<comida>
 		<titulo>
-			10 hábitos saludables
+			Recetas y alimentos para personas que padecen Gota
 		</titulo>
 		<descripcion>
-			Llevar hábitos saludables es esencial para mantenernos sanos, jóvenes y en forma más allá de la edad que tengamos. Seguir una vida saludable, en definitiva, nos hace tener...
-		</descripcion>
+			Las personas que padecen de Gota deben seguir ciertas indicaciones dietéticas para controlar y combatir esta afección. Es necesario que eliminen de la dieta los alimentos que contienen purina como los mariscos, sardinas, atunes, consomé, pavo, anchoas, etc, ya que éstas se convierten en ácido úrico en el cuerpo una vez que son metabolizadas. Se deben de evitar al máximo las grasas de origen animal y limitar los alimentos proteícos como los huevos, carnes, etc, asi como los guisantes, las habas y las lentejas. Se pueden consumir sin preocupación pastas, patatas, arroz, verduras, jugos de vegetales frescos, infusiones de hierbas, etc.		</descripcion>
 		<imagen>
-			../images/alimentos/alimentos_06.jpg
+			../images/comidas/imagen6.jpg
 		</imagen>
 		<enlace>
 		</enlace>
 	</comida>	
 		<comida>
 		<titulo>
-			5 Alimentos que deberías eliminar de tu dieta
+			Recetas ricas en Magnesio
 		</titulo>
 		<descripcion>
-			Aunque cada vez se habla más sobre la vida saludable y los buenos hábitos, los problemas de salud se siguen dando con más frecuencia. En muchos casos, son incentivados por...
-		</descripcion>
+			El magnesio es un mineral con importantes funciones en el cuerpo entre las cuales destaca su intervención en el metabolismo de los carbohidratos y proteinas, activa enzimas, disminuye la excitabilidad del sistema nervioso central, participa en la reconstrucción de la sustancia nerviosa y en su metabolismo, y juega un papel fundamental en la respiración e intercambios celulares. Es un antiséptico interno y externo, y tiene propiedades antiinflamatorias e antiinfecciosas y mejora la resistencia ante el stress, frío, traumatismos, intervenciones quirúrgicas, etc.
+
+Una dieta pobre en este mineral provoca efectos muy nocivos como la alteración de los niveles de potasio y calcio, bloqueo de la paratiroides, tetania, temblores, convulsiones, irritabilidad neuromuscular, trombosis, terreno favorable al cáncer, depresión, agitación, confusión, irritabilidad, inquietud, vértigos, desorientación, arritmia, paro cardíaco,  artritis, alopecia, etc.
+
+Podemos encontrar el magnesio en alimentos como el polen, trigo, maíz, cebada, avena, dátil, remolacha, espinacas, patata, zanahoria, almendras, nueces, avellanas, castañas, judía verde, arroz de preferencia integral, cerezas, naranja, pera, melocotón, albaricoque, etc.		</descripcion>
 		<imagen>
-			../images/alimentos/alimentos_07.jpg
+			../images/comidas/imagen7.jpg
 		</imagen>		
 		<enlace>
 		</enlace>		
