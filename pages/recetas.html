@@ -2,22 +2,24 @@
 <html> 
 	<head>
 		<meta charset="UTF-8"/>
+		<meta name="author" content="Liliana Ramos, Ana Arias, David Barrera, Denny K. Schuldt"/>        
 		<meta name="description" content="Proyecto Parcial I"/>
-		<title>Nombre - Recetas</title>
+        <meta name="Keywords" content="HTML5, CSS, Javascript, Jquery, AJAX, Salud, Recetas"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Valius - Recetas</title>
 		<link rel="stylesheet" type="text/css" href="../css/css.css">
     </head>		
     <body>
-		<div id="fb-root"></div>		
-		<script>
-            (function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=166808283489142";
-                fjs.parentNode.insertBefore(js, fjs);
+		<div id="fb-root"></div>				
+        <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=276790459133085";
+            fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
-        </script>
-		<div id="title">Nombre</div>
+        </script>        
+		<div id="title">Vitalius</div>
         <header id="main_header">
 			<h1>Vitalius</h1>
 			<h4>Come sano, vive bien</h4>
@@ -31,19 +33,32 @@
 				<li>Calendario de Dieta</li>
 				<li>Registro</li>
 			</ul>
+            <div id="pull"></div>
 		</nav>
 		<div id="content_recetas">            
             <div id="introduccion_recetas">
-                <h3>Recetas</h3>
-                <p>En este apartado podrás encontrar muchas recetas que te ayudarán a comer de manera saludable.
-                    ¡Buen provecho!
-                </p>
+                <div>
+                    <h3>Recetas<hr /></h3><br />
+                    <p>Muchas veces nos preguntamos cuales son los alimentos saludables que podemos consumir sin preocuparnos, 
+                       aquellos alimentos que sabremos que si los consumimos a cualquier hora no afectaran nuestra alimentación y 
+                       mucho menos nuestra salud.<br/><br/>
+                       En esta sección podrás encontrar muchas recetas que te ayudarán a comer de manera saludable.<br/><br/>
+                       ¡Buen provecho!
+                    </p>                    
+                </div>                              
             </div>
-            <div id="seccion_recetas">
-
-            </div>            
+            <section id="seccion_recetas"></section>            
         </div>
-		<div class="fb-like" data-href="http://localhost:9090/Proyecto%20Parcial%20I/pages/recetas.html" data-send="true" data-width="450" data-show-faces="true"></div>
+        <div id="show">
+            <div id="background"></div>
+			<div id="visible">
+				<div id="outter_article">
+                    <div id="inner_article">
+				    </div>
+                    <div id="social"></div>
+				</div>
+			</div>
+		</div>		
 		<footer id="main_footer">
             <div id="header_footer"><strong>Vitalius</strong>&nbsp;&nbsp;Come sano, vive bien.</div>
             <div id="body_footer">                             
