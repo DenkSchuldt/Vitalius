@@ -639,26 +639,95 @@ overflow: scroll;
     #content_recetas {
         background-color: #669c1f;
         margin-top: -3px;
-        padding-top: 5%;
-        padding-bottom: 5%;
+        
+        padding-bottom: 30px;
     }
 
     #introduccion_recetas {
-        background-color: rgba(211,252,70,0.7);
-        width: 90%;
-        margin-left: 5%;
-        padding-bottom: 20px;
+        background-color: rgb(62,62,62);        
+        width: 80%;
+        margin-left: 10%;        
+        padding-bottom: 20px;        
+        background-image: url(../images/various/chef.png);
+	    background-size: 40%;
+	    background-repeat:no-repeat;	
+	    background-position:bottom right;
+    }
+    #introduccion_recetas div {
+        margin-left: 10%;
+    }
+    #introduccion_recetas h3{        
+        margin-top: 40px;
+        font-size: 2.5em;
+        width: auto;  
+        display: inline-block;                
+        background-color: rgba(140,200,0,0.7);
+        padding: 20px;
+        padding-bottom: 0;
+        width: 40%;
+    }
+    #introduccion_recetas p {
+        background-color: rgba(140,200,0,0.7);
+        padding: 20px;
+        width: 40%;
+        text-align: justify;
+        display: inline-block;
+        margin-top: -40px;
     }    
     
     #seccion_recetas {
         margin-top: 0;
-        background-color: rgba(255,255,255,0.7);
-        width: 90%;
-        margin-left: 5%;
-        padding-bottom: 5%;
+        background-color: white;
+        width: 80%;
+        margin-left: 10%;        
     }
 
+    .receta {
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid gray;        
+    }
 
+    .receta img {
+        display: inline-block;
+        width: 40%;        
+        margin-left: 5%;
+        margin-right: 5%;          
+        position: relative;        
+    }
+    
+    .texto {
+        width: 45%;
+        display: inline-block;        
+    }
+    .texto h3 {                
+        display: inline-block;
+        color: #669c1f;
+        margin-right: 15px;
+    }
+    .texto h5 {
+        float: right;
+    }
+    .texto p {        
+        width: 100%;
+        text-align: justify;
+    }
+    .texto p:nth-child(6) {
+        text-align: right;
+        color: purple;
+    }
+    .texto p:nth-child(6):hover {cursor:pointer;}
+
+    #social {
+        margin-top: -10%;
+        padding-left: 80px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        margin-bottom: 5%;
+        background-color: white;        
+        display: block;
+    }
 
 /*
 [---------------------------------------------------------------------------------------------------------------]
@@ -769,6 +838,10 @@ overflow: scroll;
         color: white;        
     }
 
+    .option{
+    	color: white;
+    	background-color: rgb(140,200,0);
+    }
 
 /*
 -----------------------------------------------------------------------------------------------------------------
@@ -1008,14 +1081,6 @@ overflow: scroll;
             width: 100%;
         }
         #indice p:nth-child(2){font-size: 1.5em;}
-	}	
-	
-
-
-
-    .option{
-    	color: white;
-    	background-color: rgb(140,200,0);
-    }
+	}	    
 
 
