@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comidas>
+	<comida>
+		<titulo>
+			Macadamia endulzada
+		</titulo>
+		<descripcion>
+			cocinar
+			</descripcion>
+		<imagen>
+			../images/alimentos/alimentos_01.jpg
+		</imagen>
+		<enlace>
+		</enlace>
+	</comida>
+	<comida>
+		<titulo>
+			otra comida
+		</titulo>
+		<descripcion>
+		cocinar
+		</descripcion>
+		<imagen>
+			../images/alimentos/alimentos_02.jpg
+		</imagen>
+		<enlace>
+		</enlace>
+		</comida>
+	<comida>
+		<titulo>
+			Desayunos saludables: propiedades del muesli
+		</titulo>
+		<descripcion>
+			Como seguramente sabes, el desayuno es la comida más importante del día, es la que recarga tus energías cada mañana para mantenerte activo durante esas largas jornadas de...
+		</descripcion>
+		<imagen>
+			../images/alimentos/alimentos_03.jpg
+		</imagen>
+		<enlace>
+		</enlace>		
+	</comida>
+		<comida>
+		<titulo>
+			7 consejos de nutrición para un envejecimiento saludable
+		</titulo>
+		<descripcion>
+			Hoy te traemos una serie de consejos de nutrición para un envejecimento saludable. Si bien una alimentación balanceada es fundamental a lo largo de toda la vida, cuando envejecemos es...
+		</descripcion>
+		<imagen>
+			../images/alimentos/alimentos_04.jpg
+		</imagen>
+		<enlace>
+		</enlace>		
+	</comida>
+	<comida>
+		<titulo>
+			Cómo podemos cuidar nuestra salud
+		</titulo>
+		<descripcion>
+			La salud no sólo es sinónimo de ausencia de enfermedad. Estar saludables implica un estado permantente tanto de bienestar físico como emocional y psicológico que todos...
+		</descripcion>
+		<imagen>
+			../images/alimentos/alimentos_05.jpg
+		</imagen>
+		<enlace>
+		</enlace>		
+	</comida>	
+	<comida>
+		<titulo>
+			10 hábitos saludables
+		</titulo>
+		<descripcion>
+			Llevar hábitos saludables es esencial para mantenernos sanos, jóvenes y en forma más allá de la edad que tengamos. Seguir una vida saludable, en definitiva, nos hace tener...
+		</descripcion>
+		<imagen>
+			../images/alimentos/alimentos_06.jpg
+		</imagen>
+		<enlace>
+		</enlace>
+	</comida>	
+		<comida>
+		<titulo>
+			5 Alimentos que deberías eliminar de tu dieta
+		</titulo>
+		<descripcion>
+			Aunque cada vez se habla más sobre la vida saludable y los buenos hábitos, los problemas de salud se siguen dando con más frecuencia. En muchos casos, son incentivados por...
+		</descripcion>
+		<imagen>
+			../images/alimentos/alimentos_07.jpg
+		</imagen>		
+		<enlace>
+		</enlace>		
+	</comida>
+	<sabias>
+		-Sabías que la fibra que contiene la fresa fortalece la flora intestinal, y que además facilita la producción de glóbulos rojos y blancos? y por si no lo sabes, la alta cantidad de vitamina C en sus propiedades es un poderoso antioxidante que hace más lento el envejecimiento en las personas.		
+	</sabias>
+	<sabias>
+		-¿Sabías que tu estado de animo esta determinado por varios factores de los cuales uno de los más importantes es tu alimentación?
+	</sabias>
+	<sabias>
+		-¿Sabías que si te alimentas de forma equilibrada con lo que la naturaleza nos brinda, no necesitamos  suplementos  vitamínicos en la  dieta?
+	</sabias>
+	<sabias>
+		-¿Sabías que si te alimentas bien puedes reducir la osteoporosis?
+	</sabias>
+	<sabias>
+		-¿Sabias que la nutriciòn afecta el sueño?
+	</sabias>
+	<sabias>
+		-¿Sabias que la nutriciòn afecta el sueño?
+	</sabias>
+</comidas>
