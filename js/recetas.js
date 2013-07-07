@@ -118,7 +118,8 @@
 	        p_leer.addEventListener('click', function () {
 	            $('#show').fadeIn('fast');
 	            var query = document.querySelector('#inner_article');
-	            query.innerHTML = '<h2 style="text-align:center;">' + this.header + '</h2><br/>';
+				query.innerHTML = '<input id="but" type="button" value="imprimir" />';
+	            query.innerHTML += '<h2 style="text-align:center;">' + this.header + '</h2><br/>';
 	            query.innerHTML += '<p style="text-align:justify;">' + this.description + '</p>';
 	            query.innerHTML += '<p style="text-align:justify;">Porcion(es): ' + this.portions + '</p>';
 	            query.innerHTML += '<p style="text-align:justify;">Tiempo de preparacion:' + this.time + '</p>';
@@ -133,6 +134,9 @@
 	                query.innerHTML += '<p>' + this.steps[j].getAttribute('PasoNum') + ': ' + this.steps[j].childNodes[0].nodeValue + '</p>';
 	            }	            
 	            loadSocialLinks(this.url);
+				document.getElementById("but").addEventListener('click',function(){
+				printDiv('inner_article');
+				},true);
 	        }, false);
 
 	        var receta = document.createElement('article');
@@ -144,13 +148,15 @@
 	        receta.appendChild(img);
 
 	        var contenedor = document.createElement('div');
+			
+			
 	        contenedor.setAttribute('class', 'texto');
 	        contenedor.appendChild(h3);
 	        contenedor.innerHTML += '<div class="fb-like" data-href="' + receta_actual + 'data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>';
 	        contenedor.appendChild(p_descripcion);
 	        contenedor.appendChild(p_porcion);
 	        contenedor.appendChild(p_tiempo);
-	        contenedor.appendChild(p_leer);	        
+	        contenedor.appendChild(p_leer);	  
 	        receta.appendChild(contenedor);
 
 	        document.querySelector('section').appendChild(receta);
@@ -175,6 +181,14 @@
 	    }, false);	    
 	    document.querySelector('#social').appendChild(facebook);
 	    document.querySelector('#social').appendChild(twitter);	    
+	}
+	function printDiv(divName) {
+     var printContents = document.getElementById(divName).innerHTML;
+     var originalContents = document.body.innerHTML;
+     document.body.innerHTML = printContents;
+     window.print();
+     document.body.innerHTML = originalContents;
+	window.location.reload(); 
 	}
 
 
