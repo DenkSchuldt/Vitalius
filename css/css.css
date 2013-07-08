@@ -720,13 +720,12 @@ overflow: scroll;
 */
     #content_recetas {
         background-color: #669c1f;
-        margin-top: -3px;
-        
+        margin-top: -33px;        
         padding-bottom: 30px;
     }
 
     #introduccion_recetas {
-        background-color: rgb(62,62,62);        
+        background-color: rgb(62,62,62);
         width: 80%;
         margin-left: 10%;        
         padding-bottom: 20px;        
@@ -734,27 +733,29 @@ overflow: scroll;
 	    background-size: 40%;
 	    background-repeat:no-repeat;	
 	    background-position:bottom right;
+        color: white;
+        padding-top: 20px;
     }
-    #introduccion_recetas div {
-        margin-left: 10%;
-    }
+    
     #introduccion_recetas h3{        
         margin-top: 40px;
         font-size: 2.5em;
         width: auto;  
-        display: inline-block;                
-        background-color: rgba(140,200,0,0.7);
+        display: inline-block;        
         padding: 20px;
         padding-bottom: 0;
         width: 40%;
+        margin-left: 10%;
+        background-color: rgba(140,200,0,0.7);
     }
     #introduccion_recetas p {
-        background-color: rgba(140,200,0,0.7);
         padding: 20px;
         width: 40%;
         text-align: justify;
         display: inline-block;
         margin-top: -40px;
+        margin-left: 10%;
+        background-color: rgba(140,200,0,0.7);
     }    
     
     #seccion_recetas {
@@ -795,11 +796,11 @@ overflow: scroll;
         width: 100%;
         text-align: justify;
     }
-    .texto p:nth-child(6) {
+    .texto p:nth-child(7) {
         text-align: right;
         color: purple;
     }
-    .texto p:nth-child(6):hover {cursor:pointer;}
+    .texto p:nth-child(7):hover {cursor:pointer;}
 
     #social {
         margin-top: -10%;
@@ -960,6 +961,9 @@ overflow: scroll;
 			width: 100%;
             padding-left: 0;
             padding-right: 0;
+            font-size: 0.8em;
+            padding-top: 5px;
+            padding-bottom: 5px;
             margin: 0;
 		}
 		#title{top: -2px;}
@@ -1052,6 +1056,12 @@ overflow: scroll;
             margin-bottom: 5%;
         }
 
+        #but{            
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         /*--------------------------------------DIV 4--------------------------------------*/
         #woman_02{padding-bottom: 40%;}
         #woman_02 h2{
@@ -1090,7 +1100,7 @@ overflow: scroll;
             width: auto;            
         }
         #body_footer input{
-            width: 90%;
+            width: 88%;
             margin-left: 4%;
         }
         #body_footer textarea {
@@ -1103,10 +1113,99 @@ overflow: scroll;
         }   
 
 		
+        /*-------------------------------------RECETAS-------------------------------------*/
+        /*----------------------------------------------------------------------------------*/
+
+        #introduccion_recetas {            
+            width: 90%;
+            margin-left: 5%;
+            padding-left: 0;
+            padding-bottom: 150px;            
+	        background-size: 60%;	        
+	        background-position: bottom right;
+            padding-top: 0;
+        }
+        
+        #introduccion_recetas h3{
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: 0;
+            margin-top: 50px;
+            width: 100%;
+            background-color: transparent;
+        }
+
+        #introduccion_recetas div {            
+            padding-top: 30px;
+            margin-top: -40px;
+            background-color: transparent;
+        }
+        #introduccion_recetas h3 span {
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+        #introduccion_recetas p {
+            margin:0;
+            padding: 0;            
+            padding-bottom: 10px;
+            margin-top: -20px;
+            width: 90%;
+            margin-left: 5%;
+            background-color: transparent;
+        }        
+    
+        #seccion_recetas {            
+            width: 90%;
+            margin-left: 5%;        
+        }
+
+        .receta img {
+            display: block;
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-top: 5%;
+            border: 1px solid gray;
+        }
+    
+        .texto {
+            width: 90%;
+            margin-left: 5%;
+            display: block;        
+            font-size: 0.8em;
+        }
+
+        .texto h3 {                
+            display: inline-block;
+            color: #669c1f;
+            margin-right: 15px;
+        }
+        .texto h5 {
+            float: right;
+        }
+        .texto p {        
+            width: 100%;
+            text-align: justify;
+        }
+        .texto p:nth-child(6) {
+            text-align: right;
+            color: purple;
+        }
+        .texto p:nth-child(6):hover {cursor:pointer;}
+
+        #social {
+            margin-top: -10%;
+            padding-left: 80px;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            margin-bottom: 5%;
+            background-color: white;        
+            display: block;
+        }
 
 	
         /*-------------------------------------REGISTRO-------------------------------------*/
-        /*----------------------------------------------------------------------------------*/        
+        /*----------------------------------------------------------------------------------*/
   
         #formulario {width: 90%;}
         #formulario h3 {

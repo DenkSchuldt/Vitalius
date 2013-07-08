@@ -18,7 +18,16 @@
             js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=276790459133085";
             fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
-        </script>        
+        </script>
+        <script>!function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id; js.src = "https://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }
+            }(document, "script", "twitter-wjs");
+        </script>
 		<div id="title">Vitalius</div>
         <header id="main_header">
 			<h1>Vitalius</h1>
@@ -26,26 +35,26 @@
 		</header>
 		<nav id="main_nav">
 			<ul>
-				<li>Inicio</li>
-				<li>Que Comer</li>
-				<li>Que Beber</li>
-				<li>Recetas</li>
-				<li>Calendario de Dieta</li>
-				<li>Registro</li>
+				<li><span>Inicio</span></li>
+				<li><span>Que comer</span></li>
+				<li><span>Que beber</span></li>
+				<li><span>Recetas</span></li>
+				<li><span>Calendario de Dieta</span></li>
+				<li><span>Registro</span></li>
 			</ul>
-            <div id="pull"></div>
+			<div id="pull"></div>
 		</nav>
 		<div id="content_recetas">            
-            <div id="introduccion_recetas">
+            <div id="introduccion_recetas">                
+                <h3><span>Recetas</span><hr/></h3>
                 <div>
-                    <h3>Recetas<hr /></h3><br />
                     <p>Muchas veces nos preguntamos cuales son los alimentos saludables que podemos consumir sin preocuparnos, 
-                       aquellos alimentos que sabremos que si los consumimos a cualquier hora no afectaran nuestra alimentación y 
-                       mucho menos nuestra salud.<br/><br/>
-                       En esta sección podrás encontrar muchas recetas que te ayudarán a comer de manera saludable.<br/><br/>
-                       ¡Buen provecho!
-                    </p>                    
-                </div>                              
+                        aquellos alimentos que sabremos que si los consumimos a cualquier hora no afectaran nuestra alimentación y 
+                        mucho menos nuestra salud.<br/><br/>
+                        En esta sección podrás encontrar muchas recetas que te ayudarán a comer de manera saludable.<br/><br/>
+                        ¡Buen provecho!
+                    </p>
+                </div>
             </div>
             <section id="seccion_recetas"></section>            
         </div>

@@ -96,7 +96,7 @@
 	        var p_leer = document.createElement('p');
 
 	        var texto = document.createTextNode(titulo);
-	        h3.appendChild(texto);
+	        h3.appendChild(texto);	        
 	        texto = document.createTextNode(descripcion);
 	        p_descripcion.appendChild(texto);
 	        texto = document.createTextNode("Porcion(es): " + porcion);
@@ -117,18 +117,17 @@
 	        p_leer.url = receta_actual;
 	        p_leer.addEventListener('click', function () {
 	            $('#show').fadeIn('fast');
-	            var query = document.querySelector('#inner_article');
-				query.innerHTML = '<input id="but" type="button" value="imprimir" />';
-	            query.innerHTML += '<h2 style="text-align:center;">' + this.header + '</h2><br/>';
+	            var query = document.querySelector('#inner_article');	            
+	            query.innerHTML += '<h2 style="text-align:center; color: rgb(140,200,0);">' + this.header + '</h2><br/>';
 	            query.innerHTML += '<p style="text-align:justify;">' + this.description + '</p>';
 	            query.innerHTML += '<p style="text-align:justify;">Porcion(es): ' + this.portions + '</p>';
 	            query.innerHTML += '<p style="text-align:justify;">Tiempo de preparacion:' + this.time + '</p>';
-	            query.innerHTML += '<h4>Ingredientes:</h4><ul>';
+	            query.innerHTML += '<h4 style="color: rgb(140,200,0);">Ingredientes:</h4><ul>';
 	            console.log(this.ingredients);
 	            for (var j = 0; j < this.ingredients.length;j++){
 	                query.innerHTML += '<li>' + this.ingredients[j].childNodes[1].childNodes[0].nodeValue + '. (' + this.ingredients[j].childNodes[0].childNodes[0].nodeValue + ')</li>';
 	            }
-	            query.innerHTML += '</ul><h4>Preparacion:</h4><ol>';
+	            query.innerHTML += '</ul><h4 style="color: rgb(140,200,0);">Preparacion:</h4><ol>';
 	            console.log(this.steps);
 	            for (var j = 0; j < this.steps.length; j++) {
 	                query.innerHTML += '<p>' + this.steps[j].getAttribute('PasoNum') + ': ' + this.steps[j].childNodes[0].nodeValue + '</p>';
@@ -151,8 +150,9 @@
 			
 			
 	        contenedor.setAttribute('class', 'texto');
-	        contenedor.appendChild(h3);
-	        contenedor.innerHTML += '<div class="fb-like" data-href="' + receta_actual + 'data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>';
+	        contenedor.appendChild(h3).style.display = "block";
+	        contenedor.innerHTML += '<div class="fb-like" data-href="' + receta_actual + 'data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" style="margin-right: 10px;"></div>';
+	        contenedor.innerHTML += '<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="' + receta_actual + '" data-text="' + h3.innerHTML+ ' - ">Tweet</a>';
 	        contenedor.appendChild(p_descripcion);
 	        contenedor.appendChild(p_porcion);
 	        contenedor.appendChild(p_tiempo);
@@ -180,7 +180,8 @@
 	        if (window.focus) { newwindow.focus(); }
 	    }, false);	    
 	    document.querySelector('#social').appendChild(facebook);
-	    document.querySelector('#social').appendChild(twitter);	    
+	    document.querySelector('#social').appendChild(twitter);
+	    document.querySelector('#social').innerHTML += '<br><input id="but" type="button" style="background-color: rgb(140,200,0); padding-left:15px; padding-right:15px; padding-top: 5px; padding-bottom: 5px; color: white; font-size: 1em;" value="imprimir" />';
 	}
 	function printDiv(divName) {
      var printContents = document.getElementById(divName).innerHTML;
