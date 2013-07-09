@@ -464,33 +464,81 @@ body{
 [---------------------------------------------------(Que comer)--------------------------------------------------]
 [---------------------------------------------------------------------------------------------------------------]
 */	
-#queComerFrase{
+/*
+[---------------------------------------------------------------------------------------------------------------]
+[---------------------------------------------------(Que comer)--------------------------------------------------]
+[---------------------------------------------------------------------------------------------------------------]
+*/
+
+    #queComer_intro {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-color: white;
+        margin-top: -3px;    
+	    background-image: url(../images/various/queComer.png);
+	    background-size: 40%;
+	    background-repeat:no-repeat;	
+	    background-position:bottom right;        
+    }
+
+    #queComer_info {
+        width: 40%;
+        margin-left: 10%;
+        background-color: #669c1f;
+        padding-bottom: 20px;
+        color: white;
+    }
+
+    #queComer_info h2 {
+        margin-left: 5%;
+        margin-top: 20px;
+        padding-top: 20px;
+        font-size: 2em;
+        display: inline-block;
+    }
+
+    #queComer_info p {
+        text-align: justify;
+        width: 90%;
+        margin-left: 5%;
+        display: inline-block;
+    }
+
+    #queComer_slider {        
+    }
+
+    #queComerFrase{
 		width: 100%;
 	    display: block;
 	    background-color: white;	
 	    margin:0;
-        padding-bottom: 10%;  
+        padding-bottom: 0;
 		margin-top:-3px;
-		
-		background-image: url(../images/comidas/comida_sana.jpeg);
-		background-size: 38%;
-	    background-repeat:no-repeat;	
-	    background-position:right;
-}		
-#queComerFrase p {
-		margin-top: 0;
-		width: 40%;
-        margin-left: 20%;
-        padding: 5px;
+        background-color: #669c1f;
+    }
+
+    #queComerFrase img {
+        display: inline-block;
+        width: 40%;
+        margin-left: 5%;
+        margin-bottom: -24px;
+    }
+
+    #queComerFrase p {		
         text-align: justify;
-        color: black;        
-        padding-top: 10%; 
-		margin-top: 2%;
+        width: 40%;
+        margin-left: 5%;
+        display: inline-block;
+        margin-top: 20px;
+        margin-bottom: 20px;        
+        font-size: 0.95em;
+        color: white;
 	}	
-#comer{
+
+    #comer{
 	    width: 100%;        
 	    display: inline-block;
-	    background-color: #669c1f;
+	    background-color: white;
         padding-top: 60px;
         padding-bottom: 60px;
     }
@@ -508,11 +556,12 @@ body{
     #comer section {        
         height: auto; 
 		width:100%;		
-        background-color: rgba(255,255,255,0.4);        
+        background-color: rgba(140,200,0,0.6);
         display: table;
 		overflow:hidden;
     }
-#comer span {
+
+    #comer span {
         margin-top: 0px;
         font-size: 0.8em;
         float: left;
@@ -523,99 +572,60 @@ body{
 		max-width:300px;
     }
 
-#comer label {
-        display: inline-block;
-        width: 80%;
-        padding-top: 25px;
-        padding-bottom: 20px;
-        padding-left: 20px;
-		padding-right: 20px;
-        font-size: 1em;
-}
-#comer p {
-		
+    #comer p {
 		height:200px;
 		min-height:100px;
         height: auto;               
         display: table;
     }	
-#cortina{
-background: #F1F1F1;
-width:100%;
-height:100%;
-position:fixed;
-top:0%;
-left:0%;
-opacity: 0.9;
-z-index: 6;
-margin-left: -20px;
-margin-top: -20px;
-display: none;
-}
 
-.debajoOff{
-width:400px;
-height:500px;
-position:fixed;
-top:50%;
-left:50%;
-margin-left: -200px;
-margin-top: -250px;
-background: center no-repeat transparent;
-display:none;
-}
-.debajoOn{
-width:400px;
-height:500px;
-position:fixed;
-top:50%;
-left:50%;
-margin-left: -200px;
-margin-top: -250px;
-z-index: 7; 
-background: #FFFFFF  center no-repeat ;
-overflow: scroll;
-}
-#div_debajo{	
-	top:80%;
-	left:0px;
-	width: 100%;
-	height: 100px;
-	Font-Family: "Verdana", Geneva, sans-serif;
-	color:#FFFFFF;
-}
-.izqS{
-  float: left;
-  width: 60;
-  height: 60;
-  border-top: 60px solid transparent;
-  border-bottom: 60px solid transparent;
-  border-right:60px solid #006600;
-}
-.derS{
-  float: right;
-  width: 60;
-  height: 60;
-  border-top: 60px solid transparent;
-  border-bottom: 60px solid transparent;
-  border-left:60px solid #006600;
-}
+    #cortina{
+        background: #F1F1F1;
+        width:100%;
+        height:100%;
+        position:fixed;
+        top:0%;
+        left:0%;
+        opacity: 0.9;
+        z-index: 6;
+        margin-left: -20px;
+        margin-top: -20px;
+        display: none;
+    }
 
-.izq{
-  float: left;
-  width: 50;
-  height: 50;
-  border-top: 50px solid transparent;
-  border-bottom: 50px solid transparent;
-  border-right:50px solid #25aa00;
-}
-.der {
-  float: right;
-  width: 50;
-  height: 50;
-  border-top: 50px solid transparent;
-  border-bottom: 50px solid transparent;
-  border-left:50px solid #25aa00;
+    #div_debajo{	
+	    top:80%;
+	    left:0px;
+	    width: 100%;
+	    height: 100px;
+	    Font-Family: "Verdana", Geneva, sans-serif;
+	    color:#FFFFFF;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    #div_debajo p {
+        width: 60%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .izq{
+        float: left;        
+        border-top: 50px solid transparent;
+        border-bottom: 50px solid transparent;
+        border-right:50px solid #25aa00;
+        margin-left: 5%;
+    }
+    .izq:hover{cursor: pointer;}
+    .der {
+        float: right;        
+        border-top: 50px solid transparent;
+        border-bottom: 50px solid transparent;
+        border-left:50px solid #25aa00;
+        margin-right: 5%;
+    }
+    .der:hover{cursor: pointer;}
 }
 /*
 [---------------------------------------------------------------------------------------------------------------]

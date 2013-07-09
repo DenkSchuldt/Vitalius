@@ -26,46 +26,22 @@ izq.addEventListener('click',function(e){
 	m--;
 	cargarArticulos();
 	},false);
-izq.addEventListener('mouseover',function(e){
-	this.setAttribute("class","izqS");
-	},false);
-izq.addEventListener('mouseout',function(e){
-	this.setAttribute("class","izq");
-	},false);
 
 	
 der.addEventListener('click',function(e){
 	m++;
 	cargarArticulos();
 	},false);
-der.addEventListener('mouseover',function(e){
-	this.setAttribute("class","derS");
-	},false);
-der.addEventListener('mouseout',function(e){
-	this.setAttribute("class","der");
-	},false);
 	
 izq2.addEventListener('click',function(e){
 	n--;
 	cargarArticulos();
-	},false);
-izq2.addEventListener('mouseover',function(e){
-	this.setAttribute("class","izqS");
-	},false);
-izq2.addEventListener('mouseout',function(e){
-	this.setAttribute("class","izq");
 	},false);
 
 		
 der2.addEventListener('click',function(e){
 	n++;
 	cargarArticulos();
-	},false);
-der2.addEventListener('mouseover',function(e){
-	this.setAttribute("class","derS");
-	},false);
-der2.addEventListener('mouseout',function(e){
-	this.setAttribute("class","der");
 	},false);
 	
 	
