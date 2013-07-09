@@ -225,7 +225,7 @@ function agregar_Recetas(){
 				}	
 			}
 			recetas_div[i].setAttribute('id','listo');
-			recetas_div[i].addEventListener("ondragstart",drag,false);
+			//recetas_div[i].addEventListener("dragstart",drag,false);
 			recetas_div[i].setAttribute('draggable','true');
 			//recetas_div[i].setAttribute('class','cambia_fondo_articulo_2');	
 			
@@ -287,30 +287,42 @@ function procesarRecetasPreferidas(e){
 		var h2 = document.createElement('h1');
 			
 		var texto = document.createTextNode(titulo);
-		h2.appendChild(texto);
 		
+		var span = document.createElement('span');
+		var span_text = document.createTextNode(titulo);
+		span.appendChild(span_text);
+		span.setAttribute('class','tooltip');
+		
+		h2.appendChild(texto);
+		h2.addEventListener('dragstart',drag,true);
 		img=imagen;
 		
 		var imgfig= document.createElement('img');
 		imgfig.src=img;
 		imgfig.width="100";
 		imgfig.height="100";
+		imgfig.id="drag_img"+id;
+		imgfig.addEventListener('dragstart',drag,true);
 		var fig=document.createElement('fig');
 			
 		fig.appendChild(imgfig);
 		
 		h2.setAttribute('class','titulo');
+		h2.id="drag_h2"+id;
 		
-		
-		article.appendChild(h2);
+		article.appendChild(span);
 		article.appendChild(fig);
 		article.setAttribute('class','receta');
+				article.setAttribute('style',"cursor:move;");
+		article.setAttribute("id","drag"+id);
+		article.setAttribute('draggable','true');
 		article.addEventListener('click',function(){
 											this.setAttribute('class','cambia_fondo_articulo');
 											},false);
 		
-		article.addEventListener('ondragstart',drag,true);
+		article.addEventListener('dragstart',drag,true);
 		article.setAttribute('class','over');
+		
 		sectionPreferidas.appendChild(article);
 		
 
