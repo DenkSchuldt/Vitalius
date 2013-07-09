@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recetas>
+	<receta>
+		<id>1</id>
+		<titulo>
+			Macadamia endulzada
+		</titulo>
+		<descripcion>
+			cocinar
+			</descripcion>
+		<imagen>
+			../images/alimentos/alimentos_01.jpg
+		</imagen>
+		<enlace>
+		</enlace>
+	</receta>
+	<receta>
+		<id>2</id>
+		<titulo>
+			Receta de aguacates
+		</titulo>
+		<descripcion>
+		cocinar
+		</descripcion>
+		<imagen>
+			../images/alimentos/alimentos_02.jpg
+		</imagen>
+		<enlace>
+		</enlace>
+		</receta>
+	<receta>
+		<id>3</id>
+		<titulo>
+			Desayunos saludables: propiedades del muesli
+		</titulo>
+		<descripcion>
+			Como seguramente sabes, el desayuno es la comida más importante del día, es la que recarga tus energías cada mañana para mantenerte activo durante esas largas jornadas de...
+		</descripcion>
+		<imagen>
+			../images/alimentos/alimentos_03.jpg
+		</imagen>
+		<enlace>
+		</enlace>		
+	</receta>
+</recetas>
