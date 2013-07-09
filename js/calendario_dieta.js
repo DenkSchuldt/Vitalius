@@ -100,5 +100,16 @@
 										dia_seleccionado = 7;
 										mostrardiv()},false);
 }
+
+function mostrardiv(){
+	var seccion_inicio = document.getElementById('div');
+	div_principal = document.createElement('div');
+	div_principal.setAttribute("id",'div_principal');
+	div_principal.setAttribute('class','div_principal');
+	
+	seccion_inicio.appendChild(div_principal);
+	cargarArticulos();
+
+}
 	
 	window.onload = calendarioStart();
