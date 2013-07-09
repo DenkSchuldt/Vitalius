@@ -238,5 +238,20 @@ function agregar_Recetas(){
 			}*/
 }		
 
+
+
+function drag(ev)
+{
+	ev.dataTransfer.setData("Text",ev.target.id);
+	ev.dataTransfer.effectAllowed = 'move';
+}
+
+function drop(ev)
+{
+	ev.preventDefault();
+	var data=ev.dataTransfer.getData("Text");
+	ev.target.appendChild(document.getElementById(data));
+}
+
 	
 	window.onload = calendarioStart();
