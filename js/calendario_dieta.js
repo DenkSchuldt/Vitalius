@@ -111,5 +111,81 @@ function mostrardiv(){
 	cargarArticulos();
 
 }
+
+
+	function cargarArticulos(){
+		var url = "../xml/recetas.xml";
+		var request = new XMLHttpRequest();
+		request.addEventListener('load',procesarArticulos,false);
+		request.open("GET",url,true);
+		request.send(null);
+	}
+
+	function procesarArticulos(e){
+
+	var xml=e.target.responseXML;
+	var recetas= xml.querySelectorAll('receta');
+	
+	
+	
+	for(i=0;i<recetas.length;i++){
+	
+		var titulo = recetas[i].querySelector('titulo').childNodes[0].nodeValue;
+		var id = recetas[i].querySelector('id').childNodes[0].nodeValue;
+		var imagen = recetas[i].querySelector('imagen').childNodes[0].nodeValue;
+		
+		var article = document.createElement('article');
+		var h2 = document.createElement('h1');
+			
+		var texto = document.createTextNode(titulo);
+		h2.appendChild(texto);
+		
+		img=imagen;
+		
+		var imgfig= document.createElement('img');
+		imgfig.src=img;
+		imgfig.width="200";
+		imgfig.height="200";
+		var fig=document.createElement('fig');
+			
+		fig.appendChild(imgfig);
+		
+		h2.setAttribute('class','titulo');
+		
+		
+		article.appendChild(h2);
+		article.appendChild(fig);
+		article.setAttribute('class','receta');
+		article.addEventListener('click',function(){
+											this.setAttribute('class','cambia_fondo_articulo');
+										},false);
+		
+		
+		div_principal.appendChild(article);
+
+		}
+		
+		var boton_cerrar=document.createElement('input');
+		boton_cerrar.setAttribute('type','button');
+		//boton_cerrar.setAttribute('class','boton_cerrar');
+		boton_cerrar.setAttribute('value','CerrarDiv');
+		boton_cerrar.addEventListener('click', function(){
+										div_principal.setAttribute('class','cerrar_div');
+										});
+
+		
+		var boton_aceptar=document.createElement('input');
+		boton_aceptar.setAttribute('type','button');
+		boton_aceptar.setAttribute('value','Agregar Recetas');
+		
+		boton_aceptar.addEventListener('click', agregar_Recetas,false);
+	
+	
+	
+		div_principal.appendChild(boton_aceptar);
+		div_principal.appendChild(boton_cerrar);
+		
+		}
+
 	
 	window.onload = calendarioStart();
