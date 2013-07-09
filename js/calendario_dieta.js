@@ -144,23 +144,30 @@ function mostrardiv(){
 		
 		var imgfig= document.createElement('img');
 		imgfig.src=img;
-		imgfig.width="200";
-		imgfig.height="200";
+		imgfig.width="120";
+		imgfig.height="120";
 		var fig=document.createElement('fig');
-			
+		imgfig.id="img"+i;
+		imgfig.setAttribute('draggable','true');
+		imgfig.addEventListener('dragstart',drag,true);
+		fig.id="fig"+i;
 		fig.appendChild(imgfig);
 		
 		h2.setAttribute('class','titulo');
-		
+		h2.id="h2"+i;
 		article.setAttribute('id','nolisto');
-		article.appendChild(h2);
+		//article.appendChild(h2);
 		article.appendChild(fig);
 		article.setAttribute('class','receta');
 		article.addEventListener('click',function(){
 											this.setAttribute('class','cambia_fondo_articulo');
 										},false);
 		
-		
+		article.setAttribute('style',"cursor:move;");
+		//article.setAttribute("id","drag"+id);
+		article.setAttribute('draggable','true');
+		article.addEventListener('dragstart',drag,true);
+		div_principal.appendChild(h2);
 		div_principal.appendChild(article);
 
 		}
@@ -224,6 +231,7 @@ function agregar_Recetas(){
 					div_calendar.appendChild(recetas_div[i]);
 				}	
 			}
+
 			recetas_div[i].setAttribute('id','listo');
 			//recetas_div[i].addEventListener("dragstart",drag,false);
 			recetas_div[i].setAttribute('draggable','true');
@@ -275,7 +283,10 @@ function procesarRecetasPreferidas(e){
 	var xml=e.target.responseXML;
 	var recetas= xml.querySelectorAll('receta');
 	
-	
+	var p = document.createElement('h1');
+		var p_text = document.createTextNode("Recetas Preferidas");	
+		p.appendChild(p_text);
+	sectionPreferidas.appendChild(p);
 	
 	for(i=0;i<recetas.length;i++){
 	
@@ -292,15 +303,15 @@ function procesarRecetasPreferidas(e){
 		var span_text = document.createTextNode(titulo);
 		span.appendChild(span_text);
 		span.setAttribute('class','tooltip');
-		
+		span.addEventListener('dragstart',drag,true);
 		h2.appendChild(texto);
 		h2.addEventListener('dragstart',drag,true);
 		img=imagen;
 		
 		var imgfig= document.createElement('img');
 		imgfig.src=img;
-		imgfig.width="100";
-		imgfig.height="100";
+		imgfig.width="120";
+		imgfig.height="120";
 		imgfig.id="drag_img"+id;
 		imgfig.addEventListener('dragstart',drag,true);
 		var fig=document.createElement('fig');
@@ -316,15 +327,14 @@ function procesarRecetasPreferidas(e){
 				article.setAttribute('style',"cursor:move;");
 		article.setAttribute("id","drag"+id);
 		article.setAttribute('draggable','true');
-		article.addEventListener('click',function(){
+		/*article.addEventListener('click',function(){
 											this.setAttribute('class','cambia_fondo_articulo');
-											},false);
+											},false);*/
 		
 		article.addEventListener('dragstart',drag,true);
 		article.setAttribute('class','over');
 		
 		sectionPreferidas.appendChild(article);
-		
 
 		}
 }
