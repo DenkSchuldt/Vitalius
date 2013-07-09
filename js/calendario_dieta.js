@@ -238,7 +238,12 @@ function agregar_Recetas(){
 			}*/
 }		
 
-
+		
+function allowDrop(ev)
+{
+	ev.preventDefault();
+	var data=ev.dataTransfer.getData("Text");
+}
 
 function drag(ev)
 {
