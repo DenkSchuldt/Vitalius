@@ -152,7 +152,7 @@ function mostrardiv(){
 		
 		h2.setAttribute('class','titulo');
 		
-		
+		article.setAttribute('id','nolisto');
 		article.appendChild(h2);
 		article.appendChild(fig);
 		article.setAttribute('class','receta');
@@ -194,35 +194,37 @@ function agregar_Recetas(){
 	
 	
 	for (i=0; i<recetas_div.length;i++){	
-		if (dia_seleccionado == 1){
-				div_calendar = document.getElementById("domingo");
-				div_calendar.appendChild(recetas_div[i]);
+	if(recetas_div[i].getAttribute('id')=='nolisto'){
+			if (dia_seleccionado == 1){
+					div_calendar = document.getElementById("domingo");
+					div_calendar.appendChild(recetas_div[i]);
+				}
+				if (dia_seleccionado == 2){
+					div_calendar = document.getElementById("lunes");
+					div_calendar.appendChild(recetas_div[i]);
+				}
+				if (dia_seleccionado == 3){
+					div_calendar = document.getElementById("martes");
+					div_calendar.appendChild(recetas_div[i]);
+				}
+				if (dia_seleccionado == 4){
+					div_calendar = document.getElementById("miercoles");
+					div_calendar.appendChild(recetas_div[i]);
+				}
+				if (dia_seleccionado == 5){
+					div_calendar = document.getElementById("jueves");
+					div_calendar.appendChild(recetas_div[i]);
+				}
+				if (dia_seleccionado == 6){
+					div_calendar = document.getElementById("viernes");
+					div_calendar.appendChild(recetas_div[i]);
+				}
+				if (dia_seleccionado == 7){
+					div_calendar = document.getElementById("sabado");
+					div_calendar.appendChild(recetas_div[i]);
+				}	
 			}
-			if (dia_seleccionado == 2){
-				div_calendar = document.getElementById("lunes");
-				div_calendar.appendChild(recetas_div[i]);
-			}
-			if (dia_seleccionado == 3){
-				div_calendar = document.getElementById("martes");
-				div_calendar.appendChild(recetas_div[i]);
-			}
-			if (dia_seleccionado == 4){
-				div_calendar = document.getElementById("miercoles");
-				div_calendar.appendChild(recetas_div[i]);
-			}
-			if (dia_seleccionado == 5){
-				div_calendar = document.getElementById("jueves");
-				div_calendar.appendChild(recetas_div[i]);
-			}
-			if (dia_seleccionado == 6){
-				div_calendar = document.getElementById("viernes");
-				div_calendar.appendChild(recetas_div[i]);
-			}
-			if (dia_seleccionado == 7){
-				div_calendar = document.getElementById("sabado");
-				div_calendar.appendChild(recetas_div[i]);
-			}	
-			
+			recetas_div[i].setAttribute('id','listo');
 			recetas_div[i].addEventListener("ondragstart",drag,false);
 			recetas_div[i].setAttribute('draggable','true');
 			//recetas_div[i].setAttribute('class','cambia_fondo_articulo_2');	
