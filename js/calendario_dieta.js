@@ -258,5 +258,62 @@ function drop(ev)
 	ev.target.appendChild(document.getElementById(data));
 }
 
+function cargarRecetasPreferidas(){
+		var url_p =  "../xml/recetas_preferidas.xml";
+		var request = new XMLHttpRequest();
+		request.addEventListener('load',procesarRecetasPreferidas,false);
+		request.open("GET",url_p,true);
+		request.send(null);
+
+}
+
+function procesarRecetasPreferidas(e){
+
+	var sectionPreferidas = document.getElementById('div_preferidas');
+	var xml=e.target.responseXML;
+	var recetas= xml.querySelectorAll('receta');
+	
+	
+	
+	for(i=0;i<recetas.length;i++){
+	
+		var titulo = recetas[i].querySelector('titulo').childNodes[0].nodeValue;
+		var id = recetas[i].querySelector('id').childNodes[0].nodeValue;
+		var imagen = recetas[i].querySelector('imagen').childNodes[0].nodeValue;
+		
+		var article = document.createElement('div');
+		var h2 = document.createElement('h1');
+			
+		var texto = document.createTextNode(titulo);
+		h2.appendChild(texto);
+		
+		img=imagen;
+		
+		var imgfig= document.createElement('img');
+		imgfig.src=img;
+		imgfig.width="100";
+		imgfig.height="100";
+		var fig=document.createElement('fig');
+			
+		fig.appendChild(imgfig);
+		
+		h2.setAttribute('class','titulo');
+		
+		
+		article.appendChild(h2);
+		article.appendChild(fig);
+		article.setAttribute('class','receta');
+		article.addEventListener('click',function(){
+											this.setAttribute('class','cambia_fondo_articulo');
+											},false);
+		
+		article.addEventListener('ondragstart',drag,true);
+		article.setAttribute('class','over');
+		sectionPreferidas.appendChild(article);
+		
+
+		}
+}
+
 	
 	window.onload = calendarioStart();
