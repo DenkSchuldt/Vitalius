@@ -158,7 +158,7 @@ function mostrardiv(){
 		article.setAttribute('id','nolisto');
 		//article.appendChild(h2);
 		article.appendChild(fig);
-		article.setAttribute('class','receta');
+		article.setAttribute('class','receta_calendar');
 		article.addEventListener('click',function(){
 											this.setAttribute('class','cambia_fondo_articulo');
 										},false);
@@ -323,7 +323,7 @@ function procesarRecetasPreferidas(e){
 		
 		article.appendChild(span);
 		article.appendChild(fig);
-		article.setAttribute('class','receta');
+		article.setAttribute('class','receta_calendar');
 				article.setAttribute('style',"cursor:move;");
 		article.setAttribute("id","drag"+id);
 		article.setAttribute('draggable','true');
