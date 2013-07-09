@@ -186,6 +186,57 @@ function mostrardiv(){
 		div_principal.appendChild(boton_cerrar);
 		
 		}
+		
+				
+function agregar_Recetas(){	
+	div_principal.setAttribute("class","esconder_div");
+	recetas_div = document.getElementsByClassName('cambia_fondo_articulo');
+	
+	
+	for (i=0; i<recetas_div.length;i++){	
+		if (dia_seleccionado == 1){
+				div_calendar = document.getElementById("domingo");
+				div_calendar.appendChild(recetas_div[i]);
+			}
+			if (dia_seleccionado == 2){
+				div_calendar = document.getElementById("lunes");
+				div_calendar.appendChild(recetas_div[i]);
+			}
+			if (dia_seleccionado == 3){
+				div_calendar = document.getElementById("martes");
+				div_calendar.appendChild(recetas_div[i]);
+			}
+			if (dia_seleccionado == 4){
+				div_calendar = document.getElementById("miercoles");
+				div_calendar.appendChild(recetas_div[i]);
+			}
+			if (dia_seleccionado == 5){
+				div_calendar = document.getElementById("jueves");
+				div_calendar.appendChild(recetas_div[i]);
+			}
+			if (dia_seleccionado == 6){
+				div_calendar = document.getElementById("viernes");
+				div_calendar.appendChild(recetas_div[i]);
+			}
+			if (dia_seleccionado == 7){
+				div_calendar = document.getElementById("sabado");
+				div_calendar.appendChild(recetas_div[i]);
+			}	
+			
+			recetas_div[i].addEventListener("ondragstart",drag,false);
+			recetas_div[i].setAttribute('draggable','true');
+			//recetas_div[i].setAttribute('class','cambia_fondo_articulo_2');	
+			
+		}
+		
+		
+		/*
+					contador = contador + 1;
+			
+			if (contador > 0){
+				quitar_clase();
+			}*/
+}		
 
 	
 	window.onload = calendarioStart();
