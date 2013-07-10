@@ -537,12 +537,20 @@ body{
 
     #comer{
 	    width: 100%;        
-	    display: inline-block;
+	    display: block;
 	    background-color: white;
         padding-top: 60px;
         padding-bottom: 60px;
     }
-
+	 #comer_articles{
+	         
+	     width: 100%;        
+	    display: inline-block;
+	    background-color: white;
+        padding-top: 60px;
+        padding-bottom: 60px;
+	    
+    }
     #comer h2{
         margin: 0;
 	    text-align: left;	
@@ -562,21 +570,22 @@ body{
     }
 
     #comer span {
-        margin-top: 0px;
+        margin-top: -30px;
         font-size: 0.8em;
-        float: left;
+        float: right;
         margin-right: 20px;
         color: gray; 
-		height:400px;overflow:hidden;
-		
-		max-width:300px;
     }
 
     #comer p {
-		height:200px;
-		min-height:100px;
-        height: auto;               
-        display: table;
+		 width: 350px;
+		height: 40%;
+		margin-left: 15px;
+        margin-right: 15px;		
+        background-color: rgba(255,255,255,0.4);
+        padding: 10px;        
+        display: table-cell;
+        vertical-align: middle;
     }	
 
     #cortina{
@@ -611,60 +620,54 @@ body{
     }
 
     .izq{
-        float: left;        
+              
         border-top: 50px solid transparent;
         border-bottom: 50px solid transparent;
         border-right:50px solid #25aa00;
         margin-left: 5%;
+		display:inline-block;
     }
     .izq:hover{cursor: pointer;}
     .der {
-        float: right;        
+		display:inline-block;
+              
         border-top: 50px solid transparent;
         border-bottom: 50px solid transparent;
         border-left:50px solid #25aa00;
         margin-right: 5%;
     }
     .der:hover{cursor: pointer;}
-}
+
 /*
 [---------------------------------------------------------------------------------------------------------------]
 [---------------------------------------------------(Que beber)--------------------------------------------------]
 [---------------------------------------------------------------------------------------------------------------]
 */
 
-  #divSlider {
-         width: 100%;
-        display: block;
-        background-color: #669c1f;        
-		margin:0;
-        padding-bottom: 5%;        
-        margin-top: -3px;
-		background-image: url(../images/bebidas/bebida_06.png);
-		padding-right: 5%; 
-		background-size: 38%;
-	    background-repeat:no-repeat;
-		background-position:right;
+	#divSliderQuebeber {
+		width: 100%;
+		margin-top: -3px;
+	    background-image: url(../images/bebidas/bebida_06.png);
+	    background-size: 40%;
+	    background-repeat: no-repeat;	
+	    background-position: right;                
+        background-color: #669c1f;
+        padding-bottom: 10%;
+        
     } 
-	#divSlider h2{
+	#divSliderQuebeber h2{
 		text-align:center;
 		font-size:300%;
 	}
 	
 	#queBeberFrase{
-		margin-top: -3px;
+		margin-top: -100px;
 		width: 100%;
-	    display: block;
 	    background-color: white;	
-	    margin:0;
-        padding-bottom: 10%;  
-		margin-top:-3px;
-		
+	    padding-bottom: 10%;  
 		background-image: url(../images/bebidas/bebida_07.png);
 		background-size: 20%;
-		padding-right: -50%;
-		padding-left:0;
-	    background-repeat:no-repeat;	
+		background-repeat:no-repeat;	
 	    background-position:right;
 	}
 	#queBeberFrase p {
