@@ -15,6 +15,15 @@
         <script src="../js/bjqs-1.3.min.js"></script>   
 	</head>
 	<body>
+        <div id="fb-root"></div>				
+        <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=276790459133085";
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
 		<header id="main_header">
 			<h1>Vitalius</h1>
 			<h4>Come sano, vive bien</h4>
@@ -81,16 +90,17 @@ Este agua, ha de ser recuperada compensando las pérdidas con la ingesta. evitan
                 </div>
 			</div>	
 			<div id="show">
-                <div id="background"></div>
-			    <div id="visible">
-				    <div id="outter_article">
-                        <div id="inner_article">
-				        </div>
-						<div id="compartir_article">
-				        </div>
+            <div id="background"></div>
+			<div id="visible">
+				<div id="outter_article">
+                    <div id="inner_article">
 				    </div>
-			    </div>
-		    </div>		
+                    <div id="social">                        
+                        <div class="fb-comments" id="fbComments" data-href="" data-width="470" data-num-posts="10"></div>
+                    </div>
+				</div>
+			</div>
+		</div>
 		</div>
 		<footer id="main_footer">
             <div id="header_footer"><strong>Vitalius</strong>&nbsp;&nbsp;Come sano, vive bien.</div>

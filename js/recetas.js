@@ -134,7 +134,7 @@
 	            }	            
 	            loadSocialLinks(this.url);
 				document.getElementById("but").addEventListener('click',function(){
-				printDiv('inner_article');
+				    printDiv('inner_article');
 				},true);
 	        }, false);
 
@@ -164,7 +164,7 @@
 	}	
 
 	function loadSocialLinks(url) {	    
-	    document.querySelector('#social').innerHTML = '<h4 style="margin-top:0;">Compartir en:</4><br>';
+	    document.querySelector('#inner_social').innerHTML = '<h4 style="margin-top:0;">Compartir en:</4><br>';
 	    var facebook = document.createElement('img');
 	    facebook.setAttribute("src", "../images/various/facebook.png");
 	    facebook.setAttribute('class', 'generic');
@@ -179,18 +179,25 @@
 	        newwindow = window.open("http://twitter.com/home?status=Acabo de leer un articulo en Vitalius: " + url, 'Compartir en Twitter', 'height=300,width=500');
 	        if (window.focus) { newwindow.focus(); }
 	    }, false);	    
-	    document.querySelector('#social').appendChild(facebook);
-	    document.querySelector('#social').appendChild(twitter);
-	    document.querySelector('#social').innerHTML += '<br><input id="but" type="button" style="background-color: rgb(140,200,0); padding-left:15px; padding-right:15px; padding-top: 5px; padding-bottom: 5px; color: white; font-size: 1em;" value="imprimir" />';
-	}
-	function printDiv(divName) {
-     var printContents = document.getElementById(divName).innerHTML;
-     var originalContents = document.body.innerHTML;
-     document.body.innerHTML = printContents;
-     window.print();
-     document.body.innerHTML = originalContents;
-	window.location.reload(); 
+	    document.querySelector('#inner_social').appendChild(facebook);
+	    document.querySelector('#inner_social').appendChild(twitter);
+	    var print = document.createElement('input');
+	    print.setAttribute('type', 'button');
+	    print.setAttribute('id', 'but');
+	    print.setAttribute('style', 'background-color: rgb(140,200,0); padding-left:15px; padding-right:15px; padding-top: 5px; padding-bottom: 5px; color: white; font-size: 1em;');
+	    print.value = "Imprimir";
+	    document.querySelector('#inner_social').appendChild(document.createElement('br'));
+	    document.querySelector('#inner_social').appendChild(document.createElement('br'));
+	    document.querySelector('#inner_social').appendChild(print);	    
 	}
 
+	function printDiv(divName) {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+        document.body.innerHTML = printContents;
+        window.print();
+        document.body.innerHTML = originalContents;
+	    window.location.reload(); 
+	}
 
 	window.onload = recetasStart();

@@ -81,35 +81,8 @@
 		window.print();
 		document.body.innerHTML = oldPage;
 		queBeberStart();
-    }
-	function loadSocialLinks() {
-	    var social = document.createElement('div');
-        social.style.display = "inline-block";
-	    var facebook = document.createElement('img');
-	    facebook.setAttribute("src", "../images/various/facebook.png");
-	    facebook.setAttribute('class', 'generic');
-	    var twitter = document.createElement('img');
-	    twitter.setAttribute("src", "../images/various/twitter.png");
-	    twitter.setAttribute('class', 'generic');	    
-		var printer = document.createElement('img');
-	    printer.setAttribute("src", "../images/various/printer.gif");
-	    printer.setAttribute('class', 'generic');	
-		
-	    facebook.addEventListener('click', function () {
-	        newwindow = window.open("https://www.facebook.com/sharer/sharer.php?u=" + current_article,'Compartir en Facebook','height=500,width=500');
-	        if (window.focus) { newwindow.focus(); }
-	    }, false);
-	    twitter.addEventListener('click', function () {
-	        newwindow = window.open("http://twitter.com/home?status= Acabo de leer un articulo en Vitalius: "+current_article,'Compartir en Twitter', 'height=300,width=500');
-	        if (window.focus) { newwindow.focus(); }
-	    }, false);
-		printer.addEventListener('click', function () {
-	        imprimir('inner_article');
-	    }, false);
-	    document.querySelector('#compartir_article').appendChild(facebook);
-	    document.querySelector('#compartir_article').appendChild(twitter);
-		document.querySelector('#compartir_article').appendChild(printer);
-	}
+    }	
+
 	function procesarBajarDePeso(e){
 	
 		var xml= e.target.responseXML;
@@ -117,16 +90,14 @@
 		while(seccion.firstChild){ seccion.removeChild(seccion.firstChild);}
 		if (n < 0) { n = 0; }
 	    if (n > descripcion.length - 3) { n = descripcion.length - 3; }
-	    for (i = n; i < descripcion.length && i < (n + 3) ; i++){
-		
+	    for (i = n; i < descripcion.length && i < (n + 3) ; i++){		
 			titulo = descripcion[i].getElementsByTagName("titulo")[0].textContent;
 			receta = descripcion[i].getElementsByTagName("receta")[0].textContent;
 			
 			article = document.createElement('article');
 			h3 = document.createElement('h3');
 			h4 = document.createElement('h4');
-			p = document.createElement('p');
-			
+			p = document.createElement('p');			
 			texto = document.createTextNode(titulo);
 			h3.appendChild(texto);
 			texto = document.createTextNode(receta);
@@ -140,14 +111,23 @@
 	        article.addEventListener('click', function () {
 	            $('#show').fadeIn('fast');
 	            document.querySelector('#inner_article').innerHTML = '<h2>' + this.header + '</h2><br/>' + '<p>' + this.recipe + '</p><br><br>';
-	            loadSocialLinks();
-	        }, false);
-		
+	            if (document.getElementById("but")) document.removeChild(document.getElementById("but"));
+	            document.querySelector('#social').innerHTML += '<input id="but" type="button" style="background-color: rgb(140,200,0); padding-left:15px; padding-right:15px; padding-top: 5px; padding-bottom: 5px; color: white; font-size: 1em; margin-left:80px;" value="imprimir"/>';
+	            document.getElementById("but").addEventListener('click', function () {
+	                printDiv('inner_article');
+	            }, true);
+	        }, false);		
 			seccion.appendChild(article);
 		}
-
 	}
 	
-	
+	function printDiv(divName) {
+	    var printContents = document.getElementById(divName).innerHTML;
+	    var originalContents = document.body.innerHTML;
+	    document.body.innerHTML = printContents;
+	    window.print();
+	    document.body.innerHTML = originalContents;
+	    window.location.reload();
+	}
 	
 	window.onload = queBeberStart();

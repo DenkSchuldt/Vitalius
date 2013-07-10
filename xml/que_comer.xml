@@ -1,121 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <comidas>
 	<comida>
-		<titulo>
-			La Comida ¿La Usas para Refugiarte de tus Emociones?
+		<titulo>La Comida ¿La Usas para Refugiarte de tus Emociones?
 		</titulo>
-		<descripcion>
-			¿Adicción a la comida?
-No podemos afirmar que exista, una adicción como tal, pero sí, algo muy similar a lo que ocurre con los narcóticos, y es que cuando nosotros llevamos a cabo una acción que disfrutamos, como comer helado, nuestro cerebro, produce sustancias químicas como la dopamina, que nos hacen sentir una ráfaga de placer y satisfacción.
-
-Así que si tienes un anhelo por comer algo, que podrías describir como un antojo, que está constante en tu mente y a veces no descansa hasta que lo obtienes, no es nada nuevo, es algo por lo que muchos de nosotros, sino es que todos, pasamos, o hemos pasado. Pero si ésta conducta se ha ido fortaleciendo hasta el punto que se nos imposible no ceder, es el resultado de un sistema de recompensa que se ha ido desviando.
-
-No hay nada malo con nuestro cerebro, de hecho, el sistema de recompensa, resulta muy útil en el proceso de aprendizaje, y para alcanzar nuestros objetivos, sin embargo, si la comida se vuelve una recompensa para nosotros, muy seguramente tendremos problemas de salud en el futuro, derivado de nuestra alimentación y peso.
-			</descripcion>
-		<imagen>
-			../images/comidas/imagen1.jpg
-		</imagen>
-		<enlace>
-		</enlace>
+		<descripcion>¿Adicción a la comida? No podemos afirmar que exista, una adicción como tal, pero sí, algo muy similar a lo que ocurre con los narcóticos, y es que cuando nosotros llevamos a cabo una acción que disfrutamos, como comer helado, nuestro cerebro, produce sustancias químicas como la dopamina, que nos hacen sentir una ráfaga de placer y satisfacción. Así que si tienes un anhelo por comer algo, que podrías describir como un antojo, que está constante en tu mente y a veces no descansa hasta que lo obtienes, no es nada nuevo, es algo por lo que muchos de nosotros, sino es que todos, pasamos, o hemos pasado. Pero si ésta conducta se ha ido fortaleciendo hasta el punto que se nos imposible no ceder, es el resultado de un sistema de recompensa que se ha ido desviando. No hay nada malo con nuestro cerebro, de hecho, el sistema de recompensa, resulta muy útil en el proceso de aprendizaje, y para alcanzar nuestros objetivos, sin embargo, si la comida se vuelve una recompensa para nosotros, muy seguramente tendremos problemas de salud en el futuro, derivado de nuestra alimentación y peso.</descripcion>
+		<imagen>../images/comidas/imagen1.jpg</imagen>		
 	</comida>
 	<comida>
-		<titulo>
-			Como eliminar la ansiedad por comer
-		</titulo>
-		<descripcion>
-		Tratar de comer de manera saludable no debe agregar preocupación y ansiedad adicional tu vida. Por eso es importante saber que comes y que no estas comiendo, así como, cuándo y con qué frecuencia comes, ya que esto puede afectar tu estado de ánimo, sus niveles de energía, y por lo tanto lo bien que puedes manejar la adversidad y la tensión de llevar una dieta.
-
-		</descripcion>
-		<imagen>
-			../images/comidas/imagen2.jpg
-		</imagen>
-		<enlace>
-		</enlace>
-		</comida>
-	<comida>
-		<titulo>
-			Comer bien para rendir más
-		</titulo>
-		<descripcion>
-			Hoy en día sabemos que durante un periodo de entrenamiento  la idea es lograr que tu cuerpo pueda para llegar a un estado nutritivo perfecto que permita afrontar sin problemas una competición o una rutina de entrenamiento cotidiana. Esto es válido tanto para aquellas personas que realizan una actividad física suave-moderada (caminatas, footing, natación, etc.) sin el objetivo de competir, como para los que participan en certámenes competitivos.
-
-En principio, se debe conocer, por ejemplo, la importancia de disponer de buenas reservas de glucógeno y estar hidratado, puesto que sin una adecuada reserva de energía muscular no lograremos los mejores resultados y hasta podemos tener problemas de salud.		</descripcion>
-		<imagen>
-			../images/comidas/imagen3.jpg
-		</imagen>
-		<enlace>
-		</enlace>		
-	</comida>
-		<comida>
-		<titulo>
-			Cómo hacer que los niños coman verduras
-		</titulo>
-		<descripcion>
-			El consumo de verduras es muy importante para seguir una dieta saludable ya que son una de las principales fuentes de fibra, vitaminas, minerales y antioxidantes. Sin embargo, animar a los niños a consumirlas suele ser todo un reto. A continuación, ofrecemos algunas sugerencias para ayudar a los padres.
-
-Muchos padres saben que algunos niños son difíciles y selectivos con la comida. A muchos no les gusta la verdura y pueden convertir la hora de la comida en una auténtica pesadilla. Teniendo en cuenta que las preferencias de alimentación del niño pueden determinar su conducta alimentaria en el futuro, es importante saber que estas preferencias pueden mejorarse.		</descripcion>
-		<imagen>
-			../images/comidas/imagen4.jpg
-		</imagen>
-		<enlace>
-		</enlace>		
+		<titulo>Como eliminar la ansiedad por comer</titulo>
+		<descripcion>Tratar de comer de manera saludable no debe agregar preocupación y ansiedad adicional tu vida. Por eso es importante saber que comes y que no estas comiendo, así como, cuándo y con qué frecuencia comes, ya que esto puede afectar tu estado de ánimo, sus niveles de energía, y por lo tanto lo bien que puedes manejar la adversidad y la tensión de llevar una dieta.</descripcion>
+		<imagen>../images/comidas/imagen2.jpg</imagen>		
 	</comida>
 	<comida>
-		<titulo>
-			Recetas con anis
-		</titulo>
-		<descripcion>
-			El anis es una hierba aromática con la que se pueden preparar sopas, bebidas, aderezos, pasteles, galletas, gelatinas, etc. Tienen un aroma dulce y suave, puede combinar con verduras y algunas frutas, asi como con  carnes. Sus hojas tiernas se le pueden agregar a las ensaladas para darles un toque especial y ayudar a evitar gases o malas digestiones en la comida.		</descripcion>
-		<imagen>
-			../images/comidas/imagen5.jpg
-		</imagen>
-		<enlace>
-		</enlace>		
+		<titulo>Comer bien para rendir más</titulo>
+		<descripcion>Hoy en día sabemos que durante un periodo de entrenamiento  la idea es lograr que tu cuerpo pueda para llegar a un estado nutritivo perfecto que permita afrontar sin problemas una competición o una rutina de entrenamiento cotidiana. Esto es válido tanto para aquellas personas que realizan una actividad física suave-moderada (caminatas, footing, natación, etc.) sin el objetivo de competir, como para los que participan en certámenes competitivos. En principio, se debe conocer, por ejemplo, la importancia de disponer de buenas reservas de glucógeno y estar hidratado, puesto que sin una adecuada reserva de energía muscular no lograremos los mejores resultados y hasta podemos tener problemas de salud.</descripcion>
+		<imagen>../images/comidas/imagen3.jpg</imagen>
+	</comida>
+	<comida>
+		<titulo>Cómo hacer que los niños coman verduras</titulo>
+		<descripcion>El consumo de verduras es muy importante para seguir una dieta saludable ya que son una de las principales fuentes de fibra, vitaminas, minerales y antioxidantes. Sin embargo, animar a los niños a consumirlas suele ser todo un reto. A continuación, ofrecemos algunas sugerencias para ayudar a los padres. Muchos padres saben que algunos niños son difíciles y selectivos con la comida. A muchos no les gusta la verdura y pueden convertir la hora de la comida en una auténtica pesadilla. Teniendo en cuenta que las preferencias de alimentación del niño pueden determinar su conducta alimentaria en el futuro, es importante saber que estas preferencias pueden mejorarse.</descripcion>
+		<imagen>../images/comidas/imagen4.jpg</imagen>
+	</comida>
+	<comida>
+		<titulo>Recetas con anis</titulo>
+		<descripcion>El anis es una hierba aromática con la que se pueden preparar sopas, bebidas, aderezos, pasteles, galletas, gelatinas, etc. Tienen un aroma dulce y suave, puede combinar con verduras y algunas frutas, asi como con  carnes. Sus hojas tiernas se le pueden agregar a las ensaladas para darles un toque especial y ayudar a evitar gases o malas digestiones en la comida.</descripcion>
+		<imagen>../images/comidas/imagen5.jpg</imagen>
 	</comida>	
 	<comida>
-		<titulo>
-			Recetas y alimentos para personas que padecen Gota
-		</titulo>
-		<descripcion>
-			Las personas que padecen de Gota deben seguir ciertas indicaciones dietéticas para controlar y combatir esta afección. Es necesario que eliminen de la dieta los alimentos que contienen purina como los mariscos, sardinas, atunes, consomé, pavo, anchoas, etc, ya que éstas se convierten en ácido úrico en el cuerpo una vez que son metabolizadas. Se deben de evitar al máximo las grasas de origen animal y limitar los alimentos proteícos como los huevos, carnes, etc, asi como los guisantes, las habas y las lentejas. Se pueden consumir sin preocupación pastas, patatas, arroz, verduras, jugos de vegetales frescos, infusiones de hierbas, etc.		</descripcion>
-		<imagen>
-			../images/comidas/imagen6.jpg
-		</imagen>
-		<enlace>
-		</enlace>
+		<titulo>Recetas y alimentos para personas que padecen Gota</titulo>
+		<descripcion>Las personas que padecen de Gota deben seguir ciertas indicaciones dietéticas para controlar y combatir esta afección. Es necesario que eliminen de la dieta los alimentos que contienen purina como los mariscos, sardinas, atunes, consomé, pavo, anchoas, etc, ya que éstas se convierten en ácido úrico en el cuerpo una vez que son metabolizadas. Se deben de evitar al máximo las grasas de origen animal y limitar los alimentos proteícos como los huevos, carnes, etc, asi como los guisantes, las habas y las lentejas. Se pueden consumir sin preocupación pastas, patatas, arroz, verduras, jugos de vegetales frescos, infusiones de hierbas, etc.</descripcion>
+		<imagen>../images/comidas/imagen6.jpg</imagen>		
 	</comida>	
-		<comida>
-		<titulo>
-			Recetas ricas en Magnesio
-		</titulo>
-		<descripcion>
-			El magnesio es un mineral con importantes funciones en el cuerpo entre las cuales destaca su intervención en el metabolismo de los carbohidratos y proteinas, activa enzimas, disminuye la excitabilidad del sistema nervioso central, participa en la reconstrucción de la sustancia nerviosa y en su metabolismo, y juega un papel fundamental en la respiración e intercambios celulares. Es un antiséptico interno y externo, y tiene propiedades antiinflamatorias e antiinfecciosas y mejora la resistencia ante el stress, frío, traumatismos, intervenciones quirúrgicas, etc.
-
-Una dieta pobre en este mineral provoca efectos muy nocivos como la alteración de los niveles de potasio y calcio, bloqueo de la paratiroides, tetania, temblores, convulsiones, irritabilidad neuromuscular, trombosis, terreno favorable al cáncer, depresión, agitación, confusión, irritabilidad, inquietud, vértigos, desorientación, arritmia, paro cardíaco,  artritis, alopecia, etc.
-
-Podemos encontrar el magnesio en alimentos como el polen, trigo, maíz, cebada, avena, dátil, remolacha, espinacas, patata, zanahoria, almendras, nueces, avellanas, castañas, judía verde, arroz de preferencia integral, cerezas, naranja, pera, melocotón, albaricoque, etc.		</descripcion>
-		<imagen>
-			../images/comidas/imagen7.jpg
-		</imagen>		
-		<enlace>
-		</enlace>		
+	<comida>
+		<titulo>Recetas ricas en Magnesio</titulo>
+		<descripcion>El magnesio es un mineral con importantes funciones en el cuerpo entre las cuales destaca su intervención en el metabolismo de los carbohidratos y proteinas, activa enzimas, disminuye la excitabilidad del sistema nervioso central, participa en la reconstrucción de la sustancia nerviosa y en su metabolismo, y juega un papel fundamental en la respiración e intercambios celulares. Es un antiséptico interno y externo, y tiene propiedades antiinflamatorias e antiinfecciosas y mejora la resistencia ante el stress, frío, traumatismos, intervenciones quirúrgicas, etc. Una dieta pobre en este mineral provoca efectos muy nocivos como la alteración de los niveles de potasio y calcio, bloqueo de la paratiroides, tetania, temblores, convulsiones, irritabilidad neuromuscular, trombosis, terreno favorable al cáncer, depresión, agitación, confusión, irritabilidad, inquietud, vértigos, desorientación, arritmia, paro cardíaco,  artritis, alopecia, etc. Podemos encontrar el magnesio en alimentos como el polen, trigo, maíz, cebada, avena, dátil, remolacha, espinacas, patata, zanahoria, almendras, nueces, avellanas, castañas, judía verde, arroz de preferencia integral, cerezas, naranja, pera, melocotón, albaricoque, etc.</descripcion>
+		<imagen>../images/comidas/imagen7.jpg</imagen>
 	</comida>
-	<sabias>
-		-Sabías que la fibra que contiene la fresa fortalece la flora intestinal, y que además facilita la producción de glóbulos rojos y blancos? y por si no lo sabes, la alta cantidad de vitamina C en sus propiedades es un poderoso antioxidante que hace más lento el envejecimiento en las personas.		
-	</sabias>
-	<sabias>
-		-¿Sabías que tu estado de animo esta determinado por varios factores de los cuales uno de los más importantes es tu alimentación?
-	</sabias>
-	<sabias>
-		-¿Sabías que si te alimentas de forma equilibrada con lo que la naturaleza nos brinda, no necesitamos  suplementos  vitamínicos en la  dieta?
-	</sabias>
-	<sabias>
-		-¿Sabías que si te alimentas bien puedes reducir la osteoporosis?
-	</sabias>
-	<sabias>
-		-¿Sabias que la nutriciòn afecta el sueño?
-	</sabias>
-	<sabias>
-		-¿Sabias que la nutriciòn afecta el sueño?
-	</sabias>
+	<sabias>La fibra que contiene la fresa fortalece la flora intestinal, y que además facilita la producción de glóbulos rojos y blancos. Y por si no lo sabes, la alta cantidad de vitamina C en sus propiedades es un poderoso antioxidante que hace más lento el envejecimiento en las personas.</sabias>
+	<sabias>Tu estado de animo esta determinado por varios factores de los cuales uno de los más importantes es tu alimentación.</sabias>
+	<sabias>Si te alimentas de forma equilibrada con lo que la naturaleza nos brinda, no necesitamos  suplementos  vitamínicos en la  dieta.</sabias>
+	<sabias>Si te alimentas bien puedes reducir la osteoporosis.</sabias>
+	<sabias>La desnutrición afecta el sueño.</sabias>	
 </comidas>

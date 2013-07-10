@@ -15,7 +15,16 @@
         <script src="../js/jquery-ui-1.8.23.custom.min.js"></script>
         <script src="../js/bjqs-1.3.min.js"></script>   		
 	</head>
-	<body>		
+	<body>
+        <div id="fb-root"></div>				
+        <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=276790459133085";
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
 		<header id="main_header">
 			<h1>Vitalius</h1>
 			<h4>Come sano, vive bien</h4>
@@ -31,58 +40,68 @@
 				<li><span>Registro</span></li>
 			</ul>
 			<div id="pull"></div>
-		</nav>
-		<div id="content">			
-			<div id="queComer_intro">                
-                <div id="queComer_info">
-                    <h2>¿Que comer?</h2>
-                    <p>Comer es necesario para el funcionamiento del cuerpo. La comida es el combustible de las células de nuestros órganos para renovarse y para hacer su trabajo.<br/>
-                       Es lo que nos da energía para movernos, para pensar y para vivir. Pero no todo vale.<br /><br />
-                       Los estudios científicos de los últimos años no cesan de asociar la mala alimentación con la incidencia de diversos trastornos, especialmente los de tipo crónico como las enfermedades del corazón, la diabetes tipo 2, la obesidad o el cáncer.<br /><br />
-                       Por eso, cada vez hay más interés en comer de forma saludable. Si además de ser agradable al paladar y placentera, la comida es sana nos ayudará alimentarnos, nutrirnos y proteger nuestra salud.
-                    </p>
-                </div>				
-			</div>	
-            <div id="div_debajo">
-				<div id= "comerFrase"> </div>
-    		    <div id="izquierda" class="izq"></div>
-		        <div id="derecha"class="der"></div>
-		    </div>
-		    <div id="queComerFrase">
-                <img src="../images/various/queComer2.png" alt="Comida Sana" />
-			    <p>Alimentarse es simplemente el hecho de comer algo, lo que sea, desde vegetales crudos hasta 
-                   comida chatarra, el simple hecho de “meterle algo al estomago” es alimentarse.
-                    En cambio nutrirste es el PROCESO mediante el cual el cuerpo obtiene los macronutrientes y micronutrientes de 
-                    los alimentos adquiridos durante el proceso de alimentacion.<br/><br/>
-                    En español: “Nutrirse” es en pocas palabras “digerir los alimentos”.<br/><br/>
-                    Ahora bien, observen a su alrededor a la gente, Pueden observar personas con una alimentacion 
-                    mas de la requerida pero tener una deficiencia en su nutricion, (ejemplo: un adolecente obeso pero
-                    con problemas de anemia y colesterol alto).<br/><br/>
-                    Comunmente pensamos que comer mas equivale a nutrirse mas, sin embargo, esto es erroneo.
-                    Hoy en día, tenemo alimentos con los llamados “empty carbs” o “carbohidratos vacios”, 
-                    (siendo de este el más común) las hamburguesas de cualquiera de tus franquicias preferidas.Estos 
-                    “alimentos” son altos en macronutrimentos, pero realmente pobres en micronutrimentos.<br/><br/>
-                    Probablemente se esten preguntando “si bien bien, pero ¿como hago para vivir mas de 100
-                    años?” Pues es tan facil como uno quiera que sea:Ya cubrimos parcialmente el tema de los alimentos 
-                    chatarra, pero ese es solo uno de los muchos factores que estan implicados en una vida plena y sana.
-			    </p>
-			</div>		
-			<div id="comer">
-				<div id= "comer_articles">				
-					<div id="articles_left"></div>
-					<div id="articles_right"></div>	
+		</nav>		
+		<div id="queComer_intro">                
+            <div id="queComer_info">
+                <h2>¿Que comer?</h2>
+                <p>Comer es necesario para el funcionamiento del cuerpo. La comida es el combustible de las células de nuestros órganos para renovarse y para hacer su trabajo.<br/>
+                    Es lo que nos da energía para movernos, para pensar y para vivir. Pero no todo vale.<br /><br />
+                    Los estudios científicos de los últimos años no cesan de asociar la mala alimentación con la incidencia de diversos trastornos, especialmente los de tipo crónico como las enfermedades del corazón, la diabetes tipo 2, la obesidad o el cáncer.<br /><br />
+                    Por eso, cada vez hay más interés en comer de forma saludable. Si además de ser agradable al paladar y placentera, la comida es sana nos ayudará alimentarnos, nutrirnos y proteger nuestra salud.
+                </p>
+            </div>				
+		</div>	
+        <div id="div_debajo">
+			<img src="../images/various/left.png" id="izquierda" class="izq" alt="Izquierda"/>
+		    <img src="../images/various/right.png" id="derecha"class="der" alt="Derecha"/>
+            <label>Sabías que...</label>
+		</div>
+		<div id="queComerFrase">
+            <img src="../images/various/queComer2.png" alt="Comida Sana" />
+			<p>Alimentarse es simplemente el hecho de comer algo, lo que sea, desde vegetales crudos hasta 
+                comida chatarra, el simple hecho de “meterle algo al estomago” es alimentarse.
+                En cambio nutrirste es el PROCESO mediante el cual el cuerpo obtiene los macronutrientes y micronutrientes de 
+                los alimentos adquiridos durante el proceso de alimentacion.<br/><br/>
+                En español: “Nutrirse” es en pocas palabras “digerir los alimentos”.<br/><br/>
+                Ahora bien, observen a su alrededor a la gente, Pueden observar personas con una alimentacion 
+                mas de la requerida pero tener una deficiencia en su nutricion, (ejemplo: un adolecente obeso pero
+                con problemas de anemia y colesterol alto).<br/><br/>
+                Comunmente pensamos que comer mas equivale a nutrirse mas, sin embargo, esto es erroneo.
+                Hoy en día, tenemo alimentos con los llamados “empty carbs” o “carbohidratos vacios”, 
+                (siendo de este el más común) las hamburguesas de cualquiera de tus franquicias preferidas.Estos 
+                “alimentos” son altos en macronutrimentos, pero realmente pobres en micronutrimentos.<br/><br/>
+                Probablemente se esten preguntando “si bien bien, pero ¿como hago para vivir mas de 100
+                años?” Pues es tan facil como uno quiera que sea:Ya cubrimos parcialmente el tema de los alimentos 
+                chatarra, pero ese es solo uno de los muchos factores que estan implicados en una vida plena y sana.
+			</p>
+		</div>		
+		<div id="comer">
+			<div id= "comer_articles">
+				<div id="queComer_articulos"></div>
+			</div>
+            <div id="queComer_buttons">            
+			    <img src="../images/various/left.png" id="izquierda2" class="izq" alt="Izquierda"/>
+		        <img src="../images/various/right.png" id="derecha2"class="der" alt="Derecha"/>
+            </div>			
+		</div>
+        <div id="show">
+            <div id="background"></div>
+			<div id="visible">
+				<div id="outter_article">
+                    <div id="inner_article">
+				    </div>
+                    <div id="social">                        
+                        <div class="fb-comments" id="fbComments" data-href="" data-width="470" data-num-posts="10"></div>
+                    </div>
 				</div>
-				<div id="izquierda2" class="izq"></div>
-				<div id="derecha2" class="der"></div>				
-				<div id="debajo" class="debajoOff"></div>
-				<div id="cortina"></div>	
-			</div>							
+			</div>
+		</div>
 		<footer id="main_footer">
             <div id="header_footer"><strong>Vitalius</strong>&nbsp;&nbsp;Come sano, vive bien.</div>
             <div id="body_footer">                             
                 <div>
                     <span>Redes sociales</span><br/>
-                    <img src="../images/various/facebook.png"/><p>/vitalius.com</p><br/>
+                    <img src="../images/various/facebook.png"/><p>/vitalius</p><br/>
                     <img src="../images/various/twitter.png"/><p>@vitalius</p><br/>
                     <img src="../images/various/gplus.png"/><p>Vitalius</p><br/>
                 </div>
@@ -114,10 +133,8 @@
                 </div>
 			</div>
 		</footer>
-		
-		
+		<script src="../js/jquery.js"></script>
+        <script src="../js/general.js"></script>
+        <script src="../js/que_comer.js"></script>
 	</body>
 </html>
-<script src="../js/jquery.js"></script>
-<script src="../js/general.js"></script>
-<script src="../js/que_comer.js"></script>
