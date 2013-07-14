@@ -12,9 +12,8 @@
 	function inicioStart() {	    
 	    seccion = document.querySelector('#articles section');
 	    document.querySelector('#show #background').addEventListener('click', function () {
-	        $('#show').fadeOut('fast');
-	        var social = document.querySelector('#social');
-	        document.querySelector('body').removeChild(social);
+	        $('#show').fadeOut('fast');	        
+	        document.querySelector('body').removeChild(document.querySelector('#social'));
 	    }, false);
 	    document.querySelector('#articles_left').addEventListener('click', function () {
 	        moverIzq();
@@ -54,7 +53,7 @@
 				},true);		
 			}
 		}
-		cita = document.getElementById('inicio');
+		cita = document.querySelector('.inicio_content');
 		cargarFrases();		
 	}
 
@@ -116,42 +115,8 @@
 		request.send(null);
 	}   
 
-	function mostrarNoticia(evt) {
-	    var texto = evt.target.responseText;
-	    fst = texto.indexOf('<div class="field-item even" property="schema:articleBody content:encoded">');
-	    lst = texto.indexOf('</article>');
-	    texto = texto.slice(fst, lst + 10);
-	    var footer = texto.slice(texto.indexOf('<footer>'), texto.indexOf('</footer>') + 9);
-	    texto = texto.replace(footer, "");	    
-	    document.querySelector('#inner_article').innerHTML += texto;
-	    document.querySelector('#inner_article').innerHTML += "<br><br><strong>El Universo.com</strong><br><br>Compartir en<br><br>";
-	    loadSocialLinks();
-	}
-
-	function loadSocialLinks() {
-	    var social = document.createElement('div');
-        social.style.display = "inline-block";
-	    var facebook = document.createElement('img');
-	    facebook.setAttribute("src", "./images/various/facebook.png");
-	    facebook.setAttribute('class', 'generic');
-	    var twitter = document.createElement('img');
-	    twitter.setAttribute("src", "./images/various/twitter.png");
-	    twitter.setAttribute('class', 'generic');	    
-
-	    facebook.addEventListener('click', function () {
-	        newwindow = window.open("https://www.facebook.com/sharer/sharer.php?u=" + current_article,'Compartir en Facebook','height=500,width=500');
-	        if (window.focus) { newwindow.focus(); }
-	    }, false);
-	    twitter.addEventListener('click', function () {
-	        newwindow = window.open("http://twitter.com/home?status=Acabo de leer un articulo en Vitalius: "+current_article,'Compartir en Twitter', 'height=300,width=500');
-	        if (window.focus) { newwindow.focus(); }
-	    }, false);	    
-	    document.querySelector('#inner_article').appendChild(facebook);
-	    document.querySelector('#inner_article').appendChild(twitter);	    
-	}
-
-	function procesarArticulos(e) {	    
-	    var xml = e.target.responseXML;	    
+	function procesarArticulos(e) {
+	    var xml = e.target.responseXML;
 	    noticias = xml.querySelectorAll('item');
 	    seccion.innerHTML = "";
 	    if (n < 0) { n = 0; }
@@ -180,89 +145,65 @@
 
 	        article.url = link;
 	        article.header = titulo;
+	        article.body = titulo;
 	        article.addEventListener('click', function () {
 	            var link = this.url;
 	            current_article = this.url;
 	            var request = new XMLHttpRequest();
 	            request.open("GET", "http://chimecho.nixiweb.com/DAW/AJAX_XML/gethtml.php?URL=" + escape(link), true);	            
 	            $('#show').fadeIn('fast');
-	            document.querySelector('#inner_article').innerHTML = '<h2>' + this.header + '</h2><br/>';
-	            //document.querySelector('#comentarios div').setAttribute('data-href', link);
+	            var close = document.createElement('input');
+	            close.setAttribute('type', 'button');
+	            close.setAttribute('style', 'float: right; margin-right: -2px; margin-top: -2px; padding: 3px; background-color: white;');
+	            close.value = "X";
+	            close.addEventListener('click', function () {
+	                $('#show').fadeOut('fast');	                
+	            },false);
+	            document.querySelector('#inner_article').innerHTML = "";
+	            document.querySelector('#inner_article').appendChild(close);
+	            document.querySelector('#inner_article').innerHTML += '<h2>' + this.header + '</h2><br/>';
 	            request.addEventListener('load', mostrarNoticia, false);
-	            request.send(null);
+	            request.send(null);	            
 	        }, false);
 	        article.appendChild(h3).setAttribute('class', 'titulo');
 	        article.appendChild(p).setAttribute('class', 'descripcion');
 	        article.appendChild(h5).setAttribute('class', 'fecha');
 	        seccion.appendChild(article).setAttribute('class', 'articulo');
 	    }
-	}	
-
-	function parseDay(day) {
-	    switch (day) {
-	        case 0:
-	            return "Lunes";
-	            break;
-	        case 1:
-	            return "Martes";
-	            break;
-	        case 2:
-	            return "Miércoles";
-	            break;
-	        case 3:
-	            return "Jueves";
-	            break;
-	        case 4:
-	            return "Viernes";
-	            break;
-	        case 5:
-	            return "Sabado";
-	            break;
-	        case 6:
-	            return "Domingo";
-	            break;
-	    }
 	}
 
-	function parseMonth(month) {
-	    switch (month) {
-	        case 0:
-	            return "Enero";
-	            break;
-	        case 1:
-	            return "Febrero";
-	            break;
-	        case 2:
-	            return "Marzo";
-	            break;
-	        case 3:
-	            return "Abril";
-	            break;
-	        case 4:
-	            return "Mayo";
-	            break;
-	        case 5:
-	            return "Junio";
-	            break;
-	        case 6:
-	            return "Julio";
-	            break;
-	        case 7:
-	            return "Agosto";
-	            break;
-	        case 8:
-	            return "Septiembre";
-	            break;
-	        case 9:
-	            return "Octubre";
-	            break;
-	        case 10:
-	            return "Noviembre";
-	            break;
-	        case 11:
-	            return "Diciembre";
-	            break;
-	    }
+	function mostrarNoticia(evt) {
+	    var texto = evt.target.responseText;
+	    fst = texto.indexOf('<div class="field-item even" property="schema:articleBody content:encoded">');
+	    lst = texto.indexOf('</article>');
+	    texto = texto.slice(fst, lst + 10);
+	    var footer = texto.slice(texto.indexOf('<footer>'), texto.indexOf('</footer>') + 9);
+	    texto = texto.replace(footer, "");	    
+	    document.querySelector('#inner_article').innerHTML += texto;
+	    document.querySelector('#inner_article').innerHTML += "<br><br><strong>El Universo.com</strong><br><br>Compartir en<br><br>";
+	    loadSocialLinks();
+	}	
+
+	function loadSocialLinks() {
+	    var social = document.createElement('div');
+        social.style.display = "inline-block";
+	    var facebook = document.createElement('img');
+	    facebook.setAttribute("src", "./images/various/facebook.png");
+	    facebook.setAttribute('class', 'generic');
+	    var twitter = document.createElement('img');
+	    twitter.setAttribute("src", "./images/various/twitter.png");
+	    twitter.setAttribute('class', 'generic');	    
+
+	    facebook.addEventListener('click', function () {
+	        newwindow = window.open("https://www.facebook.com/sharer/sharer.php?u=" + current_article,'Compartir en Facebook','height=500,width=500');
+	        if (window.focus) { newwindow.focus(); }
+	    }, false);
+	    twitter.addEventListener('click', function () {
+	        newwindow = window.open("http://twitter.com/home?status=Acabo de leer un articulo en Vitalius: "+current_article,'Compartir en Twitter', 'height=300,width=500');
+	        if (window.focus) { newwindow.focus(); }
+	    }, false);	    
+	    document.querySelector('#inner_article').appendChild(facebook);
+	    document.querySelector('#inner_article').appendChild(twitter);	    
 	}
 
 	window.onload = inicioStart();

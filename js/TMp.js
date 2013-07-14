@@ -190,7 +190,11 @@ function mostrardiv(){
 		imgfig.setAttribute('parrafo2',grasas);
 		imgfig.setAttribute('parrafo3',carbohidratos);
 		imgfig.setAttribute('estado','I');
-
+		/*
+		alert(imgfig.getAttribute('parrafo1'));
+		alert(imgfig.getAttribute('parrafo2'));
+		alert(imgfig.getAttribute('parrafo3'));
+*/
 		}
 		
 		var boton_cerrar=document.createElement('input');
@@ -259,14 +263,13 @@ function agregar_Recetas(){
 			target_proteinas_rec = recetas_div[i].childNodes[0].childNodes[0].getAttribute('parrafo1');
 			target_carbo_rec = recetas_div[i].childNodes[0].childNodes[0].getAttribute('parrafo2');
 			target_grasas_rec = recetas_div[i].childNodes[0].childNodes[0].getAttribute('parrafo3');
-			target_estado = recetas_div[i].childNodes[0].childNodes[0].getAttribute('estado');
-
-			if (target_estado=='I'){
 			
-				sumar_recetas();
-			}
+			alert(target_proteinas_rec);
+			alert(target_carbo_rec);
+			alert(target_grasas_rec);
 			
-			recetas_div[i].childNodes[0].childNodes[0].setAttribute('estado','A');
+			sumar_recetas();
+			
 			
 		}
 		
@@ -413,6 +416,11 @@ function sumar_preferidas(){
 }
 
 function sumar_recetas(){
+
+	alert(target_proteinas_rec);
+	alert(target_grasas_rec);
+	alert(target_carbo_rec);
+	
 	n_proteinas = parseInt(target_proteinas_rec);
 	proteinas_totales = proteinas_totales + n_proteinas;
 	

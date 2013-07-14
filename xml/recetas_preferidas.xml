@@ -13,6 +13,9 @@
 		</imagen>
 		<enlace>
 		</enlace>
+		<proteinas>20</proteinas>
+		<grasas>20</grasas>
+		<carbohidratos>30</carbohidratos>			
 	</receta>
 	<receta>
 		<id>2</id>
@@ -27,7 +30,10 @@
 		</imagen>
 		<enlace>
 		</enlace>
-		</receta>
+		<proteinas>20</proteinas>
+		<grasas>20</grasas>
+		<carbohidratos>30</carbohidratos>			
+	</receta>
 	<receta>
 		<id>3</id>
 		<titulo>
@@ -41,5 +47,8 @@
 		</imagen>
 		<enlace>
 		</enlace>		
+		<proteinas>20</proteinas>
+		<grasas>20</grasas>
+		<carbohidratos>30</carbohidratos>			
 	</receta>
 </recetas>

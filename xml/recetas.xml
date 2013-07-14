@@ -7,17 +7,20 @@
 		</titulo>
 		<descripcion>
 			cocinar
-			</descripcion>
+		</descripcion>
 		<imagen>
 			../images/alimentos/alimentos_01.jpg
 		</imagen>
 		<enlace>
 		</enlace>
+		<proteinas>10</proteinas>
+		<grasas>10</grasas>
+		<carbohidratos>20</carbohidratos>
 	</receta>
 	<receta>
 		<id>2</id>
 		<titulo>
-			otra receta
+			Receta de aguacates
 		</titulo>
 		<descripcion>
 		cocinar
@@ -27,7 +30,10 @@
 		</imagen>
 		<enlace>
 		</enlace>
-		</receta>
+		<proteinas>10</proteinas>
+		<grasas>10</grasas>
+		<carbohidratos>20</carbohidratos>		
+	</receta>
 	<receta>
 		<id>3</id>
 		<titulo>
@@ -41,6 +47,9 @@
 		</imagen>
 		<enlace>
 		</enlace>		
+		<proteinas>20</proteinas>
+		<grasas>20</grasas>
+		<carbohidratos>30</carbohidratos>		
 	</receta>
 		<receta>
 		<id>4</id>
@@ -55,6 +64,9 @@
 		</imagen>
 		<enlace>
 		</enlace>		
+		<proteinas>30</proteinas>
+		<grasas>30</grasas>
+		<carbohidratos>40</carbohidratos>		
 	</receta>
 	<receta>
 		<id>5</id>
@@ -69,6 +81,9 @@
 		</imagen>
 		<enlace>
 		</enlace>		
+		<proteinas>40</proteinas>
+		<grasas>40</grasas>
+		<carbohidratos>50</carbohidratos>		
 	</receta>	
 	<receta>
 		<id>6</id>
@@ -83,6 +98,9 @@
 		</imagen>
 		<enlace>
 		</enlace>
+		<proteinas>10</proteinas>
+		<grasas>10</grasas>
+		<carbohidratos>20</carbohidratos>		
 	</receta>	
 		<receta>
 		<id>7</id>
@@ -97,5 +115,8 @@
 		</imagen>		
 		<enlace>
 		</enlace>		
+		<proteinas>20</proteinas>
+		<grasas>20</grasas>
+		<carbohidratos>30</carbohidratos>		
 	</receta>	
 </recetas>
