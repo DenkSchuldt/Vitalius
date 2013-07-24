@@ -102,12 +102,15 @@
 		if (n > articulos.length - 3) n = articulos.length - 3;
 
 		for(i=n; i<articulos.length&&i<(n+3); i++){
-			var titulo = articulos[i].getElementsByTagName("titulo")[0].textContent;
-			var descripcion = articulos[i].getElementsByTagName("descripcion")[0].textContent;
+		    var titulo = articulos[i].getElementsByTagName("titulo")[0].textContent;
+		    var descripcion = articulos[i].getElementsByTagName("descripcion")[0].textContent;
+			var contenido = articulos[i].getElementsByTagName("contenido")[0].textContent;
 			var imagen = articulos[i].getElementsByTagName("imagen")[0].textContent;			
 			var article = document.createElement('span');
 			var h2 = document.createElement('h2');
 			var p = document.createElement('p');
+			var leer = document.createElement('p');
+			leer.innerHTML = "Leer mas...";
 						
 			article.setAttribute("class","out");					
 			texto = document.createTextNode(titulo);
@@ -117,24 +120,25 @@
 			p.appendChild(texto);
 			p.style.textAlign = "justify";
 			var imgfig = document.createElement('img');
-			    imgfig.src = imagen;
-			    imgfig.width = "200";
-			    imgfig.height = "200";			
+			    imgfig.src = imagen;			    
 			article.appendChild(h2);	
 			article.appendChild(imgfig);
 			article.appendChild(p);
-			article.id = i;			
-			article.header = titulo;
-			article.text = descripcion;
-			article.img = imagen;
+			leer.style.color = "#236102";
+			leer.style.textDecoration = "underline";
+			article.appendChild(leer).style.textAlign = "right";			
 			seccion.appendChild(article);
-			article.addEventListener('click', function () {
+			leer.header = titulo;
+			leer.text = contenido;
+			leer.img = imagen;			
+			leer.addEventListener('mouseover', function () { this.style.cursor = "pointer"; });
+			leer.addEventListener('click', function () {
 			    $('#show').fadeIn('fast');
 			    var query = document.querySelector('#inner_article');
-			    query.innerHTML += '<h2 style="text-align:center; color: rgb(140,200,0);">' + this.header + '</h2><br/>';
+			    query.innerHTML = '<h2 style="text-align:center; color: rgb(140,200,0);">' + this.header + '</h2><br/>';
 			    query.innerHTML += '<center><img src="' + this.img + '" alt="img"/></center><br/>';
-			    query.innerHTML += '<p style="text-align:justify;">' + this.text + '</p>';			    
-			    document.querySelector('#social').innerHTML += '<input id="but" type="button" style="background-color: rgb(140,200,0); padding-left:15px; padding-right:15px; padding-top: 5px; padding-bottom: 5px; color: white; font-size: 1em; margin-left:80px;" value="imprimir"/>';
+			    query.innerHTML += '<p style="text-align:justify;">' + this.text + '</p>';
+			    document.getElementById("but").setAttribute('style', 'background-color: rgb(140,200,0); padding-left:15px; padding-right:15px; padding-top: 5px; padding-bottom: 5px; color: white; font-size: 1em; margin-left:80px;');
 			    document.getElementById("but").addEventListener('click', function () {
 			        printDiv('inner_article');
 			    }, true);

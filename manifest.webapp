@@ -1,0 +1,13 @@
+{
+	"name": "Vitalius",
+	"description": "Project test",
+	"launch_path": "./index.html",	
+	"icons": {
+		"128": "/images/various/icon.png"		
+	},
+	"developer": {
+		"name": "Denny K. Schuldt",
+		"url": "http://www.dennyschuldt.blogspot.com/"
+	},
+	"version": "1.0"
+}

@@ -6,7 +6,6 @@
 		<meta name="description" content="Proyecto Parcial I"/>
         <meta name="Keywords" content="HTML5, CSS, Javascript, Jquery, AJAX, Salud, Recetas"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="shortcut icon" href="../images/various/favicon.ico"/>
 		<title>Vitalius - Que beber</title>
 		<link rel="stylesheet" type="text/css" href="../css/css.css">
 		<link rel="stylesheet" type="text/css" href="../css/bjqs.css"/>		
@@ -43,44 +42,45 @@
 		</nav>
 		<div id="content">            
 			<div id="divSliderQuebeber">
-                <br/>
-				<h2>Beber es vida</h2>
-				<div id="slider">
-					<div id="slide">
-						<ul class="bjqs">
-							<li><img src="../images/bebidas/bebida_01.jpg" title="Bebidas saludables"/></li>
-							<li><img src="../images/bebidas/bebida_02.jpg" title="Jugo de Narajna"/></li>
-							<li><img src="../images/bebidas/bebida_03.jpg" title="Jugos varios"/></li>
-							<li><img src="../images/bebidas/bebida_04.png" title="Jugos de vegetales con frutas"/></li>
-							<li><img src="../images/bebidas/bebida_05.png" title="Leche"/></li>
-						</ul>				
-					</div>
-				</div>  
+                <div id="queBeber_info">
+				    <h2>Beber es vida</h2>
+                    <p>La hidratación es fundamental para mantener en perfectas condiciones el organismo, incluyendo el cerebro, según el Observatorio de Hidratación y Salud.<br/><br/> Sin un nivel de hidratación correcto, el rendimiento cognitivo se ve comprometido en todas las edades, incluso en los más jóvenes. Las funciones más afectadas son la memoria a corto y largo plazo, la coordinación motora, el tiempo de reacción y la discriminación perceptiva. Estos déficits empiezan a notarse con deshidrataciones leves (del 2% del peso corporal) y las habilidades mentales y psicomotoras van descendiendo cada vez más a medida que avanza el tiempo sin aporte de líquidos y electrolitos.</p>
+                </div>
+				<div id="slide_bebidas">
+					<ul class="bjqs" style="display: inline-block;">
+						<li><img src="../images/bebidas/bebida_01.jpg" title="Bebidas saludables"/></li>
+						<li><img src="../images/bebidas/bebida_02.jpg" title="Jugo de Narajna"/></li>
+						<li><img src="../images/bebidas/bebida_03.jpg" title="Jugos varios"/></li>
+						<li><img src="../images/bebidas/bebida_04.png" title="Jugos de vegetales con frutas"/></li>
+						<li><img src="../images/bebidas/bebida_05.png" title="Leche"/></li>
+					</ul>
+				</div>
 				<script class="secret-source">
-			    jQuery(document).ready(function ($) {
-			        $('#slide').bjqs({
-			            animtype: 'slide',
-			            height: 320,
-			            width: 620,
-			            responsive: true,
-			            randomstart: true
+			        jQuery(document).ready(function ($) {
+			            $('#slide_bebidas').bjqs({
+			                animtype: 'slide',
+			                height: 320,
+			                width: 620,
+			                responsive: true,
+			                randomstart: true
+			            });
 			        });
-			    });
-			</script>
+			    </script>
 			</div>						
 			<div id="queBeberFrase">
+                <img src="../images/bebidas/bebida_06.png" alt="Agua"/>
 				<p>El agua es esencial, aunque no es un nutriente en el sentido tradicional, puesto que no aporta energía, etc.
-Es el principal e imprescindible componente del cuerpo humano (casi el 60 %).
-El ser humano no puede estar sin beberla más de cinco o seis días sin poner en peligro su vida, porque no puede evitar las pérdidas.
+                Es el principal e imprescindible componente del cuerpo humano (casi el 60 %).
+                El ser humano no puede estar sin beberla más de cinco o seis días sin poner en peligro su vida, porque no puede evitar las pérdidas.
 
-De las numerosas funciones que el agua tiene en nuestro organismo, las más importantes son:
+                De las numerosas funciones que el agua tiene en nuestro organismo, las más importantes son:
 
-Forma el medio acuoso, donde se desarrollan todos los procesos metabólicos que tienen lugar en nuestro organismo.
-Contribuye a regular la temperatura corporal, mediante la evaporación de agua a través de la piel.
-Posibilita el transporte de nutrientes a las células y de las sustancias de desecho desde las células.
+                Forma el medio acuoso, donde se desarrollan todos los procesos metabólicos que tienen lugar en nuestro organismo.
+                Contribuye a regular la temperatura corporal, mediante la evaporación de agua a través de la piel.
+                Posibilita el transporte de nutrientes a las células y de las sustancias de desecho desde las células.
 
-El organismo pierde agua por distintas vías.
-Este agua, ha de ser recuperada compensando las pérdidas con la ingesta. evitando así la deshidratación.</p>
+                El organismo pierde agua por distintas vías.
+                Este agua, ha de ser recuperada compensando las pérdidas con la ingesta. evitando así la deshidratación.</p>
 			</div>
 			<div id="queBeberNutritivo">
 				<h2>Qué beber para bajar de peso</h2>

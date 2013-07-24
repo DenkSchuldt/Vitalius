@@ -2,7 +2,8 @@
     var lis = document.querySelectorAll('#main_nav li');
 	var n = 0;
 	var fst = 0, lst = 0;
-	var current_article = ""; 
+	var current_article = "";
+
     /*
 	 * Description:
 	 * Initial function.
@@ -40,20 +41,12 @@
 		
 		document.querySelector('#show #background').addEventListener('click', function () {
 	        $('#show').fadeOut('fast');
-	      /*  var social = document.querySelector('#social');
-	        document.querySelector('body').removeChild(social);*/
 			var nodo = document.querySelector('#compartir_article');
-			while (nodo.firstChild)
-			{nodo.removeChild(nodo.firstChild);}
-	        
+			while (nodo.firstChild){nodo.removeChild(nodo.firstChild);}
 	    }, false);
 		
-		document.querySelector('#articles_left').addEventListener('click', function() {
-	        moverIzq();
-	    }, false);
-	    document.querySelector('#articles_right').addEventListener('click', function() {
-	        moverDer();
-	    }, false);
+		document.querySelector('#articles_left').addEventListener('click', function() { moverIzq(); }, false);
+	    document.querySelector('#articles_right').addEventListener('click', function() { moverDer(); }, false);
 		cargarBajarDePeso();
 	}
 	
@@ -95,8 +88,7 @@
 			receta = descripcion[i].getElementsByTagName("receta")[0].textContent;
 			
 			article = document.createElement('article');
-			h3 = document.createElement('h3');
-			h4 = document.createElement('h4');
+			h3 = document.createElement('h3');			
 			p = document.createElement('p');			
 			texto = document.createTextNode(titulo);
 			h3.appendChild(texto);

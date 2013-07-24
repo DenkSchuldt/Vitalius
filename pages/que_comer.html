@@ -7,7 +7,6 @@
 		<meta name="description" content="Proyecto Parcial I"/>
         <meta name="Keywords" content="HTML5, CSS, Javascript, Jquery, AJAX, Salud, Recetas"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="shortcut icon" href="../images/various/favicon.ico"/>
 		<title>Vitalius - Que Comer</title>
 		<link rel="stylesheet" type="text/css" href="../css/css.css">
 		<link rel="stylesheet" type="text/css" href="../css/bjqs.css">
@@ -51,10 +50,12 @@
                     Por eso, cada vez hay más interés en comer de forma saludable. Si además de ser agradable al paladar y placentera, la comida es sana nos ayudará alimentarnos, nutrirnos y proteger nuestra salud.
                 </p>
             </div>				
-		</div>	
+		</div>
         <div id="div_debajo">
-			<img src="../images/various/left.png" id="izquierda" class="izq" alt="Izquierda"/>
-		    <img src="../images/various/right.png" id="derecha"class="der" alt="Derecha"/>
+            <div id="div_debajo_buttons">
+			    <img src="../images/various/icon-arrow-left-white.png" id="izquierda" class="izq" alt="Izquierda"/>
+		        <img src="../images/various/icon-arrow-right-white.png" id="derecha"class="der" alt="Derecha"/>
+            </div>
             <label>Sabías que...</label>
 		</div>
 		<div id="queComerFrase">
@@ -78,9 +79,10 @@
 		</div>		
 		<div id="comer">
 			<div id= "comer_articles">
+                <h2>Artículos recomendados:</h2>
 				<div id="queComer_articulos"></div>
 			</div>
-            <div id="queComer_buttons">            
+            <div id="queComer_buttons">
 			    <img src="../images/various/left.png" id="izquierda2" class="izq" alt="Izquierda"/>
 		        <img src="../images/various/right.png" id="derecha2"class="der" alt="Derecha"/>
             </div>			
@@ -93,6 +95,7 @@
 				    </div>
                     <div id="social">                        
                         <div class="fb-comments" id="fbComments" data-href="" data-width="470" data-num-posts="10"></div>
+                        <input id="but" type="button" value="imprimir"/>
                     </div>
 				</div>
 			</div>
