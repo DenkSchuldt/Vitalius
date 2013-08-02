@@ -26,69 +26,76 @@
 			</ul>
             <div id="pull"></div>
 		</nav>
-		<div id="content">
+		<div id="seccion_calendario">
+            <div id="calendario_info">
+                <h3>¡Hora de poner orden!</h3>
+                <p>En esta sección podrás organizar tu alimentación por semana, ver las calorías acuuladas por día en 
+                   tiempo real, y finalmente, podrás imprimirlo.
+                </p>
+                <div>
+                    <h3>Recetas preferidas:</h3>
+                    <p>Puedes arrastrar diferentes recetas y soltarlas en los diferentes días, de tal manera que puedas
+                       organizar tu alimentación. Coloca el mouse sobre una receta para obtener más información.
+                    </p>
+                </div>
+            </div>
+            <div>                
+            <div id="div_preferidas" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
 			<section id="sectionInicio">
-				<table id="table_calendario">
-				<tr id="etiquetas_dias">
-				</tr>
-				<tr id="listas_recetas">
-					<td>
-						<div id="domingo" ondrop="drop(event)" ondragover="allowDrop(event)">
-						</div>					
-					</td>
-					<td>
-						<div id="lunes" ondrop="drop(event)" ondragover="allowDrop(event)">
-						</div>
-					</td>
-					<td>
-						<div id="martes" ondrop="drop(event)" ondragover="allowDrop(event)">
-						</div>
-					</td>
-					<td>
-						<div id="miercoles" ondrop="drop(event)" ondragover="allowDrop(event)">
-						</div>
-					</td>
-					<td>
-						<div id="jueves" ondrop="drop(event)" ondragover="allowDrop(event)">
-						</div>
-					</td>
-					<td>
-						<div id="viernes" ondrop="drop(event)" ondragover="allowDrop(event)">
-						</div>
-					</td>
-					<td>
-						<div id="sabado" ondrop="drop(event)" ondragover="allowDrop(event)">
-						</div>
-					</td>
-				</tr>
+				<table id="calendario">
+				    <tr id="etiquetas_dias"></tr>
+				    <tr id="listas_recetas">
+					    <td><div id="domingo" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+					    <td><div id="lunes" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+					    <td><div id="martes" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+					    <td><div id="miercoles" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+					    <td><div id="jueves" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+					    <td><div id="viernes" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+					    <td><div id="sabado" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+				    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Total de la semana:</td>
+                    </tr>
 				</table>
-				</section>
-				<section id="sectionPreferidas">
-					<div id="div_preferidas" ondrop="drop(event)" ondragover="allowDrop(event)">
-					
-					
-					</div>
-				</section>
-				<section id="informacion_nutricional">
-					<div id="div_proteinas">
-						<p class="labels_nutricion">PROTEINAS:</p>
-					</div>
-					<div id="div_grasas">
-						<p class="labels_nutricion">GRASAS:</p>
-					</div>
-					<div id="div_carbo">
-						<p class="labels_nutricion">CARBOHIDRATOS:</p>
-					</div>
-				</section>
-				<section id="div">
-				</section>
+			</section>
+            <div id="show">
+                <div id="background"></div>
+                <div id="recetasDisponibles">
+                    <div id="recetasDisponiblesHeader">
+                        <h2>Recetas disponibles:</h2>
+                        <p>Selecciona las recetas que deseas incluir para este día de la semana. Debes seleccionar 3 recetas como mínimo, y 6 como máximo.</p>
+                    </div>
+                    <div id="recetasDisponiblesBody"></div>
+                </div>
+		    </div>
+			<!--<section id="informacion_nutricional">
+				<div id="div_proteinas">
+					<p class="labels_nutricion">PROTEINAS:</p>
+				</div>
+				<div id="div_grasas">
+					<p class="labels_nutricion">GRASAS:</p>
+				</div>
+				<div id="div_carbo">
+					<p class="labels_nutricion">CARBOHIDRATOS:</p>
+				</div>
+			</section>-->
 		</div>
 		<footer id="main_footer">
             <div id="header_footer"><strong>Vitalius</strong>&nbsp;&nbsp;Come sano, vive bien.</div>
             <div id="body_footer">                             
                 <div>
                     <span>Redes sociales</span><br/>
-                    <img src="../images/various/facebook.png"/><p>/vitalius.com</p><br/>
+                    <img src="../images/various/facebook.png"/><p>/vitalius</p><br/>
                     <img src="../images/various/twitter.png"/><p>@vitalius</p><br/>
                     <img src="../images/various/gplus.png"/><p>Vitalius</p><br/>
                 </div>
@@ -120,8 +127,8 @@
                 </div>
 			</div>
 		</footer>
-        <script src="../js/jquery.js"></script>
-        <script src="../js/general.js"></script>
-        <script src="../js/calendario_dieta.js"></script>
+        <script type="text/javascript" src="../js/jquery.js"></script>
+        <script type="text/javascript" src="../js/general.js"></script>
+        <script type="text/javascript" src="../js/calendario_dieta.js"></script>
 	</body>
 </html>
